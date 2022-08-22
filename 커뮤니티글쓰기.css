@@ -1,0 +1,435 @@
+button {
+    cursor: pointer;
+    border: 0;
+    background: none;
+}
+button, textarea {
+    font-family: Apple SD Gothic Neo,ë§‘ì€ ê³ ë”•,Malgun Gothic,ë‹ì›€,dotum,sans-serif;
+}
+.SpecialMenu {
+    margin: -12px auto 20px;
+    margin-top: 20px;
+    border: #04aec4 solid #04aec4;
+    background: #04aec4;
+    box-sizing: border-box;
+    opacity: 0.7;
+    height: 20px;
+    vertical-align: middle;
+}
+.se-body a, .se-body abbr, .se-body acronym, .se-body address, .se-body applet, .se-body article, .se-body aside, .se-body audio, .se-body big, .se-body blockquote, .se-body canvas, .se-body caption, .se-body center, .se-body cite, .se-body code, .se-body dd, .se-body del, .se-body details, .se-body dfn, .se-body div, .se-body dl, .se-body dt, .se-body em, .se-body embed, .se-body fieldset, .se-body figcaption, .se-body figure, .se-body footer, .se-body form, .se-body h1, .se-body h2, .se-body h3, .se-body h4, .se-body h5, .se-body h6, .se-body header, .se-body iframe, .se-body img, .se-body ins, .se-body kbd, .se-body label, .se-body legend, .se-body li, .se-body mark, .se-body menu, .se-body nav, .se-body object, .se-body ol, .se-body output, .se-body p, .se-body pre, .se-body q, .se-body ruby, .se-body s, .se-body samp, .se-body section, .se-body small, .se-body span, .se-body strike, .se-body summary, .se-body table, .se-body tbody, .se-body td, .se-body tfoot, .se-body th, .se-body thead, .se-body time, .se-body tr, .se-body tt, .se-body ul, .se-body var, .se-body video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
+.item{
+
+}
+.WritingHeader {
+    position: relative;
+    margin-top: 20px;
+    border-bottom: 1px solid #323232;
+}
+.WritingHeader .title {
+    margin-bottom: 16px;
+    font-size: 22px;
+}
+.WritingHeader .tool_area {
+    height: 36px;
+    position: absolute;
+    bottom: 12px;
+    right: 0;
+}
+.WritingHeader .tool_area .temp_save_area {
+    display: inline-block;
+    height: 36px;
+    margin-right: 4px;
+    border: 1px solid:grey;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 13px;
+}
+.WritingContent {
+    position: relative;
+    padding-top: 12px;
+    padding-bottom: 50px;
+}
+.WritingEditor {
+    float: left;
+    width: 755px;
+}
+.BaseButton.size_default {
+    min-width: 46px;
+    height: 36px;
+    margin-left: 10px;
+    padding: 0 12px;
+    font-size: 13px;
+    line-height: 36px;
+}
+.FormSelectButton .button {
+    display: block;
+    position: relative;
+    width: 100%;
+    padding: 0 25px 0 11px;
+    border: 1px solid #ebecef;
+    background: #fff;
+    text-align: left;
+    box-sizing: border-box;
+    color: #000;
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.BaseButton--skinGreen {
+    background: #04aec4;
+    color: #04aec4;
+    opacity: 0.7;
+}
+.BaseButton.size_default {
+    color: black;
+    min-width: 46px;
+    height: 36px;
+    margin-left: 10px;
+    padding: 0 12px;
+    font-size: 13px;
+    line-height: 36px;
+}
+.SpecialMenu .menu_list {
+    display: flex;
+    padding: 14px 24px;
+    padding-top: 2px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.SpecialMenu .menu_list .item:first-child {
+    padding-left: 0;
+}
+.FormSelectBox {
+    width: 100%;
+}
+.FormSelectButton .button {
+    display: block;
+    position: relative;
+    width: 100%;
+    padding: 0 25px 0 11px;
+    border: 1px solid #ebecef;
+    background: #fff;
+    text-align: left;
+    box-sizing: border-box;
+    color: #000;
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.ArticleWritingTitle .FlexableTextArea .input_text, .ArticleWritingTitle .FormSelectBox .button {
+    height: 40px;
+    font-size: 15px;
+
+}
+.FormSelectButton .button .svg-icon {
+    position: absolute;
+    top: 50%;
+    right: 11px;
+    width: 10px;
+    height: 6px;
+    margin-top: -3px;
+    color: #323232;
+    opacity: .5;
+}
+.ArticleWritingTitle .row {
+    margin-top: 12px;
+}
+.FlexableTextArea .textarea_input {
+    display: block;
+    width: 100%;
+    min-height: 40px;
+    padding: 11px 12px 10px;
+    border: 1px solid #ebecef;
+    box-sizing: border-box;
+    overflow: hidden;
+    resize: none;
+    word-break: break-all;
+    font-size: 15px;
+    letter-spacing: -.23px;
+    line-height: 17px;
+    outline: none;
+}
+.CafeEditor {
+    margin-top: 12px;
+    margin-bottom: 100px;
+    border: 1px solid #ebecef;
+
+    background: #fff;
+}
+.CafeEditor .se-body:lang(ko-KR), .CafeEditor .se-body:lang(ko-KR) button, .CafeEditor .se-body:lang(ko-KR) input, .CafeEditor .se-body:lang(ko-KR) select, .CafeEditor .se-body:lang(ko-KR) textarea {
+    font-family: Apple SD Gothic Neo,ë§‘ì€ ê³ ë”•,Malgun Gothic,ë‹ì›€,dotum,sans-serif;
+}
+.se-body .se-dnd-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    max-height: 100%;
+}
+.se-body, .se-body .se-dnd-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 100%;
+    flex: 1 1 100%;
+}
+.se-body .se-wrap {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 100%;
+    flex: 1 0 100%;
+    background-color: #f9f9f9;
+}
+.CafeEditor .se-body .se-container:before, .CafeEditor .se-body .se-wrap {
+    background: #fff;
+    margin-bottom: 100px;
+
+
+}
+.se-body.se-body-flexible .se-wrap {
+    min-width: 0;
+}
+.se-body.se-body-without-scroll, .se-body.se-body-without-scroll .se-container, .se-body.se-body-without-scroll .se-content, .se-body.se-body-without-scroll .se-dnd-wrap {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+}
+
+.se-body.se-body-flexible .se-wrap {
+    min-width: 0;
+}
+.se-body article, .se-body aside, .se-body details, .se-body figcaption, .se-body figure, .se-body footer, .se-body header, .se-body menu, .se-body nav, .se-body section {
+    display: block;
+}
+.se-body .se-header {
+    position: relative;
+    border-bottom: 1px solid rgba(0,0,0,.2);
+}
+
+.CafeEditor .se-body .se-header {
+    border-color: rgba(0,0,0,.06);
+}
+.se-body.se-body-flexible .se-l-document-toolbar {
+    height: 60px;
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+}
+.se-body .se-l-document-toolbar {
+    position: relative;
+    z-index: 17;
+}
+.se-body.se-body-flexible .se-document-toolbar {
+    -ms-flex-flow: wrap;
+    flex-flow: wrap;
+}
+.CafeEditor .se-body .se-document-toolbar {
+    padding: 2px 7px 3px;
+    background: #fbfbfb;
+    height: 60px;
+}
+.se-body .se-document-toolbar {
+    padding: 3px 21px 3px 6px;
+}
+.se-body .se-document-toolbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1;
+    flex: 1 1;
+    background-color: #fff;
+    border-bottom: 1px solid #e5e5e5;
+}
+.se-body ol, .se-body ul {
+    list-style: none;
+}
+.se-body .se-document-toolbar .se-toolbar-item {
+    padding-left: 10px;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    height: 54px;
+    width: 137px;
+}
+.se-body .se-toolbar-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    height: 100%;
+    font-size: 0;
+}
+.se-body.se-body-flexible .se-document-toolbar {
+    -ms-flex-flow: wrap;
+    flex-flow: wrap;
+}
+.se-body *, .se-body :after, .se-body :before {
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+}
+.se-body button {
+    padding: 0;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    font: inherit;
+    border-radius: 0;
+    outline: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.se-body button, .se-body input, .se-body select, .se-body textarea {
+    font-family: se-nanumgothic,\\B098\B214\ACE0\B515,nanumgothic,sans-serif,Meiryo;
+}
+.se-body .se-document-toolbar-basic-button, .se-body .se-document-toolbar-basic-button.se-highlight-toolbar-button {
+    position: relative;
+}
+.se-body button[type=button], .se-body input[type=text], .se-body input[type=url] {
+    outline: 0;
+}
+.se-body .se-document-toolbar-basic-button.se-text-icon-toolbar-button {
+    min-width: 40px;
+    height: 54px;
+    padding-top: 37px;
+    text-align: center;
+}
+.CafeEditor .se-body:lang(ko-KR), .CafeEditor .se-body:lang(ko-KR) button, .CafeEditor .se-body:lang(ko-KR) input, .CafeEditor .se-body:lang(ko-KR) select, .CafeEditor .se-body:lang(ko-KR) textarea {
+    font-family: Apple SD Gothic Neo,ë§‘ì€ ê³ ë”•,Malgun Gothic,ë‹ì›€,dotum,sans-serif;
+}
+.CafeEditor .se-body .se-image-toolbar-button .se-toolbar-icon {
+    width: 20px;
+    height: 20px;
+    background-position: -374px -565px;
+}
+.se-body .se-document-toolbar-basic-button.se-text-icon-toolbar-button .se-toolbar-icon {
+    position: absolute;
+    top: 0;
+    bottom: 17px;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+.se-canvas-bottom{
+  height: 338px;
+}
+.se-body .se-progressbar {
+    -webkit-box-flex: 0;
+    -ms-flex: none;
+    flex: none;
+    display: none;
+    overflow: hidden;
+    position: absolute;
+    bottom: -2px;
+    z-index: 15;
+    left: 0;
+    width: 100%;
+}
+.se-body .se-selection {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+.CafeEditor .se-body .se-content {
+    overflow-y: auto;
+}
+.se-body.se-body-without-scroll .se-content {
+    overflow: auto;
+}
+.se-body .se-canvas {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    min-height: 615px;
+    margin: auto;
+}
+.CafeEditor .se-body .se-canvas {
+    min-height: 412px;
+}
+.CafeEditor .se-canvas-width-800.se-l-viewport-desktop {
+    max-width: none;
+    min-width: 753px;
+}
+.se-body .se-canvas.se-canvas-flexible {
+    overflow: hidden;
+    -webkit-transform: translateZ(0);
+}
+#topmargin{
+  height: 74px;
+}
+.se-body .se-components-wrap .se-component:first-child:not(.se-documentTitle) {
+    margin-top: 50px;
+}
+.se-body .se-selection .se-caret {
+    position: absolute;
+    z-index: 5;
+    display: block;
+}
+.CafeEditor .se-body .se-component-content {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.CafeEditor .se-canvas-width-800.se-l-viewport-desktop .se-caption, .CafeEditor .se-canvas-width-800.se-l-viewport-desktop .se-component-content, .CafeEditor .se-canvas-width-800.se-l-viewport-desktop .se-component-content-fit, .CafeEditor .se-canvas-width-800.se-l-viewport-desktop .se-component-content>.se-drop-indicator:after, .CafeEditor .se-canvas-width-800.se-l-viewport-desktop .se-component-edge-button, .CafeEditor .se-canvas-width-800.se-l-viewport-desktop .se-cover-button-wrap, .CafeEditor .se-canvas-width-800.se-l-viewport-desktop .se-drop-indicator-bottom:after, .CafeEditor .se-canvas-width-800.se-l-viewport-desktop .se-module-code .se-code-source-editor, .CafeEditor .se-canvas-width-800.se-l-viewport-desktop .se-module-formula .se-formula-viewer-wrap, .CafeEditor .se-canvas-width-800.se-l-viewport-desktop .se-video-info-wrap {
+    max-width: 800px;
+}
+.se-body .se-module-text.se-is-empty .se-placeholder {
+    color: #999;
+}
+
+/*글쓰기 끝*/
+
+
+
+/*커뮤티니본문 시작*/
+
+.graph-comu{
+  width: 100%;
+  border-top: 2px;
+}
+.comu-top{
+  border-bottom: 1px;
+}

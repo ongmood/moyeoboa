@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="utf-8">
+    <title>검정고시 커뮤니티-대학/학과/전형-대학별</title>
+    <style>
+	.marginauto {
+	    margin: 10px auto 20px;
+	    display: block;
+	}
+
+	</style>
+    <link rel="stylesheet" href="style.css" />
+  	<link rel="stylesheet" href="plus.css" />
+    <link rel="stylesheet" href="검정고시.css"/>
+    <link rel="stylesheet" href="대학,학과,전형.css"/>
+  </head>
+  <body>
+    <div class="top_menu" id="topHeaderMenu">
+<!--            <div style="margin: 5px; padding: 5px; border: 2px solid red; border-image: none; font-size: 20px; font-weight: bold; display: inline; position: absolute;"><span style="color: red;">시험운영중</span></div> -->
+        <ul id="top">
+                <li><a class="jiu" href="/PageLinkAll.do?link=/kcue/ast/eip/eis/mbersvc/login/EipLoginView.do&p_menu_id=PG-EIP-12001" title="로그인">로그인</a></li>
+                <li><a class="jiu" href="/PageLinkAll.do?link=/kcue/ast/eip/eis/mbersvc/mbersbscrb/EipStplatAgreView.do&p_menu_id=PG-EIP-12101" title="회원가입">회원가입</a></li>
+               <li><a class="jiu" href="/PageLinkAll.do?link=/kcue/ast/eip/eis/cstmr/notice/EipNotice.do&p_menu_id=PG-EIP-10801" title="고객센터">고객센터</a></li>
+
+        </ul>
+
+    </div>
+
+
+<!-- gnb메뉴-->
+<div id="gnb">
+  <div class="logo"><a href="홈페이지.html" title="검정고시 커뮤니티"><img class="marginauto" src="모여봐 이미지1.jpg" width="180" alt="검정고시 커뮤니티" /></a></div>
+
+
+    <form id ="data_search" method="post" action="/PageLinkAll.do?link=/kcue/ast/eip/eis/search/EipSearchTotalsearch.do&p_menu_id=" onsubmit="return searchMainSubmit($('#data_search'));">
+    <div id="main_popup" style="display:none">
+        <div class="popup_wrap popup_wrap_box" style="display:none">
+            <div class="pop_top">
+                <p class="popup_close"><a href="#"><img src="닫기 이미지.jpg" alt="닫기" title="닫기" onclick="javascript:fn_clickSearch();"></a></p>
+            </div>
+            <div class="popup_content">
+                <input type="hidden" name="searchLog" value="true" />
+                <input type="hidden" name="collection" value="" />
+                <input type="hidden" name="sortSubmitDate" value="desc" />
+                <input type="hidden" name="sortAccuracy" value="desc" />
+                <input type="hidden" name="sortPopular" value="desc" />
+                <input type="hidden" name="sortPeriod" value="ALL" />
+                <input type="hidden" name="sortTarget" value="ALL" />
+                <input type="hidden" name="sortYear" value="" />
+                <input type="hidden" name="sortPlace" value="ALL" />
+                <input type="hidden" name="searchOption" value="" />
+                <input type="hidden" name="searchOptionKeyword" value="" />
+    <input type="text"  id="tags" name="keyword" data-target="#keywordSuggestTarget" title="검색어 입력창" autocomplete="off" value=""  maxlength="100"/>
+                <a href="javascript:fn_totalSearch_onclick();" class="popup_search_btn" title="검색">검색</a>
+<!--                     <input type="text"  id="tags" name="search_ip" data-target="#keywordSuggestTarget" title="검색어 입력창" autocomplete="off" value=""  maxlength="100"/>
+                <a href="javascript:goCategory4();" class="popup_search_btn" title="검색">검색</a> -->
+            </div>
+        </div>
+    </div>
+    </form>
+    <div id="tophol">
+      <ul id="gnb_ul">
+
+          <li><a href="검정고시초졸.html" class="menu1">검정고시</a></li>
+          <li><a href="커뮤니티초졸.html" class="menu2">커뮤니티</a></li>
+          <li><a href="대학,학과,전형.html" class="menu3">대학/학과/전형</a></li>
+          <li><a href="성적분석.html" class="menu4">성적분석</a></li>
+          <li><a href="대입정보.html" class="menu5">대입정보</a></li>
+          <li><a href="마이페이지.html" class="menu6">마이페이지</a></li>
+
+      </ul>
+      <ul id="gnb_ul1">
+    <div class="potal_search" id="myPgeSlide">
+    <a href="javascript:fn_mypgeVib_onclick()" title="마이페이지"><img src="마이메뉴 이미지1.jpg"  width="40" alt="마이페이지"></a>
+    </div>
+
+    <!-- gnb 통합검색 팝업 -->
+
+<!--         <form id="total_search" method="get" action="/kcue/ast/eip/eis/newsearch/totalSearch.do"> -->
+    <div class="bt_sc_open"><a href="#" title="통합검색"><img src="통합검색 이미지1.jpg" width="40" alt="통합검색"/></a></div>
+    <div id="sc_pop_wrap" style="display:none;">
+        <p class="bt_sc_close"><a href="#" title="닫기"><img src="닫기 이미지.jpg" width="40" alt="닫기"/></a></p>
+
+        <div class="keyword_box">
+            <h3>통합검색</h3>
+            <div class="main_search_list">
+            </div>
+            <input type="text" name="kwd" id="srch_sub" class="keyword_input" title="검색어를 입력해주세요" placeholder="검색어를 입력해주세요" autocomplete="off" maxlength="100" onKeypress="javascript:if(event.keyCode==13){goSearch_a();}">
+            <a href="javascript:goSearch_a();" class="btn_search_main" title="검색"><img src="/images/icon_search4.png" alt="검색"></a>
+            <a href="javascript:goSearch_a();" title="검색하기" class="btn_search">검색하기</a>
+        </div>
+        <div class="keyword_tag">
+            <h3>인기검색어</h3>
+            <ul class="tag_box">
+            </ul>
+          </ul>
+        </div>
+    </div>
+
+    <div class=""></div>
+
+<!-- //gnb메뉴 -->
+
+
+<!-- gnb 펼침메뉴-->
+  <div id="gnb_view">
+    <div class="gnb_list">
+        <div class="menu_banner">
+            <map name="bannerMap" id="bannerMap">
+                <area shape="rect" coords="21,68,101,95" href="#"  title="대입정보매거진 자세히보기" alt="대입정보매거진 자세히보기" />
+            </map>
+        </div>
+
+        <span class="tts">검정고시</span>
+        <ul id="menu1">
+            <li><a href="검정고시초졸.html">초졸</a></li>
+            <!--20210528 메뉴삭제 <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/inf/coseinf/EipCoseInfOccpThemeList.do&p_menu_id=PG-EIP-05902">테마별 직업정보</a></li> -->
+            <li><a href="검정고시중졸.html">중졸</a></li>
+            <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/cnslt/prsec/EipCoseAptdPrsec.do&p_menu_id=PG-EIP-10701">고졸</a></li>
+        </ul>
+
+        <span class="tts">커뮤니티</span>
+        <ul id="menu1">
+            <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/inf/coseinf/EipCoseInfOccpCl.do&p_menu_id=PG-EIP-05501">초졸</a></li>
+            <!--20210528 메뉴삭제 <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/inf/coseinf/EipCoseInfOccpThemeList.do&p_menu_id=PG-EIP-05902">테마별 직업정보</a></li> -->
+            <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/cnslt/prsec/EipCoseAptdPrsec.do&p_menu_id=PG-EIP-10701">중졸</a></li>
+            <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/cnslt/prsec/EipCoseAptdPrsec.do&p_menu_id=PG-EIP-10701">고졸</a></li>
+        </ul>
+
+        <span class="tts">대학/학과/전형</span>
+        <ul id="menu2">
+            <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/inf/univinf/eipUinfGnrl.do&p_menu_id=PG-EIP-01701">대학정보</a></li>
+            <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/inf/sjinf/eipSjinfGnrl.do&p_menu_id=PG-EIP-05101">학과정보</a></li>
+            <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/inf/selctninf/EipSelctnInfGnrl.do&p_menu_id=PG-EIP-06001">전형정보</a></li>
+        </ul>
+
+        <span class="tts">성적분석</span>
+        <ul id="menu3">
+            <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/cun/ssa/sgc/ConStdptScrAnalsMain.do&p_menu_id=PG-CON-00901">검정고시</a></li>
+            <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/cun/ssa/csat/ConCsatScrAnalsView.do&p_menu_id=PG-CON-01101">수능성적분석</a></li>
+            <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/cou/ssa/atrcr/CouAtrcrScrComputList.do&p_menu_id=PG-CON-01401">대학별성적분석</a></li>
+        </ul>
+
+        <span class="tts">대입상담</span>
+        <ul id="menu4">
+            <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/cnslt/EipCnsltUseGuid.do&p_menu_id=PG-EIP-09301">이용안내</a></li>
+            <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/cnslt/onlineunvent/EipOnlineUnivCnslt.do&p_menu_id=PG-EIP-09401">온라인대입상담</a></li>
+            <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/cnslt/onlinemajor/EipOnlineMajorCnsltMain.do&p_menu_id=PG-EIP-09801">온라인전공상담</a></li>
+            <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/cnslt/EipCnsltTelCnslt.do&p_menu_id=PG-EIP-10301">전화상담안내</a></li>
+            <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/cnslt/example/eipUniventCnsltCase.do&p_menu_id=PG-EIP-10401">자주하는 질문</a></li>
+            <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/cnslt/EipCnsltCoseErtdsCnter.do&p_menu_id=PG-EIP-10601">진로진학센터안내</a></li>
+<!-- 20190227 상담 소스 수정              <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/cnslt/telresve/EipTelResveCnsltList.do?p_menu_id=PG-EIP-10702" >전화예약상담신청</a></li> -->
+        </ul>
+
+        <span class="tts">대입정보</span>
+        <ul id="menu5">
+            <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/unventsystem/EipGuidSystemGnrl.do&p_menu_id=PG-EIP-00201">대입제도안내</a></li>
+            <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/presnatn/schdul/EipPresnatnSchdul.do&p_menu_id=PG-EIP-09001">대입일정</a></li>
+            <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/inf/bbs/EipUnventRecsroom.do&p_menu_id=PG-EIP-07401">대입전략자료실</a></li>
+            <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/inf/bbs/EipUnventNews.do&p_menu_id=PG-EIP-07601">대입소식</a></li>
+            <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/inf/bbs/EipUnventSfe.do&p_menu_id=PG-EIP-31301">대학별 입시정보</a></li>
+            <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/presnatn/expo/EipUnventInfExhbList.do&p_menu_id=PG-EIP-07901">대입박람회/설명회</a></li>
+            <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/presnatn/exprn/EipUnivExprnPgmList.do&p_menu_id=PG-EIP-00224">대학별 행사안내</a></li>
+            <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/unventsystem/EipGuidRelateSiteGuid.do&p_menu_id=PG-EIP-01401">관련사이트</a></li>
+        </ul>
+
+        <span class="tts">마이페이지</span>
+        <ul id="menu6">
+<!--                <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/mypge/submainpge/EipSubMainList.do?p_menu_id=PG-EIP-13201">마이페이지</a></li> -->
+            <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/mypge/intrstuniv/EipIntrstUnivSubjctList.do&p_menu_id=PG-EIP-13301">관심대학/전형/진로</a></li>
+            <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/mypge/schdul/EipCldrExList.do&p_menu_id=PG-EIP-14201">일정관리</a></li>
+            <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/cun/mng/sgc/ConStdptScrMngSimplReg.do?linkParamDefaultField=1&p_menu_id=PG-CON-00201">성적관리</a></li>
+            <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/mypge/cnslt/eipMyCnslt.do&p_menu_id=PG-EIP-13501">상담내역</a></li>
+            <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/mypge/qestnans/EipMyAnsQestn.do&p_menu_id=PG-EIP-13801">질문</a></li>
+            <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/mypge/violtinf/EipMyVioltInfCrtfcView.do&p_menu_id=PG-EIP-13601">커뮤니티 글</a></li>
+            <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/mypge/mberinf/eipPasswordComfm.do&p_menu_id=PG-EIP-14401">회원정보</a></li>
+            <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/mypge/chldrnentsch/EipChldrnEntschAsstnView.do&p_menu_id=PG-EIP-14601">입학도우미</a></li>
+            <!-- 20190227 상담 소스 수정 <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/mypge/mberinf/eipTelCnsltMapngHisInit.do&p_menu_id=PG-EIP-40101">전화상담연동이력조회</a></li> -->
+        </ul>
+      </div>
+  </div>
+  <!--펼침메뉴 끝-->
+  <div id="popup_top_wrap">
+      <div class="notice_bar" onclick="javascript:fn_hotNotice();">
+          <div class="notice_bar_wrap">
+              <input type="hidden" id="pop_cnt" value="6"/>
+              <h2><span class="hot">HOT</span> 질문/공지</h2>
+              <div id="scrolltextup" style="overflow:hidden; position:relative; width:600px; height:21px;">
+                <div id="textup" style="position:absolute; top:0; left:0; width:600px;">
+                  <div style="line-height:21px;">
+
+                          <a href="#" tabindex="-1" title="대입정보포털 단계적 서비스 제공 안내" class="popup_content" >
+                          대입정보포털 단계적 서비스 제공 안내
+                          </a>
+
+                              <br/>
+
+
+                          <a href="#" tabindex="-1" title="2023학년도 수시 대학별 검정고시 성적산출 서비스 오픈" class="popup_content" >
+                          2023학년도 수시 대학별 성적산출 서비스 오픈
+                          </a>
+
+                              <br/>
+
+                          <a href="#" tabindex="-1" title="2023학년도 수시 대입정보포털 만족도조사" class="popup_content" >
+                          2023학년도 수시 대입정보포털 만족도조사
+                          </a>
+
+                              <br/>
+
+                          <a href="#" tabindex="-1" title="대학별 정보를 한눈에 볼 수 있는 대학알리미" class="popup_content" >
+                          대학별 정보를 한눈에 볼 수 있는 대학알리미
+                          </a>
+
+                  </div>
+                </div>
+              </div>
+          </div>
+      </div>
+      <div class="slide_btn_wrap">
+
+          <p class="btn_close">
+              <a href="#" id="btn_top_popup" title="팝업 열기"><img src="더보기 이미지.jpg" width="30" alt="팝업 열기 버튼"></a>
+          </p>
+
+      </div><!--//slide_btn_wrap-->
+      <div id="pop_top_banner" style="display: none;" >
+          <div class="banner_img_group">
+              <!-- 팝업 배너 이미지 -->
+              <div class="banner_img_wrap">
+
+                          <div>
+                          <ul>
+
+                  <li>
+                      <a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/cstmr/notice/EipNoticeView.do&p_menu_id=PG-EIP-10901&sn=15461&rnum=203" tabindex="-1" title="대입정보포털 단계적 서비스 제공 안내" onclick="go_hearderPop(this.href,'10','',''); return false;">
+                      <img src="/common/downloadImage.do?fileId=00000000000000115424&fileSn=1&filePath=eip.fileStorePath" alt="대입정보포털 단계적 서비스 제공 안내" width="226" height="256"/>
+                      </a>
+                  </li>
+
+
+                  <li>
+                      <a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/cstmr/notice/EipNoticeView.do&p_menu_id=PG-EIP-10901&sn=15692&rnum=1" tabindex="-1" title="2023학년도 수시 대학별 성적산출 서비스 오픈" onclick="go_hearderPop(this.href,'10','',''); return false;">
+                      <img src="/common/downloadImage.do?fileId=00000000000000124303&fileSn=1&filePath=eip.fileStorePath" alt="2023학년도 수시 대학별 성적산출 서비스 오픈" width="226" height="256"/>
+                      </a>
+                  </li>
+
+
+                  <li>
+                      <a href="https://ko.research.net/r/adigamain2022" tabindex="-1" title="2023학년도 수시 대입정보포털 만족도조사" onclick="go_hearderPop(this.href,'30','0','0'); return false;">
+                      <img src="/common/downloadImage.do?fileId=00000000000000124405&fileSn=1&filePath=eip.fileStorePath" alt="2023학년도 수시 대입정보포털 만족도조사" width="226" height="256"/>
+                      </a>
+                  </li>
+
+                          </ul>
+                          </div>
+
+                          <div>
+                          <ul>
+
+                  <li>
+                      <a href="https://www.gumjung.co.kr/" tabindex="-1" title="검정고시 대입정보포털 검정고시로 대학어디가" onclick="go_hearderPop(this.href,'30','0','0'); return false;">
+                      <img src="/common/downloadImage.do?fileId=00000000000000057454&fileSn=1&filePath=eip.fileStorePath" alt="검정고시 대입정보포털 검정고시로 대학어디가" width="226" height="256"/>
+                      </a>
+                  </li>
+
+                          </ul>
+                          </div>
+
+              </div>
+              <!-- //팝업 배너 이미지 -->
+          </div><!--//position-->
+      </div><!--//pop_top_banner-->
+  </div>
+  <!--팝업 배너 끝-->
+<div id="hole">
+  <!--왼쪽 메뉴-->
+  <div class="left_menu" id="left_menu_gom">
+    <div class="left_menu_title">대학/학과/전형</div>
+    <ul id="left_menu_gom1">
+
+      <li>
+        <a href="대학,학과,전형.html" class="cho">대학별</a>
+      </li>
+
+      <li>
+        <a href="대학,학과별.html">학과별</a>
+      </li>
+
+      <li>
+        <a href="대학,전형별.html">전형별</a>
+      </li>
+
+    </ul>
+
+  </div>
+  <!--왼쪽 메뉴 끝-->
+
+  <!--hole 전체(오른쪽 내용)-->
+
+  <!--hole 전체(오른쪽 내용)끝-->
+
+  <!--본문제목-->
+  <div id="gomgo">
+  <div class="gomcho_title"><h1>대학별 검정고시 수시 지원 자격</h1></div>
+<!--스페셜메뉴-->
+  <div class="SpecialMenu">
+    <ul class="menu_list">
+      <li class="item">
+        <a href="대학,학과,전형.html" class="link_special">서울권 10개 대학</a>
+      </li>
+      <li class="item" id="cho-1">
+        <a href="대학,경기.html" class="link_special">경기권, 경상권 10개 대학</a>
+      </li>
+      <li class="item">
+        <a href="대학,충청.html" class="link_special">충청권, 전라권 10개 대학</a>
+      </li>
+    </ul>
+  </div>
+<!--스페셜메뉴 끝-->
+
+  <!--본문내용-->
+  <div class="gomcho_contents">
+    <div class="gomgo_h3"><li class="care">※검정고시합격자지원가능여부는아래표의지원자격참조.세부지원자격은반드시해당대학의모집요강을
+확인바람.<br>페이지1: 경기권 / 페이지2: 경상권<br>※2023학년도 자료에 따라 작성 됨(매년 갱신)</li></div>
+<h4 class="gomgo_h4">△경기권 검정고시 가능대학 10개<h4>
+  <div class="graph">
+  <table class="gomchograp">
+    <thead class="p_title">
+      <tr>
+        <th class="thtd-uni">대학명</th>
+        <th class="thtd-uni">지역</th>
+        <th class="thtd-uni">전형명</th>
+        <th class="thtd-uni">지원자격</th>
+      </tr>
+    </thead>
+    <tbody class="p_contents">
+      <tr>
+        <td class="thtd-uni">성균관대<br>자연과학캠퍼스</td>
+        <td class="thtd-uni">수원</td>
+        <td class="thtd-uni">학생부종합</td>
+        <td class="thtd-uni">고교졸업(예정)자 또는 관련 법령에 의하여 이와 동등 이상의 학력이 있다고 인정된 자</td>
+      </tr>
+      <tr>
+        <td class="thtd-uni">성균관대<br>자연과학캠퍼스</td>
+        <td class="thtd-uni">수원</td>
+        <td class="thtd-uni">학생부종합<br>고른기회</td>
+        <td class="thtd-uni">대학해당요건 해당되는 자</td>
+      </tr>
+      <tr>
+        <td class="thtd-uni">성균관대<br>자연과학캠퍼스</td>
+        <td class="thtd-uni">수원</td>
+        <td class="thtd-uni">학생부종합<br>이웃사랑</td>
+        <td class="thtd-uni">대학해당요건 해당되는 자</td>
+      </tr>
+      <tr>
+        <td class="thtd-uni">성균관대<br>자연과학캠퍼스</td>
+        <td class="thtd-uni">수원</td>
+        <td class="thtd-uni">학생부종합<br>장애인 등</td>
+        <td class="thtd-uni">대학해당요건 해당되는 자</td>
+      </tr>
+      <tr>
+        <td class="thtd-uni">성균관대<br>자연과학캠퍼스</td>
+        <td class="thtd-uni">수원</td>
+        <td class="thtd-uni">논술</td>
+        <td class="thtd-uni">고교졸업(예정)자 또는 관련 법령에 의하여 이와 동등 이상의 학력이 있다고 인정된 자</td>
+      </tr>
+
+      <tr>
+        <td class="thtd-uni">한양대<br>ERICA캠퍼스</td>
+        <td class="thtd-uni">서울</td>
+        <td class="thtd-uni">실기실적전형<br>(소프트웨어인재, 음악, 체육, 연기, 무용)</td>
+        <td class="thtd-uni">관계법령에 의하여 고교졸업자와 동등한 이상의 학력이 있다고 인정된 자</td>
+      </tr>
+      <tr>
+        <td class="thtd-uni">한양대<br>ERICA캠퍼스</td>
+        <td class="thtd-uni">서울</td>
+        <td class="thtd-uni">논술</td>
+        <td class="thtd-uni">관계법령에 의하여 고교졸업자와 동등한 이상의 학력이 있다고 인정된 자</td>
+      </tr>
+      <tr>
+        <td class="thtd-uni">한양대<br>ERICA캠퍼스</td>
+        <td class="thtd-uni">서울</td>
+        <td class="thtd-uni">고른기회전형<br>(특수교육대상자)</td>
+        <td class="thtd-uni">대학해당요건 해당되는 자</td>
+      </tr>
+
+      <tr>
+        <td class="thtd-uni">경희대<br>국제캠퍼스</td>
+        <td class="thtd-uni">용인</td>
+        <td class="thtd-uni">학생부종합<br>네오르네상스전형</td>
+        <td class="thtd-uni">고교졸업(예정)자 또는 관련 법령에 의하여 이와 동등 이상의 학력이 있다고 인정된 자</td>
+      </tr>
+      <tr>
+        <td class="thtd-uni">경희대<br>국제캠퍼스</td>
+        <td class="thtd-uni">용인</td>
+        <td class="thtd-uni">고른기회전형1<br>장애인대상자,북한이탈주민</td>
+        <td class="thtd-uni">대학해당요건 해당되는 자</td>
+      </tr>
+      <tr>
+        <td class="thtd-uni">경희대<br>국제캠퍼스</td>
+        <td class="thtd-uni">용인</td>
+        <td class="thtd-uni">고른기회전형1<br>기회균등<br>(국가보훈대상자,기초생<br>한부모가족)</td>
+        <td class="thtd-uni">대학해당요건 해당되는 자</td>
+      </tr>
+      <tr>
+        <td class="thtd-uni">경희대<br>국제캠퍼스</td>
+        <td class="thtd-uni">용인</td>
+        <td class="thtd-uni">고른기회전형2</td>
+        <td class="thtd-uni">대학해당요건 해당되는 자</td>
+      </tr>
+      <tr>
+        <td class="thtd-uni">경희대<br>국제캠퍼스</td>
+        <td class="thtd-uni">용인</td>
+        <td class="thtd-uni">논술</td>
+        <td class="thtd-uni">고교졸업(예정)자 또는 관련 법령에 의하여 이와 동등 이상의 학력이 있다고 인정된 자</td>
+      </tr>
+      <tr>
+        <td class="thtd-uni">경희대<br>국제캠퍼스</td>
+        <td class="thtd-uni">용인</td>
+        <td class="thtd-uni">실기우수자전형</td>
+        <td class="thtd-uni">고교졸업(예정)자 또는 관련 법령에 의하여 이와 동등 이상의 학력이 있다고 인정된 자</td>
+      </tr>
+
+      <tr>
+        <td class="thtd-uni">가톨릭대</td>
+        <td class="thtd-uni">부천</td>
+        <td class="thtd-uni">학새부종합<br>잠재능력우수자전형</td>
+        <td class="thtd-uni">고교졸업(예정)자 또는 관련 법령에 의하여 이와 동등 이상의 학력이 있다고 인정된 자</td>
+      </tr>
+      <tr>
+        <td class="thtd-uni">가톨릭대</td>
+        <td class="thtd-uni">부천</td>
+        <td class="thtd-uni">학새부종합<br>가톨릭지도자추천전형</td>
+        <td class="thtd-uni">고교졸업(예정)자 또는 관련 법령에 의하여 이와 동등 이상의 학력이 있다고 인정된 자</td>
+      </tr>
+      <tr>
+        <td class="thtd-uni">가톨릭대</td>
+        <td class="thtd-uni">부천</td>
+        <td class="thtd-uni">학새부종합<br>고른기회전형1</td>
+        <td class="thtd-uni">대학해당요건 해당되는 자</td>
+      </tr>
+      <tr>
+        <td class="thtd-uni">가톨릭대</td>
+        <td class="thtd-uni">부천</td>
+        <td class="thtd-uni">학새부종합<br>장애인등대상자</td>
+        <td class="thtd-uni">대학해당요건 해당되는 자</td>
+      </tr>
+      <tr>
+        <td class="thtd-uni">가톨릭대</td>
+        <td class="thtd-uni">부천</td>
+        <td class="thtd-uni">논술</td>
+        <td class="thtd-uni">고교졸업(예정)자 또는 관련 법령에 의하여 이와 동등 이상의 학력이 있다고 인정된 자</td>
+      </tr>
+
+      <tr>
+        <td class="thtd-uni">아주대</td>
+        <td class="thtd-uni">수원</td>
+        <td class="thtd-uni">학생부종합<br>ACE전형</td>
+        <td class="thtd-uni">고교졸업(예정)자 또는 관련 법령에 의하여 이와 동등 이상의 학력이 있다고 인정된 자</td>
+      </tr>
+      <tr>
+        <td class="thtd-uni">아주대</td>
+        <td class="thtd-uni">수원</td>
+        <td class="thtd-uni">학생부종합<br>SW융합인재전형</td>
+        <td class="thtd-uni">고교졸업(예정)자 또는 관련 법령에 의하여 이와 동등 이상의 학력이 있다고 인정된 자</td>
+      </tr>
+      <tr>
+        <td class="thtd-uni">아주대</td>
+        <td class="thtd-uni">수원</td>
+        <td class="thtd-uni">학생부종합<br>다산인재전형</td>
+        <td class="thtd-uni">고교졸업(예정)자 또는 관련 법령에 의하여 이와 동등 이상의 학력이 있다고 인정된 자</td>
+      </tr>
+      <tr>
+        <td class="thtd-uni">아주대</td>
+        <td class="thtd-uni">수원</td>
+        <td class="thtd-uni">학생부종합<br>특수교육대상자(정원외)</td>
+        <td class="thtd-uni">대학해당요건 해당되는 자</td>
+      </tr>
+      <tr>
+        <td class="thtd-uni">아주대</td>
+        <td class="thtd-uni">수원</td>
+        <td class="thtd-uni">고른기회1전형<br>(국가보훈대상자,한부모가족,<br>기초생활수급자및차상위계층)</td>
+        <td class="thtd-uni">대학해당요건 해당되는 자</td>
+      </tr>
+      <tr>
+        <td class="thtd-uni">아주대</td>
+        <td class="thtd-uni">수원</td>
+        <td class="thtd-uni">고른기회2전형<br>(사회기여자,사회배려자,다자녀가구)</td>
+        <td class="thtd-uni">대학해당요건 해당되는 자</td>
+      </tr>
+      <tr>
+        <td class="thtd-uni">아주대</td>
+        <td class="thtd-uni">수원</td>
+        <td class="thtd-uni">논술</td>
+        <td class="thtd-uni">고교졸업(예정)자 또는 관련 법령에 의하여 이와 동등 이상의 학력이 있다고 인정된 자</td>
+      </tr>
+      <tr>
+        <td class="thtd-uni">아주대</td>
+        <td class="thtd-uni">수원</td>
+        <td class="thtd-uni">실기/실적<br>국방IT우수인재1전형</td>
+        <td class="thtd-uni">고교졸업(예정)자 또는 관련 법령에 의하여 이와 동등 이상의 학력이 있다고 인정된 자</td>
+      </tr>
+      <tr>
+        <td class="thtd-uni">아주대</td>
+        <td class="thtd-uni">수원</td>
+        <td class="thtd-uni">실기/실적<br>체육우수자(축구)전형</td>
+        <td class="thtd-uni">고교졸업(예정)자 또는 관련 법령에 의하여 이와 동등 이상의 학력이 있다고 인정된 자</td>
+      </tr>
+
+      <tr>
+        <td class="thtd-uni">가천대</td>
+        <td class="thtd-uni">성남</td>
+        <td class="thtd-uni">학생부위주(교과)<br>학생부우수자전형</td>
+        <td class="thtd-uni">고교졸업(예정)자 또는 관련 법령에 의하여 이와 동등 이상의 학력이 있다고 인정된 자</td>
+      </tr>
+      <tr>
+        <td class="thtd-uni">가천대</td>
+        <td class="thtd-uni">성남</td>
+        <td class="thtd-uni">학생부위주(교과)<br>지역균형전형</td>
+        <td class="thtd-uni">고교졸업(예정)자 또는 관련 법령에 의하여 이와 동등 이상의 학력이 있다고 인정된 자</td>
+      </tr>
+      <tr>
+        <td class="thtd-uni">가천대</td>
+        <td class="thtd-uni">성남</td>
+        <td class="thtd-uni">학생부위주(종합)<br>가천바람개비전형</td>
+        <td class="thtd-uni">고교졸업(예정)자 또는 관련 법령에 의하여 이와 동등 이상의 학력이 있다고 인정된 자</td>
+      </tr>
+      <tr>
+        <td class="thtd-uni">가천대</td>
+        <td class="thtd-uni">성남</td>
+        <td class="thtd-uni">학생부위주(종합)<br>가천AIㆍSW전형</td>
+        <td class="thtd-uni">고교졸업(예정)자 또는 관련 법령에 의하여 이와 동등 이상의 학력이 있다고 인정된 자</td>
+      </tr>
+      <tr>
+        <td class="thtd-uni">가천대</td>
+        <td class="thtd-uni">성남</td>
+        <td class="thtd-uni">학생부위주(종합)<br>사회기여자전형</td>
+        <td class="thtd-uni">대학해당요건 해당되는 자</td>
+      </tr>
+      <tr>
+        <td class="thtd-uni">가천대</td>
+        <td class="thtd-uni">성남</td>
+        <td class="thtd-uni">학생부위주(종합)<br>교육기회균형전형<br>(기초생활수급자밎차상위계층)</td>
+        <td class="thtd-uni">대학해당요건 해당되는 자</td>
+      </tr>
+      <tr>
+        <td class="thtd-uni">가천대</td>
+        <td class="thtd-uni">성남</td>
+        <td class="thtd-uni">실기위주<br>실기우수자전형</td>
+        <td class="thtd-uni">고교졸업(예정)자 또는 관련 법령에 의하여 이와 동등 이상의 학력이 있다고 인정된 자</td>
+      </tr>
+
+      <tr>
+        <td class="thtd-uni">단국대</td>
+        <td class="thtd-uni">용인</td>
+        <td class="thtd-uni">학생부종합전형<br>고른기회학생,특수교육대상자,<br>기회균형선발,사회적배려대상자,<br>취업자)</td>
+        <td class="thtd-uni">대학해당요건 해당되는 자</td>
+      </tr>
+      <tr>
+        <td class="thtd-uni">단국대</td>
+        <td class="thtd-uni">용인</td>
+        <td class="thtd-uni">논술우수자</td>
+        <td class="thtd-uni">고교졸업(예정)자 또는 관련 법령에 의하여 이와 동등 이상의 학력이 있다고 인정된 자</td>
+      </tr>
+      <tr>
+        <td class="thtd-uni">단국대</td>
+        <td class="thtd-uni">용인</td>
+        <td class="thtd-uni">실기우수자(미술계열 제외)</td>
+        <td class="thtd-uni">고교졸업(예정)자 또는 관련 법령에 의하여 이와 동등 이상의 학력이 있다고 인정된 자</td>
+      </tr>
+
+      <tr>
+        <td class="thtd-uni">치의과학대</td>
+        <td class="thtd-uni">포천</td>
+        <td class="thtd-uni">학생부교과<br>CHA학생부교과전형</td>
+        <td class="thtd-uni">고교졸업(예정)자 또는 관련 법령에 의하여 이와 동등 이상의 학력이 있다고 인정된 자</td>
+      </tr>
+      <tr>
+        <td class="thtd-uni">치의과학대</td>
+        <td class="thtd-uni">포천</td>
+        <td class="thtd-uni">학생부종합<br>CHA학생부종합전형</td>
+        <td class="thtd-uni">고교졸업(예정)자 또는 관련 법령에 의하여 이와 동등 이상의 학력이 있다고 인정된 자</td>
+      </tr>
+      <tr>
+        <td class="thtd-uni">치의과학대</td>
+        <td class="thtd-uni">포천</td>
+        <td class="thtd-uni">학생부종합<br>고른기회특별전형<br>(국가보흔,기회균등)</td>
+        <td class="thtd-uni">대학해당요건 해당되는 자</td>
+      </tr>
+      <tr>
+        <td class="thtd-uni">치의과학대</td>
+        <td class="thtd-uni">포천</td>
+        <td class="thtd-uni">학생부종합<br>기회균등특별전형</td>
+        <td class="thtd-uni">대학해당요건 해당되는 자</td>
+      </tr>
+
+      <tr>
+        <td class="thtd-uni">명지대자연캠퍼스</td>
+        <td class="thtd-uni">용인시</td>
+        <td class="thtd-uni">학생부교과<br>교과면접</td>
+        <td class="thtd-uni">고교졸업(예정)자 또는 관련 법령에 의하여 이와 동등 이상의 학력이 있다고 인정된 자</td>
+      </tr>
+      <tr>
+        <td class="thtd-uni">명지대자연캠퍼스</td>
+        <td class="thtd-uni">용인시</td>
+        <td class="thtd-uni">학생부교과<br>고른기회<br>(국가보훈,기회균형)</td>
+        <td class="thtd-uni">대학해당요건 해당되는 자</td>
+      </tr>
+      <tr>
+        <td class="thtd-uni">명지대자연캠퍼스</td>
+        <td class="thtd-uni">용인시</td>
+        <td class="thtd-uni">학생부교과<br>성인학습자</td>
+        <td class="thtd-uni">대학해당요건 해당되는 자</td>
+      </tr>
+      <tr>
+        <td class="thtd-uni">명지대자연캠퍼스</td>
+        <td class="thtd-uni">용인시</td>
+        <td class="thtd-uni">학생부교과<br>특수교육대상자</td>
+        <td class="thtd-uni">대학해당요건 해당되는 자</td>
+      </tr>
+      <tr>
+        <td class="thtd-uni">명지대자연캠퍼스</td>
+        <td class="thtd-uni">용인시</td>
+        <td class="thtd-uni">학생부종합<br>명지인재면접</td>
+        <td class="thtd-uni">고교졸업(예정)자 또는 관련 법령에 의하여 이와 동등 이상의 학력이 있다고 인정된 자</td>
+      </tr>
+      <tr>
+        <td class="thtd-uni">명지대자연캠퍼스</td>
+        <td class="thtd-uni">용인시</td>
+        <td class="thtd-uni">학생부종합<br>명지인재서류</td>
+        <td class="thtd-uni">고교졸업(예정)자 또는 관련 법령에 의하여 이와 동등 이상의 학력이 있다고 인정된 자</td>
+      </tr>
+      <tr>
+        <td class="thtd-uni">명지대자연캠퍼스</td>
+        <td class="thtd-uni">용인시</td>
+        <td class="thtd-uni">학생부종합<br>크리스천리더</td>
+        <td class="thtd-uni">고교졸업(예정)자 또는 관련 법령에 의하여 이와 동등 이상의 학력이 있다고 인정된 자</td>
+      </tr>
+      <tr>
+        <td class="thtd-uni">명지대자연캠퍼스</td>
+        <td class="thtd-uni">용인시</td>
+        <td class="thtd-uni">학생부종합<br>사회배려대상자</td>
+        <td class="thtd-uni">대학해당요건 해당되는 자</td>
+      </tr>
+      <tr>
+        <td class="thtd-uni">명지대자연캠퍼스</td>
+        <td class="thtd-uni">용인시</td>
+        <td class="thtd-uni">실기/실적<br>실기우수자</td>
+        <td class="thtd-uni">고교졸업(예정)자 또는 관련 법령에 의하여 이와 동등 이상의 학력이 있다고 인정된 자</td>
+      </tr>
+      <tr>
+        <td class="thtd-uni">명지대자연캠퍼스</td>
+        <td class="thtd-uni">용인시</td>
+        <td class="thtd-uni">실기/실적<br>특기자/td>
+        <td class="thtd-uni">고교졸업(예정)자 또는 관련 법령에 의하여 이와 동등 이상의 학력이 있다고 인정된 자</td>
+      </tr>
+
+      <tr>
+        <td class="thtd-uni">을지대성남캠퍼스</td>
+        <td class="thtd-uni">성남</td>
+        <td class="thtd-uni">학생부종합<br>EU자기추천</td>
+        <td class="thtd-uni">고교졸업(예정)자 또는 관련 법령에 의하여 이와 동등 이상의 학력이 있다고 인정된 자</td>
+      </tr>
+      <tr>
+        <td class="thtd-uni">을지대성남캠퍼스</td>
+        <td class="thtd-uni">성남</td>
+        <td class="thtd-uni">학생부종합<br>EU미래인재</td>
+        <td class="thtd-uni">고교졸업(예정)자 또는 관련 법령에 의하여 이와 동등 이상의 학력이 있다고 인정된 자</td>
+      </tr>
+      <tr>
+        <td class="thtd-uni">을지대성남캠퍼스</td>
+        <td class="thtd-uni">성남</td>
+        <td class="thtd-uni">학생부종합<br>사회기여및배려대상자</td>
+        <td class="thtd-uni">대학해당요건 해당되는 자</td>
+      </tr>
+      <tr>
+        <td class="thtd-uni">을지대성남캠퍼스</td>
+        <td class="thtd-uni">성남</td>
+        <td class="thtd-uni">학생부종합<br>고른기회</td>
+        <td class="thtd-uni">대학해당요건 해당되는 자</td>
+      </tr>
+      <tr>
+        <td class="thtd-uni">을지대성남캠퍼스</td>
+        <td class="thtd-uni">성남</td>
+        <td class="thtd-uni">학생부교과<br>교과면접우수자</td>
+        <td class="thtd-uni">고교졸업(예정)자 또는 관련 법령에 의하여 이와 동등 이상의 학력이 있다고 인정된 자</td>
+      </tr>
+      <tr>
+        <td class="thtd-uni">을지대성남캠퍼스</td>
+        <td class="thtd-uni">성남</td>
+        <td class="thtd-uni">기회균형1</td>
+        <td class="thtd-uni">대학해당요건 해당되는 자</td>
+      </tr>
+      <tr>
+        <td class="thtd-uni">을지대성남캠퍼스</td>
+        <td class="thtd-uni">성남</td>
+        <td class="thtd-uni">실기우수자<br>(의료홍보디자인학과)</td>
+        <td class="thtd-uni">고교졸업(예정)자 또는 관련 법령에 의하여 이와 동등 이상의 학력이 있다고 인정된 자</td>
+      </tr>
+
+      <!--경기 끝-->
+    </tbody>
+  </table>
+
+
+  <h4 class="gomgo_h4">▲자세한 사항은 대학별 입학처 입시요강 확인▲</h4>
+
+<div id="pagenum">
+  <a class="pagenum" id="stiknum" href="대학,경기.html">1</a>
+  <a class="pagenum" href="대학,경상.html">2</a>
+</div>
+
+  </div>
+</div>
+</div>
+  </body>
+</html>

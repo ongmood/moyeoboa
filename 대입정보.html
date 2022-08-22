@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="utf-8">
+    <title>검정고시 커뮤니티-대입정보-꿀TIP</title>
+    <style>
+	.marginauto {
+	    margin: 10px auto 20px;
+	    display: block;
+	}
+
+	</style>
+    <link rel="stylesheet" href="style.css" />
+  	<link rel="stylesheet" href="plus.css" />
+    <link rel="stylesheet" href="검정고시.css"/>
+    <link rel="stylesheet" href="대학,학과,전형.css"/>
+  </head>
+  <body>
+    <div class="top_menu" id="topHeaderMenu">
+<!--            <div style="margin: 5px; padding: 5px; border: 2px solid red; border-image: none; font-size: 20px; font-weight: bold; display: inline; position: absolute;"><span style="color: red;">시험운영중</span></div> -->
+        <ul id="top">
+                <li><a class="jiu" href="/PageLinkAll.do?link=/kcue/ast/eip/eis/mbersvc/login/EipLoginView.do&p_menu_id=PG-EIP-12001" title="로그인">로그인</a></li>
+                <li><a class="jiu" href="/PageLinkAll.do?link=/kcue/ast/eip/eis/mbersvc/mbersbscrb/EipStplatAgreView.do&p_menu_id=PG-EIP-12101" title="회원가입">회원가입</a></li>
+               <li><a class="jiu" href="/PageLinkAll.do?link=/kcue/ast/eip/eis/cstmr/notice/EipNotice.do&p_menu_id=PG-EIP-10801" title="고객센터">고객센터</a></li>
+
+        </ul>
+
+    </div>
+
+
+<!-- gnb메뉴-->
+<div id="gnb">
+  <div class="logo"><a href="홈페이지.html" title="검정고시 커뮤니티"><img class="marginauto" src="모여봐 이미지1.jpg" width="180" alt="검정고시 커뮤니티" /></a></div>
+
+
+    <form id ="data_search" method="post" action="/PageLinkAll.do?link=/kcue/ast/eip/eis/search/EipSearchTotalsearch.do&p_menu_id=" onsubmit="return searchMainSubmit($('#data_search'));">
+    <div id="main_popup" style="display:none">
+        <div class="popup_wrap popup_wrap_box" style="display:none">
+            <div class="pop_top">
+                <p class="popup_close"><a href="#"><img src="닫기 이미지.jpg" alt="닫기" title="닫기" onclick="javascript:fn_clickSearch();"></a></p>
+            </div>
+            <div class="popup_content">
+                <input type="hidden" name="searchLog" value="true" />
+                <input type="hidden" name="collection" value="" />
+                <input type="hidden" name="sortSubmitDate" value="desc" />
+                <input type="hidden" name="sortAccuracy" value="desc" />
+                <input type="hidden" name="sortPopular" value="desc" />
+                <input type="hidden" name="sortPeriod" value="ALL" />
+                <input type="hidden" name="sortTarget" value="ALL" />
+                <input type="hidden" name="sortYear" value="" />
+                <input type="hidden" name="sortPlace" value="ALL" />
+                <input type="hidden" name="searchOption" value="" />
+                <input type="hidden" name="searchOptionKeyword" value="" />
+    <input type="text"  id="tags" name="keyword" data-target="#keywordSuggestTarget" title="검색어 입력창" autocomplete="off" value=""  maxlength="100"/>
+                <a href="javascript:fn_totalSearch_onclick();" class="popup_search_btn" title="검색">검색</a>
+<!--                     <input type="text"  id="tags" name="search_ip" data-target="#keywordSuggestTarget" title="검색어 입력창" autocomplete="off" value=""  maxlength="100"/>
+                <a href="javascript:goCategory4();" class="popup_search_btn" title="검색">검색</a> -->
+            </div>
+        </div>
+    </div>
+    </form>
+    <div id="tophol">
+      <ul id="gnb_ul">
+
+          <li><a href="검정고시초졸.html" class="menu1">검정고시</a></li>
+          <li><a href="커뮤니티초졸.html" class="menu2">커뮤니티</a></li>
+          <li><a href="대학,학과,전형.html" class="menu3">대학/학과/전형</a></li>
+          <li><a href="성적분석.html" class="menu4">성적분석</a></li>
+          <li><a href="대입정보.html" class="menu5">대입정보</a></li>
+          <li><a href="마이페이지.html" class="menu6">마이페이지</a></li>
+
+      </ul>
+      <ul id="gnb_ul1">
+    <div class="potal_search" id="myPgeSlide">
+    <a href="javascript:fn_mypgeVib_onclick()" title="마이페이지"><img src="마이메뉴 이미지1.jpg"  width="40" alt="마이페이지"></a>
+    </div>
+
+    <!-- gnb 통합검색 팝업 -->
+
+<!--         <form id="total_search" method="get" action="/kcue/ast/eip/eis/newsearch/totalSearch.do"> -->
+    <div class="bt_sc_open"><a href="#" title="통합검색"><img src="통합검색 이미지1.jpg" width="40" alt="통합검색"/></a></div>
+    <div id="sc_pop_wrap" style="display:none;">
+        <p class="bt_sc_close"><a href="#" title="닫기"><img src="닫기 이미지.jpg" width="40" alt="닫기"/></a></p>
+
+        <div class="keyword_box">
+            <h3>통합검색</h3>
+            <div class="main_search_list">
+            </div>
+            <input type="text" name="kwd" id="srch_sub" class="keyword_input" title="검색어를 입력해주세요" placeholder="검색어를 입력해주세요" autocomplete="off" maxlength="100" onKeypress="javascript:if(event.keyCode==13){goSearch_a();}">
+            <a href="javascript:goSearch_a();" class="btn_search_main" title="검색"><img src="/images/icon_search4.png" alt="검색"></a>
+            <a href="javascript:goSearch_a();" title="검색하기" class="btn_search">검색하기</a>
+        </div>
+        <div class="keyword_tag">
+            <h3>인기검색어</h3>
+            <ul class="tag_box">
+            </ul>
+          </ul>
+        </div>
+    </div>
+
+    <div class=""></div>
+
+<!-- //gnb메뉴 -->
+
+
+<!-- gnb 펼침메뉴-->
+  <div id="gnb_view">
+    <div class="gnb_list">
+        <div class="menu_banner">
+            <map name="bannerMap" id="bannerMap">
+                <area shape="rect" coords="21,68,101,95" href="#"  title="대입정보매거진 자세히보기" alt="대입정보매거진 자세히보기" />
+            </map>
+        </div>
+
+        <span class="tts">검정고시</span>
+        <ul id="menu1">
+            <li><a href="검정고시초졸.html">초졸</a></li>
+            <!--20210528 메뉴삭제 <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/inf/coseinf/EipCoseInfOccpThemeList.do&p_menu_id=PG-EIP-05902">테마별 직업정보</a></li> -->
+            <li><a href="검정고시중졸.html">중졸</a></li>
+            <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/cnslt/prsec/EipCoseAptdPrsec.do&p_menu_id=PG-EIP-10701">고졸</a></li>
+        </ul>
+
+        <span class="tts">커뮤니티</span>
+        <ul id="menu1">
+            <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/inf/coseinf/EipCoseInfOccpCl.do&p_menu_id=PG-EIP-05501">초졸</a></li>
+            <!--20210528 메뉴삭제 <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/inf/coseinf/EipCoseInfOccpThemeList.do&p_menu_id=PG-EIP-05902">테마별 직업정보</a></li> -->
+            <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/cnslt/prsec/EipCoseAptdPrsec.do&p_menu_id=PG-EIP-10701">중졸</a></li>
+            <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/cnslt/prsec/EipCoseAptdPrsec.do&p_menu_id=PG-EIP-10701">고졸</a></li>
+        </ul>
+
+        <span class="tts">대학/학과/전형</span>
+        <ul id="menu2">
+            <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/inf/univinf/eipUinfGnrl.do&p_menu_id=PG-EIP-01701">대학정보</a></li>
+            <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/inf/sjinf/eipSjinfGnrl.do&p_menu_id=PG-EIP-05101">학과정보</a></li>
+            <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/inf/selctninf/EipSelctnInfGnrl.do&p_menu_id=PG-EIP-06001">전형정보</a></li>
+        </ul>
+
+        <span class="tts">성적분석</span>
+        <ul id="menu3">
+            <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/cun/ssa/sgc/ConStdptScrAnalsMain.do&p_menu_id=PG-CON-00901">검정고시</a></li>
+            <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/cun/ssa/csat/ConCsatScrAnalsView.do&p_menu_id=PG-CON-01101">수능성적분석</a></li>
+            <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/cou/ssa/atrcr/CouAtrcrScrComputList.do&p_menu_id=PG-CON-01401">대학별성적분석</a></li>
+        </ul>
+
+        <span class="tts">대입상담</span>
+        <ul id="menu4">
+            <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/cnslt/EipCnsltUseGuid.do&p_menu_id=PG-EIP-09301">이용안내</a></li>
+            <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/cnslt/onlineunvent/EipOnlineUnivCnslt.do&p_menu_id=PG-EIP-09401">온라인대입상담</a></li>
+            <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/cnslt/onlinemajor/EipOnlineMajorCnsltMain.do&p_menu_id=PG-EIP-09801">온라인전공상담</a></li>
+            <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/cnslt/EipCnsltTelCnslt.do&p_menu_id=PG-EIP-10301">전화상담안내</a></li>
+            <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/cnslt/example/eipUniventCnsltCase.do&p_menu_id=PG-EIP-10401">자주하는 질문</a></li>
+            <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/cnslt/EipCnsltCoseErtdsCnter.do&p_menu_id=PG-EIP-10601">진로진학센터안내</a></li>
+<!-- 20190227 상담 소스 수정              <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/cnslt/telresve/EipTelResveCnsltList.do?p_menu_id=PG-EIP-10702" >전화예약상담신청</a></li> -->
+        </ul>
+
+        <span class="tts">대입정보</span>
+        <ul id="menu5">
+            <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/unventsystem/EipGuidSystemGnrl.do&p_menu_id=PG-EIP-00201">대입제도안내</a></li>
+            <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/presnatn/schdul/EipPresnatnSchdul.do&p_menu_id=PG-EIP-09001">대입일정</a></li>
+            <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/inf/bbs/EipUnventRecsroom.do&p_menu_id=PG-EIP-07401">대입전략자료실</a></li>
+            <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/inf/bbs/EipUnventNews.do&p_menu_id=PG-EIP-07601">대입소식</a></li>
+            <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/inf/bbs/EipUnventSfe.do&p_menu_id=PG-EIP-31301">대학별 입시정보</a></li>
+            <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/presnatn/expo/EipUnventInfExhbList.do&p_menu_id=PG-EIP-07901">대입박람회/설명회</a></li>
+            <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/presnatn/exprn/EipUnivExprnPgmList.do&p_menu_id=PG-EIP-00224">대학별 행사안내</a></li>
+            <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/unventsystem/EipGuidRelateSiteGuid.do&p_menu_id=PG-EIP-01401">관련사이트</a></li>
+        </ul>
+
+        <span class="tts">마이페이지</span>
+        <ul id="menu6">
+<!--                <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/mypge/submainpge/EipSubMainList.do?p_menu_id=PG-EIP-13201">마이페이지</a></li> -->
+            <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/mypge/intrstuniv/EipIntrstUnivSubjctList.do&p_menu_id=PG-EIP-13301">관심대학/전형/진로</a></li>
+            <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/mypge/schdul/EipCldrExList.do&p_menu_id=PG-EIP-14201">일정관리</a></li>
+            <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/cun/mng/sgc/ConStdptScrMngSimplReg.do?linkParamDefaultField=1&p_menu_id=PG-CON-00201">성적관리</a></li>
+            <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/mypge/cnslt/eipMyCnslt.do&p_menu_id=PG-EIP-13501">상담내역</a></li>
+            <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/mypge/qestnans/EipMyAnsQestn.do&p_menu_id=PG-EIP-13801">질문</a></li>
+            <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/mypge/violtinf/EipMyVioltInfCrtfcView.do&p_menu_id=PG-EIP-13601">커뮤니티 글</a></li>
+            <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/mypge/mberinf/eipPasswordComfm.do&p_menu_id=PG-EIP-14401">회원정보</a></li>
+            <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/mypge/chldrnentsch/EipChldrnEntschAsstnView.do&p_menu_id=PG-EIP-14601">입학도우미</a></li>
+            <!-- 20190227 상담 소스 수정 <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/mypge/mberinf/eipTelCnsltMapngHisInit.do&p_menu_id=PG-EIP-40101">전화상담연동이력조회</a></li> -->
+        </ul>
+      </div>
+  </div>
+  <!--펼침메뉴 끝-->
+  <div id="popup_top_wrap">
+      <div class="notice_bar" onclick="javascript:fn_hotNotice();">
+          <div class="notice_bar_wrap">
+              <input type="hidden" id="pop_cnt" value="6"/>
+              <h2><span class="hot">HOT</span> 질문/공지</h2>
+              <div id="scrolltextup" style="overflow:hidden; position:relative; width:600px; height:21px;">
+                <div id="textup" style="position:absolute; top:0; left:0; width:600px;">
+                  <div style="line-height:21px;">
+
+                          <a href="#" tabindex="-1" title="대입정보포털 단계적 서비스 제공 안내" class="popup_content" >
+                          대입정보포털 단계적 서비스 제공 안내
+                          </a>
+
+                              <br/>
+
+
+                          <a href="#" tabindex="-1" title="2023학년도 수시 대학별 검정고시 성적산출 서비스 오픈" class="popup_content" >
+                          2023학년도 수시 대학별 성적산출 서비스 오픈
+                          </a>
+
+                              <br/>
+
+                          <a href="#" tabindex="-1" title="2023학년도 수시 대입정보포털 만족도조사" class="popup_content" >
+                          2023학년도 수시 대입정보포털 만족도조사
+                          </a>
+
+                              <br/>
+
+                          <a href="#" tabindex="-1" title="대학별 정보를 한눈에 볼 수 있는 대학알리미" class="popup_content" >
+                          대학별 정보를 한눈에 볼 수 있는 대학알리미
+                          </a>
+
+                  </div>
+                </div>
+              </div>
+          </div>
+      </div>
+      <div class="slide_btn_wrap">
+
+          <p class="btn_close">
+              <a href="#" id="btn_top_popup" title="팝업 열기"><img src="더보기 이미지.jpg" width="30" alt="팝업 열기 버튼"></a>
+          </p>
+
+      </div><!--//slide_btn_wrap-->
+      <div id="pop_top_banner" style="display: none;" >
+          <div class="banner_img_group">
+              <!-- 팝업 배너 이미지 -->
+              <div class="banner_img_wrap">
+
+                          <div>
+                          <ul>
+
+                  <li>
+                      <a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/cstmr/notice/EipNoticeView.do&p_menu_id=PG-EIP-10901&sn=15461&rnum=203" tabindex="-1" title="대입정보포털 단계적 서비스 제공 안내" onclick="go_hearderPop(this.href,'10','',''); return false;">
+                      <img src="/common/downloadImage.do?fileId=00000000000000115424&fileSn=1&filePath=eip.fileStorePath" alt="대입정보포털 단계적 서비스 제공 안내" width="226" height="256"/>
+                      </a>
+                  </li>
+
+
+                  <li>
+                      <a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/cstmr/notice/EipNoticeView.do&p_menu_id=PG-EIP-10901&sn=15692&rnum=1" tabindex="-1" title="2023학년도 수시 대학별 성적산출 서비스 오픈" onclick="go_hearderPop(this.href,'10','',''); return false;">
+                      <img src="/common/downloadImage.do?fileId=00000000000000124303&fileSn=1&filePath=eip.fileStorePath" alt="2023학년도 수시 대학별 성적산출 서비스 오픈" width="226" height="256"/>
+                      </a>
+                  </li>
+
+
+                  <li>
+                      <a href="https://ko.research.net/r/adigamain2022" tabindex="-1" title="2023학년도 수시 대입정보포털 만족도조사" onclick="go_hearderPop(this.href,'30','0','0'); return false;">
+                      <img src="/common/downloadImage.do?fileId=00000000000000124405&fileSn=1&filePath=eip.fileStorePath" alt="2023학년도 수시 대입정보포털 만족도조사" width="226" height="256"/>
+                      </a>
+                  </li>
+
+                          </ul>
+                          </div>
+
+                          <div>
+                          <ul>
+
+                  <li>
+                      <a href="https://www.gumjung.co.kr/" tabindex="-1" title="검정고시 대입정보포털 검정고시로 대학어디가" onclick="go_hearderPop(this.href,'30','0','0'); return false;">
+                      <img src="/common/downloadImage.do?fileId=00000000000000057454&fileSn=1&filePath=eip.fileStorePath" alt="검정고시 대입정보포털 검정고시로 대학어디가" width="226" height="256"/>
+                      </a>
+                  </li>
+
+                          </ul>
+                          </div>
+
+              </div>
+              <!-- //팝업 배너 이미지 -->
+          </div><!--//position-->
+      </div><!--//pop_top_banner-->
+  </div>
+  <!--팝업 배너 끝-->
+<div id="hole">
+  <!--왼쪽 메뉴-->
+  <div class="left_menu" id="left_menu_gom">
+    <div class="left_menu_title">대입정보</div>
+    <ul id="left_menu_gom1">
+
+      <li>
+        <a href="대입정보.html" class="cho">꿀TIP</a>
+      </li>
+
+      <li>
+        <a href="주의.html">주의점</a>
+      </li>
+
+    </ul>
+
+  </div>
+  <!--왼쪽 메뉴 끝-->
+
+  <!--hole 전체(오른쪽 내용)-->
+
+  <!--hole 전체(오른쪽 내용)끝-->
+
+  <!--본문제목-->
+  <div id="gomgo">
+  <div class="gomcho_title"><h1>대입 꿀정보</h1></div>
+<!--스페셜메뉴-->
+
+<!--스페셜메뉴 끝-->
+
+  <!--본문내용-->
+  <div class="gomcho_contents">
+    <div class="gomgo_h3"><li class="care">※대학 입학처에서 다시 한번 확인</li></div>
+<h4 class="gomgo_h4">△특별전형</h4>
+  <li class="manhack">국가에서 보장하는 특별유형에 드는 경우 따로 전형이 마련되어 있기 때문에 아래 사항중 해당 사항이 있으면 원하는 대학 수시모집요강을 통해 사회통합전형,사회배려자전형 등의 전형을 주의깊게 살펴보세요.</li>
+  <div class="cheakhol">
+  <div class="check"><img src="체크박스.jpg"  width=20px></div><h3 class="gomgo_h4h3">한부모가정</h3>
+  </div>
+
+  <br>
+
+  <div class="cheakhol">
+  <div class="check"><img src="체크박스.jpg"  width=20px></div><h3 class="gomgo_h4h3">다자녀가정(서울:4자녀이상/지방:3자녀이상)</h3>
+  </div>
+
+  <br>
+
+  <div class="cheakhol">
+  <div class="check"><img src="체크박스.jpg"  width=20px></div><h3 class="gomgo_h4h3">평생학습자(또는 만학도)</h3><a class="manhack">:고등학교 졸업(예정)자 또는 법령에 의하여 이와 동등 이상의 학력을 갖춘 자로서 입학일(2023. 3. 1.) 기준 현재 만 30세 이상의
+     평생학습자</a>
+  </div>
+
+  <br><br><br>
+
+  <div class="cheakhol">
+  <div class="check"><img src="체크박스.jpg"  width=20px></div><h3 class="gomgo_h4h3">기초생활수급자및차상위계층</h3>
+  </div>
+
+  <br>
+
+  <div class="cheakhol">
+  <div class="check"><img src="체크박스.jpg"  width=20px></div><h3 class="gomgo_h4h3">국가보훈대상자</h3>
+  </div>
+
+  <br>
+
+  <div class="cheakhol">
+  <div class="check"><img src="체크박스.jpg"  width=20px></div><h3 class="gomgo_h4h3">아동복지시설에서 고등학교 전 교육과정 기간(3년)을 생활한 자</h3>
+  </div>
+
+  <br>
+
+  <div class="cheakhol">
+  <div class="check"><img src="체크박스.jpg"  width=20px></div><h3 class="gomgo_h4h3">행정관청에 가정위탁보호아동으로 등재된 자</h3>
+  </div>
+
+  <br>
+
+  <div class="cheakhol">
+  <div class="check"><img src="체크박스.jpg"  width=20px></div><h3 class="gomgo_h4h3">부모 중 1인 이상이 장애인인 자녀</h3>
+  </div>
+
+  <br>
+
+  <div class="cheakhol">
+  <div class="check"><img src="체크박스.jpg"  width=20px></div><h3 class="gomgo_h4h3">다문화가정</h3>
+  </div>
+
+  <br>
+
+  <div class="cheakhol">
+  <div class="check"><img src="체크박스.jpg"  width=20px></div><h3 class="gomgo_h4h3">직업군인(장교,준부사관)자녀</h3>
+  </div>
+
+  <br>
+
+  <div class="cheakhol">
+  <div class="check"><img src="체크박스.jpg"  width=20px></div><h3 class="gomgo_h4h3">소방관 자녀</h3>
+  </div>
+
+  <br>
+
+  <div class="cheakhol">
+  <div class="check"><img src="체크박스.jpg"  width=20px></div><h3 class="gomgo_h4h3">장애인 본인</h3>
+  </div>
+
+  <br><br>
+-------------------------------------------------------------------------------------------------------------------
+  <h4 class="gomgo_h4">△비교과활동 꿀팁</h4>
+    <li class="manhack">학교생활기록부가 없는 자퇴생들은 이를 대신하는 대체서식이 있습니다.</li>
+    <div class="cheakhol">
+    <div class="check"><img src="체크박스.jpg"  width=20px></div><h3 class="gomgo_h4h3">독서</h3>
+      <a class="manhack">:대체서식에 독서활동을 기록하고 이 증빙자료로 독서감상문을 제출하면 도움이 됩니다.</a>
+    </div>
+
+    <br>
+
+    <div class="cheakhol">
+    <div class="check"><img src="체크박스.jpg"  width=20px></div><h3 class="gomgo_h4h3">청소년생활기록부</h3>
+      <a class="manhack">:학교생활기록부가 없는 검정고시생들을 위해 정부에서 마련한 대체생기부입니다.<br><a href="청소년생활기록부.html" title="청소년생확기록부" class="deep">+자세한 사항</a></a>
+    </div>
+
+    <br><br><br>
+
+    <div class="cheakhol">
+    <div class="check"><img src="체크박스.jpg"  width=20px></div><h3 class="gomgo_h4h3">비교과활동</h3>
+    <a class="manhack">1. 활동을 진행한 회사명을 밝히지 않으면 작성가능합니다.<br>2. 출간ㆍ특허 등의 활동은 기재 불가합니다.
+      <br>3. 교외 수상, 시험결과는 기재 불가합니다.<br>(※ 다만, SW특기자전형 등 실적 위주의 전형에서는 교외수상 기재가능하니 수상경험이 많은 경우 대학별 입시요강을 자세히 살펴보세요.)</a>
+    </div>
+
+
+    <br><br><br><br><br>
+
+    <div class="cheakhol">
+    <div class="check"><img src="체크박스.jpg"  width=20px></div><h3 class="gomgo_h4h3">봉사활동</h3>
+      <a class="manhack">:꾸준한 봉사활동을 대체서식에 기재하면 도움이 됩니다.</a>
+    </div>
+
+<br><br><br><br>
+    -------------------------------------------------------------------------------------------------------------------
+      <h4 class="gomgo_h4">△고등학교재학중 자퇴</h4>
+
+    <div class="cheakhol">
+    <div class="check"><img src="체크박스.jpg"  width=20px></div><h3 class="gomgo_h4h3">학교생활기록부</h3>
+      <a class="manhack">:고등학교 재학중 자퇴 한 수험생의경우 고등학생시절 학생생활기록부는[나이스-홈에듀민원서비스]를 통해 발급 가능합니다.
+      <br><a href="학생부다운로드.html" title="다운로드방법" class="deep">+발급 방법 자세히 보기</a>
+      <br><a href="https://www.neis.go.kr/pas_mms_nv99_001.do" title="나이스바로가기" class="deep">+나이스 바로가기</a>
+    </div>
+
+    <br><br><br><br><br>
+
+    <div class="cheakhol">
+    <div class="check"><img src="체크박스.jpg"  width=20px></div><h3 class="gomgo_h4h3">교내수상</h3>
+      <a class="manhack">:고등학교 재학 중 자퇴 한 수험생의 경우 대체서식에 고등학생시절 교내수상을 기재할 때 일반학생과 동일하게 한 학기에 1개씩만 기재 가능합니다.</a>
+    </div>
+
+
+
+
+</div>
+</div>
+  </body>
+</html>
