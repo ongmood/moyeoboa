@@ -433,3 +433,17 @@ button, textarea {
 .comu-top{
   border-bottom: 1px;
 }
+.form-control{
+  width: 96.7%;
+  margin-top: 12px;
+  border: 1px solid #ebecef;
+  padding: 11px 12px 10px;
+
+}
+.form-comtrol{
+  width: 94.7%;
+  margin-top: 12px;
+  margin-right: 10px;
+  border: 1px solid #ebecef;
+  padding: 20px 20px 20px;
+}

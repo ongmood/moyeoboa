@@ -1,0 +1,2848 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<title>검정고시 커뮤니티</title>
+
+	<style>
+	.marginauto {
+	    margin: 10px auto 20px;
+	    display: block;
+	}
+
+	</style>
+
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="모여봐" />
+	<meta property="og:description" content="moyeoboa, 홈스쿨링커뮤니티, 모여봐, 대학입학정보" />
+	<meta property="og:image" content="https://moyeoboa.kr/images" />
+	<meta property="og:url" content="https://moyeoboa.kr" />
+	<meta name="google-site-verification" content="QN-LXaoviPTTzOiXUR2crIUH4XNJJWwUH5Jg4R3fhys" />
+
+
+
+
+<!-- IE7, 8 에서 차트 생성하고자 하는 경우 -->
+<!--[if IE]><script language="javascript" type="text/javascript" src="/js/rMateChartH5/excanvas.min.js"></script><![endif]-->
+
+	<link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" href="plus.css" />
+	<!--[if IE 8]><link rel="stylesheet" href="/css/main_style_8.css" /><![endif]-->
+	<!--[if lt IE 9]><script src="/js/selectivizr.js"></script><![endif]-->
+	<link rel="stylesheet" type="text/css" href="/css/keywordSuggest.css" />
+	<!-- 2015-12-28 패스트캣 전제현 : 자동완성용 스타일 중 부가 설정 -->
+	<link rel="stylesheet" type="text/css" href="/css/jquery.toast.min.css">
+	<style>
+	/*
+	 * 필수설정 스타일. 자동완성 폭과 최소높이.
+	*/
+	.keywordSuggest-dropdown, .keywordSuggest-keywords, .keywordSuggest-comment, .keywordSuggest-footer {
+	    width: 346px;
+	}
+
+	.keywordSuggest-keywords {
+	    min-height: 230px;
+	}
+
+
+	/* Skip Nav */
+	/* #skipContent{position:relative;z-index:9999;} */
+	/* #skipContent a{display:block; height:1px; width:1px; margin-bottom:-1px; overflow:hidden; font-size:20px; color:#fff; font-weight:bold; background:#2466a6; white-space:nowrap;text-align:center;} */
+	/* #skipContent a:focus, #skipContent a:active{height:auto; width:100%; padding:5px; margin-bottom:10px; position:absolute; left:0; top:0;} */
+	.skipContent{position:relative}
+	.skipContent a{position:absolute;top:-30px;left:0;width:138px;border:1px solid #4ec53d;background:#333;text-align:center}
+	.skipContent a:active,.skipContent a:focus{top:0;z-index:1000;text-decoration:none}
+	.skipContent span{display:inline-block;padding:2px 6px 0 0;color:#fff;letter-spacing:-1px;font-size:13px;line-height:26px}
+	</style>
+
+	<script type="text/javascript" src="/js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="/js/jquery.blockUI.min.js"></script>
+	<script type="text/javascript" src="/js/common.js"></script>
+	<script type="text/javascript" src="/js/common2.js"></script>
+	<script type="text/javascript" src="/js/responsiveCarousel.min.js"></script>
+    <script type="text/javascript" src="/js/TweenMax.min.js"></script>
+	<script type="text/javascript" src="/js/ui.js"></script>
+	<script type="text/javascript" src="/js/jquery-ui.custom.min.js"></script>
+	<script type="text/javascript" src="/js/jquery.rolling.js"></script>
+	<script src="/js/keywordSuggest.js"></script>
+	<script src="/js/string_score.js"></script>
+	<script type="text/javascript" src="/js/acinit-main.js"></script>
+	<script type="text/javascript" src="/js/jquery.toast.min.js"></script>
+	<script type="text/javascript">
+// 		function noEvent(){
+// 		   if(event.keyCode == 116) {
+// 		      event.keyCode = 2;
+// 		      return false;
+// 		   }else if(event.ctrlKey && (event.keyCode==78 || event.keyCode == 82)) {
+// 		      return false;
+// 		   }
+// 		}
+
+// 		document.onkeydown = noEvent;
+
+		$('.skipContent a').on('focus', function(){
+	        $(this).stop().animate({"top":0, "opacity":1});
+	    });
+	    $('.skipContent a').on('click', function(){
+	        $(this).stop().animate({"top":"-30px", "opacity":0});
+	    });
+	    $('.skipContent a').on('focusout', function(){
+	        $(this).stop().animate({"top":"-30px", "opacity":0});
+	    });
+
+	    function openLinkSite(){ //v3.0
+	        var selObj = document.getElementById('bot1');
+	        url = selObj.options[selObj.selectedIndex].value;
+	        if (url != "") {
+	            //window.open("http://" + url, 'newWindow');
+	            window.open(url, 'newWindow');
+	        }
+	    }
+
+	    function openLinkSite2(){ //v3.0
+	        var selObj = document.getElementById('bot2');
+	        url = selObj.options[selObj.selectedIndex].value;
+	        if (url != "") {
+	            //window.open("http://" + url, 'newWindow');
+	            window.open(url, 'newWindow');
+	        }
+	    }
+	</script>
+
+</head>
+<body>
+	<div class="skipContent" id="skipContent">
+		<a href="#topHeaderMenu"><span>메뉴 바로가기</span></a>
+		<a href="#container"><span>본문 바로가기</span></a>
+	</div>
+
+	<div id="wrap">
+	<input type="hidden" id="main_yn" value="Y"/>
+	<input type="hidden" id="first_chk" value="Y"/>
+	<!-- <div id="mouse_no" oncontextmenu="return false" ondragstart="return false" onselectstart="return false"> -->
+		<!-- Header -->
+		<div id="headerWrap">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+var sessionTime = "540";
+var gs_usidId = "";
+
+//var domains = window.location.host;
+$(document).ready(function() {
+
+    // N : 처음 로그인 했을경우, R : 리프레시 기능 클릭시
+    if("" == "N" || "" == "R"){
+        $("#mypge_div").slideToggle("slow");
+        $("#myPgeSlide img").attr("src","/images/my_top_icon_on.png");
+        gfn_setComSession("mp_open_at","Y");
+
+    }
+    if(gfn_null(gs_usidId) != "null"){
+        fn_counter_init();
+    }
+});
+
+//어디가 HOT 공지 / 이벤트 스크롤링
+/****** start-event *****/
+var scrollheight = $("#textup").height();
+
+function scrolltextup(dur){
+
+    // 팝업 건수가 1건이면 애니메이션 기능 삭제
+	if($("#pop_cnt").val() > 1){
+		$("#textup").animate({"top":"-=21"},{
+			duration: dur,
+			easing: "linear",
+			complete:function(){
+				$("#textup").children(":last").after("<div style='line-height:21px;'>"+ $("#textup").children(":first").html()+"</div>");
+				$("#textup").children(":first").remove();
+				if($("#textup").children(":first").height() <=(parseInt($("#textup").css("top"))*-0.9)){
+				    $("#textup").css({"top":0});
+				}
+
+				//setTimeout("scrolltextup(스크롤링 속도)", 딜레이);
+				setTimeout("scrolltextup(500)", 3000);
+			}
+		});
+	}
+}
+// setTimeout("scrolltextup(스크롤링 속도)", 딜레이);
+setTimeout("scrolltextup(500)", 3000);
+/****** end-event *****/
+
+
+
+//마이페이지 스크롤링
+/****** start-event *****/
+
+function intrstUp(dur){
+
+    if($(".interest_list dl").get().length > 3){
+          $(".interest_list").animate({"top":"50"},{
+                duration: dur,
+                easing: "linear",
+                complete:function(){
+                  $(".interest_list").children(":last").after("<dl>"+$(".interest_list").children(":first").html()+"</dl>");
+                   $(".interest_list").children(":first").remove();
+                }
+          });
+    }else{
+        gfn_Submission_Call("/kcue/ast/eip/com/selectIntrstUnivSubjct.do",null, function(data){
+            if(data != null){
+                if (data.resultVO.resultCode == "SUCCESS")
+                {
+                    intrst_univSubjct_make(data, 'UP');
+                }else{
+                    alert(data.resultVO.resultMessage);
+                }
+            }
+        },'json');
+    }
+
+//  interest_list
+}
+
+function intrstDown(dur){
+
+    if($(".interest_list dl").get().length > 3){
+          $(".interest_list").animate({"top":"50"},{
+                duration: dur,
+                easing: "linear",
+                complete:function(){
+                  $(".interest_list").children(":first").before("<dl>" + $(".interest_list").children(":last").html()+"</dl>");
+                   $(".interest_list").children(":last").remove();
+                }
+          });
+    }else{
+        gfn_Submission_Call("/kcue/ast/eip/com/selectIntrstUnivSubjct.do",null, function(data){
+            if(data != null){
+                if (data.resultVO.resultCode == "SUCCESS")
+                {
+                    intrst_univSubjct_make(data, 'DOWN');
+                }else{
+                    alert(data.resultVO.resultMessage);
+                }
+            }
+        },'json');
+    }
+
+//  interest_list
+}
+/****** end-event *****/
+
+function intrst_univSubjct_make(data, direction){
+    var resultSubjct = data.resultSubjct;
+    var resultUniv = data.resultUniv;
+    var intrstSubjctCnt = 0;
+    var strRow = "";
+    var resultDiv = $(".interest_list");
+
+
+    if(resultSubjct != "" && resultSubjct != null){
+
+        intrstSubjctCnt = resultSubjct.length;
+
+        for(var i = 0 ; i < resultSubjct.length ; i++){
+            var result = resultSubjct[i];
+
+            strRow += '<dl><dt><a href="javascript:fn_intrstSubjct_onclick(\''+gfn_null(result.sch_se_cd)+'\',\''+gfn_null(result.sch_year)+'\',\''+gfn_null(result.univ_cd)+'\',\''+gfn_null(result.rcrr_cd)+'\',\''+gfn_null(result.selctn_grp_cd)+'\',\''+gfn_null(result.rcu_sn)+'\',\''+gfn_null(result.rcu_cd)+'\',\''+gfn_null(result.sers_cd)+'\')" target="_top">';
+            strRow += '<span class="ranking">'+(i+1)+'</span><span class="ranking-t">순위</span>';
+            strRow += '<span class="space"> ㅣ</span>'+gfn_null(result.univ_nm)+' ['+gfn_null(result.campus_nm)+']<span class="slush">/</span>'+gfn_null(result.selctn_grp_nm)+'<span class="slush">/</span>'+gfn_null(result.rcu_nm)+'</a>';
+            strRow += '</dt></dl>';
+        }
+    }
+
+    if(resultUniv != "" && resultUniv != null){
+        for(var i = 0 ; i < resultUniv.length ; i++){
+            var result = resultUniv[i];
+
+            strRow += '<dl><dt><a href="javascript:fn_intrstUniv_onclick(\''+gfn_null(result.sch_se_cd)+'\',\''+gfn_null(result.sch_year)+'\',\''+gfn_null(result.univ_cd)+'\')" target="_top">';
+            strRow += '<span class="ranking">'+ (intrstSubjctCnt + (i+1))+'</span><span class="ranking-t">순위</span>';
+            strRow += '<span class="space"> ㅣ</span>'+gfn_null(result.univ_nm)+' ['+gfn_null(result.campus_nm)+']<span class="slush">/</span>'+gfn_null(result.area_nm)+'<span class="slush">/</span>'+gfn_null(result.fond_se_nm)+'</a>';
+            strRow += '</dt></dl>';
+        }
+    }
+
+    resultDiv.html(strRow);
+
+    if(direction == "UP"){
+          $(".interest_list").animate({"top":"50"},{
+                duration: 300,
+                easing: "linear",
+                complete:function(){
+                  $(".interest_list").children(":last").after("<dl>"+$(".interest_list").children(":first").html()+"</dl>");
+                   $(".interest_list").children(":first").remove();
+                }
+          });
+    }else if(direction == "DOWN"){
+          $(".interest_list").animate({"top":"50"},{
+                duration: 300,
+                easing: "linear",
+                complete:function(){
+                  $(".interest_list").children(":first").before("<dl>" + $(".interest_list").children(":last").html()+"</dl>");
+                   $(".interest_list").children(":last").remove();
+                }
+          });
+    }
+
+}
+
+/*
+ * 팝업창(10:현재창, 20:팝업, 30:새창)
+ */
+function go_hearderPop(link, link_cd, link_width, link_vrticl){
+
+    var target = "";
+    var size = "";
+    if(link_cd == "10"){
+        target = "_self";
+    }else if(link_cd == "20"){
+        target = "_blank";
+        size   = "width="+link_width+", height="+link_vrticl;
+    }else if(link_cd == "30"){
+        target = "_blank";
+        size   = "width="+screen.width+", height="+screen.height+", top=0, left=0, fullscreen=yes, status=yes, menubar=yes, toolbar=yes, resizable=yes, location=yes";
+    }
+    window.open(link, target, size+", scrollbars=yes");
+}
+
+function fn_pop_allView(){
+
+    $(".banner_img_wrap > div:gt(0)").slideToggle("slow");
+    /*
+    if($(".btn_popSlide img").prop("src").indexOf("btn_popSlide_open.png") >= 0){
+        $(".btn_popSlide img").prop("src","/images/re_icon/btn_popSlide_close.png");
+    }else{
+        $(".btn_popSlide img").prop("src","/images/re_icon/btn_popSlide_open.png");
+    } */
+
+    /*
+    var bannerLi = $(".banner_img_wrap > ul > li:gt(3)").get();
+    var bannerCnt = 0;
+
+    $(bannerLi).each(function(data,index){
+        if($(this).css("display") != "none"){
+            $(this).css("display","none");
+        }else{
+            $(this).css("display","inline-block");
+        }
+    });
+
+    */
+}
+
+function changeEvent(selectLaguage) {
+    if(selectLaguage == "ENGLISH") {
+        location.href="/kcue/ast/eip/eng/EngGnrl.do?p_menu_id=30101";
+    } else if(selectLaguage == "CHINESE") {
+        location.href="/kcue/ast/eip/cha/ChaGnrl.do?p_menu_id=PG-EIP-40101";
+    }
+}
+
+function fn_totalSearch_onclick(){
+    $("#data_search").submit();
+}
+
+function fn_mypgeVib_onclick(){
+    if(gfn_null(gs_usidId) == "null"){
+        alert("로그인이 필요합니다.");
+    }else{
+        if($("#mypge_div").css("display") != "none"){
+            $("#myPgeSlide img").attr("src","/images/my_top_icon.png");
+        }else{
+            $("#myPgeSlide img").attr("src","/images/my_top_icon_on.png");
+        }
+
+        $("#mypge_div").slideToggle("slow");
+    }
+}
+
+/*
+ * 학과상세페이지 이동
+ */
+function fn_intrstSubjct_onclick(sch_se_cd, sch_year, univ_cd, rcrr_cd, selctn_grp_cd, rcu_sn, rcu_cd, sers_cd)
+{
+    $("#header_send_sch_year").val(sch_year);
+    $("#header_send_univ_cd").val(gfn_leadingZeros(univ_cd,7));
+    $("#header_send_rcrr_cd").val(rcrr_cd);
+    $("#header_send_selctn_grp_cd").val(selctn_grp_cd);
+    $("#header_send_rcu_sn").val(rcu_sn);
+    $("#header_send_rcu_cd").val(gfn_leadingZeros(rcu_cd,7));
+    $("#header_send_sers_cd").val(sers_cd);
+
+    var frm = document.subjctFrm;
+    if(sch_se_cd == "02"){
+        frm.action = "/PageLinkAll.do?link=/kcue/ast/eip/eis/inf/selctninf/EipSelctnInfSelScheMthGnrl.do&p_menu_id=PG-EIP-06101&tab=1";
+    }else{
+        frm.action = "/PageLinkAll.do?link=/kcue/ast/eip/eis/inf/selctninfjncll/EipSelctnInfSelScheMthJncll.do&p_menu_id=PG-EIP-06701&tab=1";
+    }
+    frm.submit();
+}
+/*
+ * 대학상세페이지 이동
+ */
+function fn_intrstUniv_onclick(sch_se_cd, sch_year, univ_cd)
+{
+    $("#header_sch_year").val(sch_year);
+    $("#header_univ_cd").val(gfn_leadingZeros(univ_cd,7));
+
+    var frm = document.univFrm;
+    if(sch_se_cd == "02"){
+        frm.action = "/PageLinkAll.do?link=/kcue/ast/eip/eis/inf/univinf/eipUinfMainGnrl.do&p_menu_id=PG-EIP-01801";
+    }else{
+        frm.action = "/PageLinkAll.do?link=/kcue/ast/eip/eis/inf/univinfjncll/eipUinfMainJncll.do&p_menu_id=PG-EIP-03501";
+    }
+    frm.submit();
+}
+
+
+function fn_quickMenu_ref(){
+    gfn_setComSession("mp_open_at","R","",function(){
+        gfn_setComSession("allRef","Y","Y");
+    });
+}
+
+
+function fn_hotNotice(){
+    if($("#pop_top_banner").css("display") == "none"){
+        $("#btn_top_popup").find("img").prop("src","/images/re_icon/btn_popup_close.png");
+    }
+    if($("#pop_top_banner").css("display") == "block"){
+        $("#btn_top_popup").find("img").prop("src","/images/re_icon/btn_popup_open.png");
+    }
+
+    $("#pop_top_banner").slideToggle(500);
+}
+
+
+function fn_clickSearch() {
+    if($("#main_popup").css("display") == "none"){
+        $("#main_popup").css("display", "block");
+    }
+    else if($("#main_popup").css("display") == "block"){
+        $("#main_popup").css("display", "none");
+    }
+}
+
+//Timer 설정 시작
+var tid;
+var cnt = parseInt(sessionTime);//초기값(초단위)
+
+function fn_counter_init() { //메인화면 세션 카운트 실행
+
+    tid = setInterval("fn_counter_run()", 1000);
+
+}
+
+function fn_counter_run() { //메인화면 세션 카운트
+    document.getElementById('counter').innerText = fn_time_format(cnt, "MS");
+    cnt--;
+    if(cnt < 60) {
+        clearInterval(tid);
+        /*세션연장 여부를 질의하는 팝업을 띄운다.*/
+        showLayer();
+
+
+        /*팝업에서 다시 카운트 시작*/
+        cnt = parseInt(59);//카운트 초기화(초단위)
+        fn_nCounter_init();
+    }
+}
+
+function fn_nCounter_init() { //팝업화면 추가 세션 카운트 실행
+    tid = setInterval("fn_nCounter_run()", 1000);
+}
+
+function fn_nCounter_run() { //팝업화면 추가 세션 카운트
+    document.getElementById('ncounter').innerText = fn_time_format(cnt, "S");
+    cnt--;
+    if(cnt < 0) {
+        /*추가 세션 카운트가 0이면 로그아웃 후 자동로그아웃 안내화면으로 이동*/
+        fn_logoutView();
+    }
+
+}
+
+function fn_logout() { //로그아웃 후 로그인화면으로 이동
+    location.href = "/PageLinkAll.do?link=/kcue/ast/eip/eis/mbersvc/login/selectUsrLogout.do&p_menu_id=PG-EIP-12001";
+}
+function fn_logoutView() { //로그아웃 후 로그인화면으로 이동
+    location.href = "/PageLinkAll.do?link=/kcue/ast/eip/eis/mbersvc/login/reUsrSessionout.do";
+}
+
+function fn_counter_reset() { //메인화면 카운트 재시작 및 서버 세션 연장
+
+	$("#qmenuNewDiv").show();
+	$('#mask').hide();
+	//(1) 세션연장222.
+    gfn_Submission_Call("/kcue/ast/eip/eis/mbersvc/login/EipUsrSession.do","", "",'json');
+
+    //(2) 세션 카운트 초기화
+    clearInterval(tid);
+    cnt = parseInt(sessionTime);//초기값(초단위)
+    fn_counter_init();
+
+}
+
+function fn_time_format(s, sType) {
+
+    var nMin=0;
+    var nSec=0;
+
+    var sHMS = "";
+
+    if(s>0) {
+        nMin = parseInt(s/60);
+        nSec = s%60;
+
+        if(nMin>60) {
+            nHour = parseInt(nMin/60);
+            nMin = nMin%60;
+        }
+    }
+    if(nSec<10) nSec = "0"+nSec;
+    if(nMin<10) nMin = "0"+nMin;
+
+    if (sType == "MS") {
+        sHMS = ""+nMin+":"+nSec;
+    } else if (sType == "S") {
+        sHMS = ""+nSec;
+    }
+    return sHMS;
+}
+
+function wrapWindowByMask() {
+    //화면의 높이와 너비를 구한다.
+    var maskHeight = $(document).height();
+    var maskWidth = $(window).width();
+
+    //마스크의 높이와 너비를 화면 것으로 만들어 전체 화면을 채운다.
+    $('#mask').css({
+      'width': maskWidth,
+      'height': maskHeight
+    });
+}
+
+  /// 화면의 중앙에 레이어띄움
+function showLayer() {
+    wrapWindowByMask();
+
+    //$("#CountDiv").css("top", Math.max(0, (($(window).height() - $("#CountDiv").outerHeight()) / 2) + $(window).scrollTop() - 100) + "px");
+    //$("#CountDiv").css("left", Math.max(0, (($(window).width() - $("#CountDiv").outerWidth()) / 2) + $(window).scrollLeft()) + "px");
+
+    $("#CountDiv").css("top", Math.max(0, (($(window).height() - $("#CountDiv").outerHeight()) / 2)) + "px");
+    $("#CountDiv").css("left", Math.max(0, (($(window).width() - $("#CountDiv").outerWidth()) / 2)) + "px");
+
+    $("#qmenuNewDiv").hide();
+    //$("#qmenu_add").hide();
+    //$("#date_detail").hide();
+
+    $('#mask').show();
+    $('#CountDiv').show();
+}
+</script>
+
+    <script type="text/javascript" src="/js/search/jquery-ui.min.js"></script><!-- autocomplete -->
+    <script type="text/javascript" src="/js/search/search.js"></script>
+    <script type="text/javascript" src="/js/search/searchedKwd.js"></script>
+    <script type="text/javascript" src="/js/search/search.ksf.js"></script>
+<script>
+function fn_totalSearch(){
+    callKwdCookie($(".keyword_input").val().trim());
+    $("#total_search").submit();
+    }
+</script>
+
+    <div id="header">
+
+        <form id="subjctFrm" name="subjctFrm" method="post">
+        <!-- 전형정보 상세화면으로 넘길 인자값 -->
+        <!-- 기존 코드에서 아이디를 같은 것을 사용 중이어서, 아이디앞에 'head_'추가 -->
+        <input type="hidden" name="send_sch_year" id="header_send_sch_year"/>
+        <input type="hidden" name="send_univ_cd" id="header_send_univ_cd"/>
+        <input type="hidden" name="send_rcrr_cd" id="header_send_rcrr_cd"/>
+        <input type="hidden" name="send_selctn_grp_cd" id="header_send_selctn_grp_cd"/>
+        <input type="hidden" name="send_rcu_sn" id="header_send_rcu_sn"/>
+        <input type="hidden" name="send_rcu_cd" id="header_send_rcu_cd"/>
+        <input type="hidden" name="send_sers_cd" id="header_send_sers_cd"/>
+        </form>
+
+        <form id="univFrm" name="univFrm" method="post">
+        <!-- 전형정보 상세화면으로 넘길 인자값 -->
+        <input type="hidden" name="sch_year" id="header_sch_year"/>
+        <input type="hidden" name="univ_cd" id="header_univ_cd"/>
+        </form>
+
+
+
+        <input type="hidden" id="intrstCnt" name="intrstCnt" value="0"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="top_menu" id="topHeaderMenu">
+<!--            <div style="margin: 5px; padding: 5px; border: 2px solid red; border-image: none; font-size: 20px; font-weight: bold; display: inline; position: absolute;"><span style="color: red;">시험운영중</span></div> -->
+            <ul id="top">
+                    <li><a class="jiu" href="/PageLinkAll.do?link=/kcue/ast/eip/eis/mbersvc/login/EipLoginView.do&p_menu_id=PG-EIP-12001" title="로그인">로그인</a></li>
+                    <li><a class="jiu" href="/PageLinkAll.do?link=/kcue/ast/eip/eis/mbersvc/mbersbscrb/EipStplatAgreView.do&p_menu_id=PG-EIP-12101" title="회원가입">회원가입</a></li>
+                   <li><a class="jiu" href="/PageLinkAll.do?link=/kcue/ast/eip/eis/cstmr/notice/EipNotice.do&p_menu_id=PG-EIP-10801" title="고객센터">고객센터</a></li>
+
+            </ul>
+
+        </div>
+    </div>
+
+
+    <!-- gnb메뉴-->
+    <div id="gnb">
+			<div class="logo"><a href="로그인후main.html" title="검정고시 커뮤니티"><img class="marginauto" src="모여봐 이미지1.jpg" width="180" alt="검정고시 커뮤니티" /></a></div>
+
+
+        <form id ="data_search" method="post" action="/PageLinkAll.do?link=/kcue/ast/eip/eis/search/EipSearchTotalsearch.do&p_menu_id=" onsubmit="return searchMainSubmit($('#data_search'));">
+        <div id="main_popup" style="display:none">
+            <div class="popup_wrap popup_wrap_box" style="display:none">
+                <div class="pop_top">
+                    <p class="popup_close"><a href="#"><img src="닫기 이미지.jpg" alt="닫기" title="닫기" onclick="javascript:fn_clickSearch();"></a></p>
+                </div>
+                <div class="popup_content">
+                    <input type="hidden" name="searchLog" value="true" />
+                    <input type="hidden" name="collection" value="" />
+                    <input type="hidden" name="sortSubmitDate" value="desc" />
+                    <input type="hidden" name="sortAccuracy" value="desc" />
+                    <input type="hidden" name="sortPopular" value="desc" />
+                    <input type="hidden" name="sortPeriod" value="ALL" />
+                    <input type="hidden" name="sortTarget" value="ALL" />
+                    <input type="hidden" name="sortYear" value="" />
+                    <input type="hidden" name="sortPlace" value="ALL" />
+                    <input type="hidden" name="searchOption" value="" />
+                    <input type="hidden" name="searchOptionKeyword" value="" />
+        <input type="text"  id="tags" name="keyword" data-target="#keywordSuggestTarget" title="검색어 입력창" autocomplete="off" value=""  maxlength="100"/>
+                    <a href="javascript:fn_totalSearch_onclick();" class="popup_search_btn" title="검색">검색</a>
+<!--                     <input type="text"  id="tags" name="search_ip" data-target="#keywordSuggestTarget" title="검색어 입력창" autocomplete="off" value=""  maxlength="100"/>
+                    <a href="javascript:goCategory4();" class="popup_search_btn" title="검색">검색</a> -->
+                </div>
+            </div>
+        </div>
+        </form>
+
+			  	<ul id="gnb_ul">
+
+						  <li><a href="검정고시초졸.html" class="menu1">검정고시</a></li>
+						  <li><a href="커뮤니티초졸.html" class="menu2">커뮤니티</a></li>
+						  <li><a href="대학,학과,전형.html" class="menu3">대학/학과/전형</a></li>
+						  <li><a href="성적분석.html" class="menu4">성적분석</a></li>
+						  <li><a href="대입정보.html" class="menu5">대입정보</a></li>
+						  <li><a href="마이페이지.html" class="menu6">마이페이지</a></li>
+
+				  </ul>
+					<ul id="gnb_ul1">
+        <div class="potal_search" id="myPgeSlide">
+        <a href="javascript:fn_mypgeVib_onclick()" title="마이페이지"><img src="마이메뉴 이미지1.jpg"  width="40" alt="마이페이지"></a>
+        </div>
+
+        <!-- gnb 통합검색 팝업 -->
+
+<!--         <form id="total_search" method="get" action="/kcue/ast/eip/eis/newsearch/totalSearch.do"> -->
+        <div class="bt_sc_open"><a href="#" title="통합검색"><img src="통합검색 이미지1.jpg" width="40" alt="통합검색"/></a></div>
+        <div id="sc_pop_wrap" style="display:none;">
+            <p class="bt_sc_close"><a href="#" title="닫기"><img src="닫기 이미지.jpg" width="40" alt="닫기"/></a></p>
+
+            <div class="keyword_box">
+                <h3>통합검색</h3>
+                <div class="main_search_list">
+                </div>
+                <input type="text" name="kwd" id="srch_sub" class="keyword_input" title="검색어를 입력해주세요" placeholder="검색어를 입력해주세요" autocomplete="off" maxlength="100" onKeypress="javascript:if(event.keyCode==13){goSearch_a();}">
+                <a href="javascript:goSearch_a();" class="btn_search_main" title="검색"><img src="/images/icon_search4.png" alt="검색"></a>
+                <a href="javascript:goSearch_a();" title="검색하기" class="btn_search">검색하기</a>
+            </div>
+            <div class="keyword_tag">
+                <h3>인기검색어</h3>
+                <ul class="tag_box">
+                </ul>
+							</ul>
+            </div>
+        </div>
+
+
+
+</div>
+
+    <!-- //gnb메뉴 -->
+
+
+    <!-- gnb 펼침메뉴-->
+      <div id="gnb_view" >
+        <div class="gnb_list">
+					<div class="menu_banner">
+							<map name="bannerMap" id="bannerMap">
+									<area shape="rect" coords="21,68,101,95" href="#"  title="대입정보매거진 자세히보기" alt="대입정보매거진 자세히보기" />
+							</map>
+					</div>
+						<div class="drop">
+            <span class="tts">검정고시</span>
+            <ul id="menu1" class="droppy">
+                <li><a href="검정고시초졸.html">초졸</a></li>
+                <li><a href="검정고시중졸.html">중졸</a></li>
+                <li><a href="검정고시고졸.html">고졸</a></li>
+            </ul>
+					</div>
+
+
+            <div class="drop"><span class="tts">커뮤니티</span>
+            <ul id="menu2" class="droppy">
+                <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/inf/coseinf/EipCoseInfOccpCl.do&p_menu_id=PG-EIP-05501">초졸</a></li>
+                <!--20210528 메뉴삭제 <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/inf/coseinf/EipCoseInfOccpThemeList.do&p_menu_id=PG-EIP-05902">테마별 직업정보</a></li> -->
+                <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/cnslt/prsec/EipCoseAptdPrsec.do&p_menu_id=PG-EIP-10701">중졸</a></li>
+                <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/cnslt/prsec/EipCoseAptdPrsec.do&p_menu_id=PG-EIP-10701">고졸</a></li>
+            </ul>
+					</div>
+
+
+            <div class="drop>"<span class="tts">대학/학과/전형</span>
+            <ul id="menu3" class="droppy">
+                <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/inf/univinf/eipUinfGnrl.do&p_menu_id=PG-EIP-01701">대학정보</a></li>
+                <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/inf/sjinf/eipSjinfGnrl.do&p_menu_id=PG-EIP-05101">학과정보</a></li>
+                <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/inf/selctninf/EipSelctnInfGnrl.do&p_menu_id=PG-EIP-06001">전형정보</a></li>
+            </ul>
+					</div>
+
+            <div class="drop"><span class="tts">성적분석</span>
+            <ul id="menu4" class="droppy">
+                <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/cun/ssa/sgc/ConStdptScrAnalsMain.do&p_menu_id=PG-CON-00901">검정고시</a></li>
+                <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/cun/ssa/csat/ConCsatScrAnalsView.do&p_menu_id=PG-CON-01101">수능성적분석</a></li>
+                <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/cou/ssa/atrcr/CouAtrcrScrComputList.do&p_menu_id=PG-CON-01401">대학별성적분석</a></li>
+            </ul>
+					</div>
+
+            <div class="drop"><span class="tts">대입정보</span>
+            <ul id="menu5" class="droppy">
+                <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/unventsystem/EipGuidSystemGnrl.do&p_menu_id=PG-EIP-00201">대입제도안내</a></li>
+                <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/presnatn/schdul/EipPresnatnSchdul.do&p_menu_id=PG-EIP-09001">대입일정</a></li>
+                <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/inf/bbs/EipUnventRecsroom.do&p_menu_id=PG-EIP-07401">대입전략자료실</a></li>
+                <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/inf/bbs/EipUnventNews.do&p_menu_id=PG-EIP-07601">대입소식</a></li>
+                <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/inf/bbs/EipUnventSfe.do&p_menu_id=PG-EIP-31301">대학별 입시정보</a></li>
+                <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/presnatn/expo/EipUnventInfExhbList.do&p_menu_id=PG-EIP-07901">대입박람회/설명회</a></li>
+                <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/presnatn/exprn/EipUnivExprnPgmList.do&p_menu_id=PG-EIP-00224">대학별 행사안내</a></li>
+                <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/unventsystem/EipGuidRelateSiteGuid.do&p_menu_id=PG-EIP-01401">관련사이트</a></li>
+            </ul>
+					</div>
+
+            <div class="drop"><span class="tts">마이페이지</span>
+            <ul id="menu6" class="droppy">
+<!--                <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/mypge/submainpge/EipSubMainList.do?p_menu_id=PG-EIP-13201">마이페이지</a></li> -->
+                <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/mypge/intrstuniv/EipIntrstUnivSubjctList.do&p_menu_id=PG-EIP-13301">관심대학/전형/진로</a></li>
+                <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/mypge/schdul/EipCldrExList.do&p_menu_id=PG-EIP-14201">일정관리</a></li>
+                <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/cun/mng/sgc/ConStdptScrMngSimplReg.do?linkParamDefaultField=1&p_menu_id=PG-CON-00201">성적관리</a></li>
+                <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/mypge/cnslt/eipMyCnslt.do&p_menu_id=PG-EIP-13501">상담내역</a></li>
+                <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/mypge/qestnans/EipMyAnsQestn.do&p_menu_id=PG-EIP-13801">질문</a></li>
+                <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/mypge/violtinf/EipMyVioltInfCrtfcView.do&p_menu_id=PG-EIP-13601">커뮤니티 글</a></li>
+                <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/mypge/mberinf/eipPasswordComfm.do&p_menu_id=PG-EIP-14401">회원정보</a></li>
+                <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/mypge/chldrnentsch/EipChldrnEntschAsstnView.do&p_menu_id=PG-EIP-14601">입학도우미</a></li>
+            </ul>
+					</div>
+          </div>
+      </div>
+      <!-- //gnb 펼침메뉴 끝-->
+
+
+			<!--드롭다운메뉴-->
+
+
+
+
+
+<!--마이페이지-->
+
+<!--마이페이지-->
+
+
+    <!-- popup_notice 어디가 HOT 공지/이벤트 -->
+    <div id="popup_top_wrap">
+        <div class="notice_bar" onclick="javascript:fn_hotNotice();">
+            <div class="notice_bar_wrap">
+                <input type="hidden" id="pop_cnt" value="6"/>
+                <h2><span class="hot">HOT</span> 질문/공지</h2>
+                <div id="scrolltextup" style="overflow:hidden; position:relative; width:600px; height:21px;">
+                  <div id="textup" style="position:absolute; top:0; left:0; width:600px;">
+                    <div style="line-height:21px;">
+
+
+
+
+
+
+
+                            <a href="#" tabindex="-1" title="대입정보포털 단계적 서비스 제공 안내" class="popup_content" >
+                            대입정보포털 단계적 서비스 제공 안내
+                            </a>
+
+
+                                <br/>
+
+
+
+
+
+
+
+                            <a href="#" tabindex="-1" title="2023학년도 수시 대학별 검정고시 성적산출 서비스 오픈" class="popup_content" >
+                            2023학년도 수시 대학별 성적산출 서비스 오픈
+                            </a>
+
+
+                                <br/>
+
+
+
+
+
+
+
+                            <a href="#" tabindex="-1" title="2023학년도 수시 대입정보포털 만족도조사" class="popup_content" >
+                            2023학년도 수시 대입정보포털 만족도조사
+                            </a>
+
+
+
+                                <br/>
+
+
+
+
+
+
+                            <a href="#" tabindex="-1" title="대학별 정보를 한눈에 볼 수 있는 대학알리미" class="popup_content" >
+                            대학별 정보를 한눈에 볼 수 있는 대학알리미
+                            </a>
+
+
+
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide_btn_wrap">
+
+            <p class="btn_close">
+                <a href="#" id="btn_top_popup" title="팝업 열기"><img src="더보기 이미지.jpg" width="30" alt="팝업 열기 버튼"></a>
+            </p>
+
+        </div><!--//slide_btn_wrap-->
+        <div id="pop_top_banner" style="display: none;" >
+            <div class="banner_img_group">
+                <!-- 팝업 배너 이미지 -->
+                <div class="banner_img_wrap">
+
+
+
+                            <div>
+                            <ul>
+
+
+
+
+
+
+
+                    <li>
+                        <a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/cstmr/notice/EipNoticeView.do&p_menu_id=PG-EIP-10901&sn=15461&rnum=203" tabindex="-1" title="대입정보포털 단계적 서비스 제공 안내" onclick="go_hearderPop(this.href,'10','',''); return false;">
+                        <img src="/common/downloadImage.do?fileId=00000000000000115424&fileSn=1&filePath=eip.fileStorePath" alt="대입정보포털 단계적 서비스 제공 안내" width="226" height="256"/>
+                        </a>
+                    </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <li>
+                        <a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/cstmr/notice/EipNoticeView.do&p_menu_id=PG-EIP-10901&sn=15692&rnum=1" tabindex="-1" title="2023학년도 수시 대학별 성적산출 서비스 오픈" onclick="go_hearderPop(this.href,'10','',''); return false;">
+                        <img src="/common/downloadImage.do?fileId=00000000000000124303&fileSn=1&filePath=eip.fileStorePath" alt="2023학년도 수시 대학별 성적산출 서비스 오픈" width="226" height="256"/>
+                        </a>
+                    </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <li>
+                        <a href="https://ko.research.net/r/adigamain2022" tabindex="-1" title="2023학년도 수시 대입정보포털 만족도조사" onclick="go_hearderPop(this.href,'30','0','0'); return false;">
+                        <img src="/common/downloadImage.do?fileId=00000000000000124405&fileSn=1&filePath=eip.fileStorePath" alt="2023학년도 수시 대입정보포털 만족도조사" width="226" height="256"/>
+                        </a>
+                    </li>
+
+
+
+                            </ul>
+                            </div>
+
+
+
+
+
+
+                            <div>
+                            <ul>
+
+
+
+
+
+                    <li>
+                        <a href="https://www.gumjung.co.kr/" tabindex="-1" title="검정고시 대입정보포털 검정고시로 대학어디가" onclick="go_hearderPop(this.href,'30','0','0'); return false;">
+                        <img src="/common/downloadImage.do?fileId=00000000000000057454&fileSn=1&filePath=eip.fileStorePath" alt="검정고시 대입정보포털 검정고시로 대학어디가" width="226" height="256"/>
+                        </a>
+                    </li>
+
+
+                            </ul>
+                            </div>
+
+
+
+
+
+                </div>
+                <!-- //팝업 배너 이미지 -->
+            </div><!--//position-->
+        </div><!--//pop_top_banner-->
+    </div>
+
+
+    <div class="layer_mask" id="mask"></div>
+    <!--
+    <div class="qmenu_add" id="CountDiv" style="display: none;">
+        <div class="w350">
+            <div class="pop_layer2" style="height: 420px;">
+                <div class="tit_popcal">
+                    <h3>자동로그아웃 안내</h3>
+                </div>
+                <div class="qmenu_text">
+                    <p style="font-size:14px; font-weight:bold; padding:10px;">약 9분 동안 서비스 이용이 없어</p>
+                    <p style="font-size:14px; font-weight:bold; padding:10px;"><span id ="ncounter" name="ncounter">59</span>초 후 자동 로그아웃 됩니다.</p>
+                    <p style="font-size:14px; font-weight:bold; padding:10px;">연장 하시겠습니까?</p>
+                </div><br />
+
+                <div class="align_c mgt30">
+                        <button type="button" class="btnc_member2_2 w70" onclick="javascript:fn_counter_reset(), closed('CountDiv');">연장하기</button>
+                        <button type="button" class="btnc_member2_3 w70" onclick="javascript:fn_logout();">로그아웃</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    -->
+     <div class="layer_add" id="CountDiv" style="display: none;">
+         <div class="layer_popup_con2">
+             <h5 class="st"><span class="color-txt">자동로그아웃</span>안내</h5>
+             <p class="count">자동 로그아웃 남은시간 : <span class="color-txt" id ="ncounter">59</span>초</p>
+             <p class="txt">
+                 고객님의 안전한 웹사이트 사용을 위해 로그인 후<br>
+                 서비스 이용이 없어 로그아웃 됩니다.<br><br>
+
+                 로그인 시간을 연장하시겠습니까?
+             </p>
+             <div class="btn-area">
+                 <a href="#" class="btn1" onclick="javascript:fn_counter_reset(), closed('CountDiv');">연장하기</a>
+                 <a href="#" class="btn2" onclick="javascript:fn_logout();">로그아웃</a>
+             </div>
+         </div>
+     </div>
+
+    <!-- //popup_notice 어디가 HOT 공지/이벤트 -->
+    <!-- //header -->
+
+
+
+		<!-- // Header -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" type="text/css" href="/css/rMateChartH5.css">
+<!-- IE7, 8 에서 차트 생성하고자 하는 경우 -->
+<!--[if IE 8]><script language="javascript" type="text/javascript" src="/js/rMateChartH5/excanvas.min.js"></script><![endif]-->
+
+<!-- rMateChartH5 라이센스 -->
+<script type="text/javascript" src="/js/rMateChartH5/rMateChartH5License.js"></script>
+<script type="text/javascript" src="/js/rMateChartH5/rMateChartH5.js"></script>
+<script type="text/javascript" src="/js/rMateChartH5/theme.min.js"></script>
+
+<script type="text/javascript">
+var gs_sch_txt = [];
+var gs_usidId = "null";
+var gs_usSeCd = "null";
+
+$(document).ready(function() {
+
+	$("#occp_rdo_chg input[type='radio']").change(function(){
+		var rdo_id = $(this).prop("id");
+
+		if(rdo_id == "keyword_radio"){
+			$("#occp_searchBox .keyword_box_wrap").show();
+			$("#occp_searchBox .select_box_wrap").hide();
+		}else if(rdo_id == "terms_radio"){
+			$("#occp_searchBox .keyword_box_wrap").hide();
+			$("#occp_searchBox .select_box_wrap").show();
+		}
+	});
+
+
+
+	init();
+});
+
+/*
+ * 화면초기화
+ */
+function init() {
+	//초기화면
+	set_defaultPage();
+
+	$(".botbanner:first").bnnrRollingList({ auto : true, speed : 4000 }, function(){
+	    // alert("리스트 변경후 실행할 함수 정의");
+	});
+
+
+	/* - DB 업그레이드 임시 팝업 삭제
+    var todayCheck = true;
+    var date = new Date(localStorage.todayChk);
+
+    date.setDate(date.getDate()+1);
+
+    var session_date = getFullDate(date,false);
+    var this_date = getFullDate(new Date());
+
+
+    if(gfn_null(localStorage.todayChk) != "" && session_date > this_date){
+        todayCheck = false;
+    }
+
+    if(gfn_null(sessionStorage.popChk) != 1 && todayCheck){
+		window.open("/EgovPageLink.do?link=cmn/cmn/EipServicePopupView", "service_popup", "width=226, height=280, scrollbars=no, resizable=no");
+    }
+	*/
+
+	//오늘하루 열지않기 시간 체크
+    cookiedata = document.cookie;
+    if (cookiedata.indexOf("ncookie=done") < 0){
+        var width = $(window).width();
+        var height = $(window).height();
+        //화면을 가리는 레이어의 사이즈 조정
+        $(".mask").width(width);
+        $(".mask").height(height);
+
+        //화면을 가리는 레이어를 보여준다 (0.5초동안 30%의 농도의 투명도)
+        //$(".mask").fadeTo(500, 0.3);
+
+        $("#layer_popup_wrap").css("display","inline");
+//         document.getElementById('layer_popup_wrap').style.display = "inline";
+    } else {
+        $("#layer_popup_wrap").css("display","none");
+//         document.getElementById('layer_popup_wrap').style.display = "none";
+    }
+}
+
+/*
+ * 초기설정
+ */
+function set_defaultPage() {
+
+	gfn_Submission_Call("/kcue/ast/eip/eis/mainpge/selectMainInfo.do" ,$("#frm").serialize(), function(data){
+		if(data != null){
+	        if (data.resultVO.resultCode == "SUCCESS")
+		    {
+	        	fn_makeTabResult(data.resultUnventList, "unvent_div");
+	        	fn_makeTabResult(data.resultNewsList, "news_div");
+
+	        	fn_make_pop(data.resultEntschInf);
+
+	        	fn_makeTabResult2(data);
+
+                if(gs_usidId != "null"){
+                	go_intrst();
+                }
+
+		    }
+		}
+	},'json');
+}
+
+/*
+ * 입학도우미 신청 알림 팝업창 열기
+ */
+function fn_make_pop(data)
+{
+	var dataResult = data;
+	if(dataResult != "" && dataResult != null && dataResult !="null"){
+
+		var width = $(window).width();
+		var height = $(window).height();
+		var tbResult = $(".mask");
+		var strRow = "";
+		var loadingDivObj;
+
+		for(var i = 0; i < dataResult.length; i++){
+			//팝업창 만들기
+			strRow +='<div class="w315" class="loadingDiv" id="loadingDiv'+(i+1)+'" style="position:absolute; z-index:600; width:100%;">';
+			strRow +='	<div class="pop_layer">';
+			strRow +='		<div class="tit_popcal">';
+			strRow +='			<h3>입학도우미 신청 알림</h3>';
+			strRow +="				<button type='button' class='closed' onclick='javascript:closed(\"loadingDiv"+(i+1)+"\");'><img src='/images/btn_closed.png' alt='창닫기' /></button>";
+			strRow +='		</div>';
+			strRow +='		<div class="con_popcal">';
+			strRow +='			<span class="t_cr01" id="parntsNm">'+dataResult[i].parnts_nm+'</span>님으로 부터 입학도우미 신청이 왔습니다.';
+			strRow +='      	<input type="hidden" name ="parntsId" id ="parntsId" value="'+dataResult[i].parnts_id+'"/>';
+			strRow +='			<div><textarea rows="3" id="reqCn">'+dataResult[i].req_cn+'</textarea></div>';
+			strRow +='			<div class="align_c mgt10">';
+			strRow +='				<button type="button" class="btnc_member2_2 w70" onclick="procEntsch(\'Y\',\'loadingDiv'+(i+1)+'\');">수락하기</button>';
+			strRow +='				<button type="button" class="btnc_member2_3 w70" onclick="procEntsch(\'N\',\'loadingDiv'+(i+1)+'\');">거절하기</button>';
+			strRow +='			</div>';
+			strRow +='		</div></div></div>';
+			strRow +='	</div>';
+			strRow +='</div>';
+		}
+
+        $(".mask").fadeIn(500);
+		tbResult.after(strRow);
+
+		for(var i = 0; i < dataResult.length; i++){
+			$("#loadingDiv"+(i+1)).draggable();
+			//팝업 레이어 보이게
+			loadingDivObj = $("#loadingDiv"+(i+1));
+			loadingDivObj.css("top", $("#container").height()/2-400);
+			loadingDivObj.css("left",$("#container").width()/2-150);
+		}
+	}
+}
+
+/*
+ * 팝업창 닫기
+ */
+function closed(param){
+	 $(".mask").fadeOut(500);
+	 var ex_obj = document.getElementById(param);
+	 ex_obj.style.display = ex_obj.style.display=='none'?'block':'none';
+}
+
+
+
+
+/*
+ * 로그인시 대입정보센터의 관심 목록이 보이게 함.
+ */
+function go_intrst(){
+
+    var addrLink = "";
+    var addrparam = "";
+    var tabFlag = "unvent_div";
+    var tabVal = "intrst";
+
+    $("#unvent_div_all").removeClass("se_on").addClass("se_off");
+    $("#unvent_div_intrst").removeClass("se_off").addClass("se_on");
+
+    addrparam = "unvent_ctgry="+tabVal+"&usr_id="+gs_usidId;
+    addrLink = "/kcue/ast/eip/eis/mainpge/selectUnventInfCenterList.do";
+
+    gfn_Submission_Call(addrLink , addrparam, function(data){
+        if(data != null){
+            if (data.resultVO.resultCode == "SUCCESS")
+            {
+                fn_makeTabResult(data.resultList, tabFlag);
+            }else{
+                alert(data.resultVO.resultMessage);
+            }
+        }
+    },'json');
+}
+
+/*
+ * 탭 클릭
+ */
+function tab_sel(tabFlag, tabVal){
+
+	var addrLink = "";
+	var addrparam = "";
+
+	if(gfn_null(gs_usidId) == "null" && tabFlag == "unvent_div" && tabVal == "intrst"){
+		alert("로그인이 필요합니다.");
+		return;
+	}
+
+	$("#"+tabFlag+"_grp span.se_on").removeClass("se_on").addClass("se_off");
+	$("#"+tabFlag+"_grp #"+tabFlag+"_"+tabVal).removeClass("se_off").addClass("se_on");
+
+	if(tabFlag == "unvent_div"){
+
+		addrparam = "unvent_ctgry="+tabVal+"&usr_id="+gs_usidId;
+		addrLink = "/kcue/ast/eip/eis/mainpge/selectUnventInfCenterList.do";
+	}else if(tabFlag == "news_div"){
+		addrparam = "news_ctgry="+tabVal;
+		addrLink = "/kcue/ast/eip/eis/mainpge/selectUnventNewsRecsroomList.do";
+
+		if($("input[id^='news_ctgry']:checked").val() == "recsroom"){
+			$("#tab_btn_more").prop("href","/PageLinkAll.do?link=/kcue/ast/eip/eis/inf/bbs/EipUnventRecsroom.do&p_menu_id=PG-EIP-07401");
+		}else{
+			$("#tab_btn_more").prop("href","/PageLinkAll.do?link=/kcue/ast/eip/eis/inf/bbs/EipUnventNews.do&p_menu_id=PG-EIP-07601");
+		}
+
+	}
+
+	gfn_Submission_Call(addrLink , addrparam, function(data){
+		if(data != null){
+	        if (data.resultVO.resultCode == "SUCCESS")
+		    {
+	        	fn_makeTabResult(data.resultList, tabFlag);
+		    }else{
+		    	alert(data.resultVO.resultMessage);
+		    }
+		}
+	},'json');
+}
+
+/*
+ * 탭 테이블 작성
+ */
+function fn_makeTabResult(data,  tabFlag) {
+
+	var dataResultList = data;
+	var strRow = "";
+
+	var tbResult = $("#"+tabFlag);
+	tbResult.empty();
+
+	if(dataResultList != "" && dataResultList != null){
+
+		if(tabFlag == "unvent_div"){
+
+			for(var i = 0; i < dataResultList.length; i++){
+
+				strRow += '<div class="list_all">';
+				strRow += '	<div class="list_left">';
+
+				if(gfn_null(dataResultList[i].univ_se_cd) == '02'){
+					strRow += '		<p class="mark"><img width="38" heigth="37" src="/common/downloadImage.do?fileId='+gfn_null(dataResultList[i].file_id)+'&fileSn='+gfn_null(dataResultList[i].file_sn)+'&filePath=kcu.fileStorePath" onerror="this.src=\'/images/no_img.png\'" alt="대학마크"></p>';
+				}else{
+					strRow += '		<p class="mark"><img width="38" heigth="37" src="'+gfn_null(dataResultList[i].origin_file_nm)+'" onerror="this.src=\'/images/no_img.png\'" alt="대학마크"></p>';
+				}
+
+				strRow += '	</div>';
+				strRow += '	<div class="list_center">';
+				strRow += '	    <p>'+gfn_null(dataResultList[i].univ_nm)+' <span class="branch">['+gfn_null(dataResultList[i].campus_nm)+']</span><p>';
+				strRow += '		<ul>';
+
+				strRow += '			<li><a href="javascript:go_view_cst(\''+gfn_null(dataResultList[i].sn)+'\', \''+gfn_null(dataResultList[i].rnum)+'\', \''+gfn_null(dataResultList[i].univ_cd)+'\', \''+gfn_null(dataResultList[i].univ_se_cd)+'\')" class="main_list_bt01">대학캐스트</a></li>';
+
+				if(gfn_null(dataResultList[i].selctn_cnt) > 0){
+					strRow += '			<li><a href="javascript:go_view_stdpt(\''+gfn_null(dataResultList[i].selctn_year)+'\',\''+gfn_null(dataResultList[i].univ_cd)+'\')" class="main_list_bt02">전형 평가기준 및 결과공개</a></li>';
+				}
+
+				if(gfn_null(dataResultList[i].sfe_cnt) > 0){
+					strRow += '			<li><a href="javascript:go_view_sfe(\''+gfn_null(dataResultList[i].sfe_year)+'\',\''+gfn_null(dataResultList[i].univ_cd)+'\')" class="main_list_bt03">대입특징</a></li>';
+				}
+
+				strRow += '		</ul>';
+				strRow += '	</div>';
+				strRow += '	<div class="list_right">'+gfn_null(dataResultList[i].ins_dt)+'</div>';
+				strRow += '</div>';
+
+			}
+		}else if(tabFlag == "news_div"){
+			for(var i = 0; i < dataResultList.length; i++){
+
+				strRow += '<div class="new_list">';
+				strRow += '	<span class="type">['+gfn_null(dataResultList[i].bbs_se_nm)+']</span>';
+				if(gfn_null(dataResultList[i].new_icon) == 'Y'){
+	                strRow += '    <img src="/images/re_icon/icon_new2.gif" alt="new" class="new">';
+				}
+
+                strRow += '    <span class="text">';
+                //자료실
+				if(gfn_null(dataResultList[i].bbs_se_cd) == "11"){
+                	strRow += '<a href="javascript:go_view_news(\''+gfn_null(dataResultList[i].sn)+'\',\''+gfn_null(dataResultList[i].no)+'\',\'univ_recsroom\')">['+gfn_null(dataResultList[i].ctgry_nm)+'] '+gfn_null(dataResultList[i].sj)+'</a>';
+				//뉴스
+				}else{
+                	strRow += '<a href="javascript:go_view_news(\''+gfn_null(dataResultList[i].sn)+'\',\''+gfn_null(dataResultList[i].no)+'\',\'univ_news\')">['+gfn_null(dataResultList[i].ctgry_nm)+'] '+gfn_null(dataResultList[i].sj)+'</a>';
+				}
+                strRow += '</span>';
+
+				strRow += '</div>';
+
+			}
+		}
+
+		tbResult.append(strRow);
+	}else{
+		var strRow = "";
+		if(tabFlag == "unvent_div"){
+			strRow += '<div class="mypage">';
+			strRow += '	<div class="mypage_arm">';
+			strRow += '		<div class="mypage_right">';
+			strRow += '			<div class="allarm">';
+			strRow += '				<div class="right01">';
+			strRow += '				<div class="c_say">관심대학, 학과,<br/> 전형을<br/> 더 찾아보세요!</div>';
+			strRow += '				<div class="r_button">';
+			strRow += '					<p><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/inf/univinf/eipUinfGnrl.do&p_menu_id=PG-EIP-01701" class="btn_step">대학검색</a></p>';
+			strRow += '					<p><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/inf/sjinf/eipSjinfGnrl.do&p_menu_id=PG-EIP-05101" class="btn_step">학과검색</a></p>';
+			strRow += '					<p><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/inf/selctninf/EipSelctnInfGnrl.do&p_menu_id=PG-EIP-06001" class="btn_step">전형검색</a></p>';
+			strRow += '				</div>';
+			strRow += '				</div>';
+			strRow += '			</div>';
+			strRow += '		</div>';
+			strRow += '	</div>';
+			strRow += '</div>';
+		}else{
+			strRow += '<li>' + '조회된 자료가 없습니다.' +'</li>' ;
+		}
+
+		tbResult.append(strRow);
+	}
+}
+
+//전형 평가기준 및 결과공개
+function go_view_stdpt(sch_year, univ_cd){
+	location.href = "/PageLinkAll.do?link=/kcue/ast/eip/eis/inf/univinf/eipUinfMainGnrl.do&p_menu_id=PG-EIP-01801&stdpt_se_cd=Y&sch_year="+sch_year+"&univ_cd="+univ_cd;
+}
+
+//전형 평가기준 및 결과공개
+function go_view_sfe(sch_year, univ_cd){
+	location.href = "/PageLinkAll.do?link=/kcue/ast/eip/eis/inf/univinf/eipUinfMainGnrl.do&p_menu_id=PG-EIP-01801&sfe_se_cd=Y&sch_year="+sch_year+"&univ_cd="+univ_cd;
+}
+
+/*
+ * 탭 상세보기
+ */
+function go_view_news(sn, no, tabFlag)
+{
+	var frm = document.newsFrm;
+	if(tabFlag == "univ_news"){
+		frm.action = "/PageLinkAll.do?link=/kcue/ast/eip/eis/inf/bbs/EipNewsCnView.do&p_menu_id=PG-EIP-07701&sn="+sn + "&no=" + no;
+	}else if(tabFlag == "univ_recsroom"){
+		frm.action = "/PageLinkAll.do?link=/kcue/ast/eip/eis/inf/bbs/EipRecsroomCnView.do&p_menu_id=PG-EIP-07501&sn="+sn + "&no=" + no;
+	}
+
+	frm.submit();
+}
+
+/*
+ * 대학캐스트 상세보기
+ */
+function go_view_cst(sn, rnum, univ_cd, sch_se_cd)
+{
+	var pageLink = "";
+	if(sch_se_cd == "02"){
+		pageLink = "/PageLinkAll.do?link=/kcue/ast/eip/eis/inf/univinf/eipUinfMainGnrl.do&p_menu_id=PG-EIP-01801&cst_se_cd=Y&univ_cd="+univ_cd+"&sn="+sn+"&rnum="+rnum;
+	}else{
+		pageLink = "/PageLinkAll.do?link=/kcue/ast/eip/eis/inf/univinfjncll/eipUinfMainJncll.do&p_menu_id=PG-EIP-03501&cst_se_cd=Y&univ_cd="+univ_cd+"&sn="+sn+"&rnum="+rnum;
+	}
+	location.href = pageLink;
+}
+
+/*
+ * 팝업창(10:현재창, 20:팝업, 30:새창)
+ */
+function go_pop(link, link_cd, link_width, link_vrticl){
+
+	var target = "";
+	var size = "";
+	if(link_cd == "10"){
+		target = "_self";
+	}else if(link_cd == "20"){
+		target = "_blank";
+		size   = "width="+link_width+", height="+link_vrticl;
+	}else if(link_cd == "30"){
+		target = "_blank";
+		size   = "width="+screen.width+", height="+screen.height+", top=0, left=0, fullscreen=yes, status=yes, menubar=yes, toolbar=yes, resizable=yes, location=yes";
+	}
+	window.open(link, target, size+", scrollbars=yes");
+}
+
+/*
+ * 입학도우미 승낙/거절
+ */
+function procEntsch(gubun, param){
+	var parntsId = $("#"+param +" #parntsId").val();
+	gfn_Submission_Call("/kcue/ast/eip/eis/mypge/chldrnentsch/procEntsch.do?gubun="+gubun+"&parntsId="+parntsId , $("#frm").serialize(), function(data){
+		if(data != null){
+	        if (data.resultVO.resultCode == "SUCCESS")
+		    {
+	        	closed(param);
+		    }else{
+		    	alert(data.resultVO.resultMessage);
+		    }
+		}
+	},'json');
+}
+
+function fn_stdptselctn_pop(){
+	window.open("/kcue/ast/eip/eis/inf/stdptselctn/PopEipStdptSelctn.do?p_menu_id=PG-EIP-16001", 'pop_stdptselctn', 'width=801, height=820, left=50, top=0, statusbar=0, scrollbars=no');
+	return;
+}
+
+
+function fn_occp_search(){
+	var rdo_chg = $("#occp_rdo_chg input[type='radio']:checked").attr("id");
+
+	if(rdo_chg == "keyword_radio"){
+		if(gfn_null($("#occp_searchKeyword").val()) != "" && gfn_null($("#occp_searchKeyword").val()).length > 1){
+
+			var frm = document.occpFrm;
+			frm.action = "/PageLinkAll.do?link=/kcue/ast/eip/eis/inf/coseinf/EipCoseInfOccpCl.do&p_menu_id=PG-EIP-05501";
+			frm.main_searchAt.value = "K";
+			frm.main_searchKeyword.value = $("#occp_searchKeyword").val();
+			frm.main_optionAvg.value = "";
+			frm.main_optionProspect.value = "";
+
+			frm.submit();
+		}else{
+			alert("검색어를 2자이상 입력해주세요.");
+		}
+	}else if(rdo_chg == "terms_radio"){
+
+		if(gfn_null($("#occp_optionAvg").val()) == "" && gfn_null($("#occp_optionProspect").val()) == ""){
+			alert("검색조건을 선택해주세요.");
+		}else{
+
+			var frm2 = document.occpFrm;
+
+			frm2.action = "/PageLinkAll.do?link=/kcue/ast/eip/eis/inf/coseinf/EipCoseInfOccpCl.do&p_menu_id=PG-EIP-05501";
+			frm2.main_searchAt.value = "C";
+			frm2.main_searchKeyword.value = "";
+			frm2.main_optionAvg.value = $("#occp_optionAvg").val();
+			frm2.main_optionProspect.value = $("#occp_optionProspect").val();
+
+			frm2.submit();
+
+		}
+
+	}
+}
+function callChartData() {
+	gfn_Submission_Call("/kcue/ast/eip/eis/mainpge/selectEipUnivOnlineCnsltTopThreeList.do", null, function(data){
+		if(data != null){
+	        if (data.resultVO.resultCode == "SUCCESS") {
+	        	drawChart(data);
+		    } else {
+		    	alert(data.resultVO.resultMessage);
+		    }
+		}
+	},'json');
+}
+
+var chartData;
+var layoutStr = "";
+
+var chartVars = "rMateOnLoadCallFunction=chartReadyHandler";
+
+function drawChart(data) {
+	//차트 데이터
+	//rMate 차트 생성 준비가 완료된 상태 시 호출할 함수를 지정합니다.
+	chartData = new Array();
+	for(var i = 0; i < data.resultList.length ; i ++) {
+		var tempArr = {"yaxis":data.resultList[i].qestn_ty_nm, "xaxis":(data.resultList[i].qestn_ty_cnt/data.totalCnt*100).toFixed(1)};
+		chartData.push(tempArr);
+	}
+
+	//스트링 형식으로 레이아웃 정의.
+	layoutStr =
+		'<rMateChart backgroundColor="#FFFFFF"  borderStyle="none">'
+                  +'<Options>'
+                       +'<Legend useVisibleCheck="true"/>'
+                  +'</Options>'
+			+'<CurrencyFormatter id="numFmt" currencySymbol="%" alignSymbol="right"/>'
+			+'<Pie2DChart showDataTips="true">'
+	            +'<series>'
+	                +'<Pie2DSeries nameField="yaxis" field="xaxis" labelPosition="inside" formatter="{numFmt}" color="black" renderDirection="counterClockwise">'
+    					+'<showDataEffect>'
+							+'<SeriesInterpolate/>'
+						+'</showDataEffect>'
+					+'</Pie2DSeries>'
+				+'</series>'
+			+'</Pie2DChart>'
+		+'</rMateChart>';
+
+	rMateChartH5.create("chart", "graph_box", chartVars, "100%", "100%");
+}
+
+function chartReadyHandler(id) {
+	document.getElementById(id).setLayout(layoutStr);
+	document.getElementById(id).setData(chartData);
+}
+
+
+//2017.11.24 김세라
+function fn_makeTabResult2(data) {
+
+	var dataRcrrResult = data.resultRcrrList;
+	var dataSersResult = data.resultRcuSersList;
+	var dataAreaResult = data.resultAreaList;
+	var dataComList = data.resultComList;
+
+	var strRow = "";
+	var tbResult = "";
+	var tbResult2 = "";
+
+	//일반대
+	if(dataRcrrResult != "" && dataRcrrResult != null ){
+		tbResult = $("#rcrr_select_list");
+		tbResult.empty();
+		var rcrr_cd = "";
+		strRow = "";
+		strRow +="<th scope='row'><span>모집시기</span></th>";
+        strRow +="<td>";
+
+        if(dataComList != "" && dataComList != null){
+        	for(var i = 0 ; i < dataComList.length; i++){
+        		if(dataComList[i].univ_se_cd == '10'){
+        			rcrr_cd = gfn_null(dataComList[i].rcrr_cd);
+        		}
+        	}
+        }
+
+        for(var i = 0; i < dataRcrrResult.length; i++){
+			if(gfn_nvl(dataRcrrResult[i].univ_se_cd) =='02') {
+               	strRow +="    <input type='radio' name='rcrr' id='rcrr_"+gfn_nvl(dataRcrrResult[i].rcrr_cd)+"' ";
+				if(rcrr_cd.indexOf(gfn_nvl(dataRcrrResult[i].rcrr_cd)) >= 0){
+					strRow +="checked='checked'";
+				}
+               	strRow +="    value='"+gfn_nvl(dataRcrrResult[i].rcrr_cd)+"'><label for='rcrr_"+gfn_nvl(dataRcrrResult[i].rcrr_cd)+"'>"+gfn_nvl(dataRcrrResult[i].rcrr_nm)+"</label>";
+			}
+		}
+		strRow +="</td>";
+		tbResult.append(strRow);
+	}
+
+	//전문대
+	if(dataRcrrResult != "" && dataRcrrResult != null ){
+		tbResult2 = $("#rcrr_select_list2");
+		tbResult2.empty();
+		var rcrr_cd = "";
+
+		strRow = "";
+		strRow +="<th scope='row'><span>모집시기</span></th>";
+        strRow +="<td>";
+
+        if(dataComList != "" && dataComList != null){
+        	for(var i = 0 ; i < dataComList.length; i++){
+        		if(dataComList[i].univ_se_cd == '20'){
+        			rcrr_cd = gfn_null(dataComList[i].rcrr_cd);
+        		}
+        	}
+        }
+
+		for(var i = 0; i < dataRcrrResult.length; i++){
+			if(gfn_nvl(dataRcrrResult[i].univ_se_cd) =='01') {
+               	strRow +="    <input type='radio' name='jncll_rcrr' id='jncll_rcrr_"+gfn_nvl(dataRcrrResult[i].rcrr_cd)+"' ";
+				if(rcrr_cd.indexOf(gfn_nvl(dataRcrrResult[i].rcrr_cd)) >= 0){
+					strRow +="checked='checked'";
+				}
+               	strRow +="    value='"+gfn_nvl(dataRcrrResult[i].rcrr_cd)+"'><label for='jncll_rcrr_"+gfn_nvl(dataRcrrResult[i].rcrr_cd)+"'>"+gfn_nvl(dataRcrrResult[i].rcrr_nm)+"</label>";
+			}
+		}
+		strRow +="</td>";
+
+		tbResult2.append(strRow);
+	}
+
+	//일반대
+	if (dataSersResult != "" && dataSersResult != null ) {
+		tbResult = $("#sers_select_list");
+		tbResult.empty();
+
+		strRow = "";
+		strRow +="<th scope='row'><span>학과계열</span></th>";
+	    strRow +="    <td>";
+
+		for(var i = 0; i < dataSersResult.length; i++){
+	   	 	strRow +="    <input type='radio' name='sers' id='sers_"+gfn_nvl(dataSersResult[i].sers_cd)+"' value='"+gfn_nvl(dataSersResult[i].sers_cd)+"'><label for='sers_"+gfn_nvl(dataSersResult[i].sers_cd)+"'>"+gfn_nvl(dataSersResult[i].sers_nm)+"</label>";
+		}
+	    strRow +="</td>";
+
+		tbResult.append(strRow);
+	}
+
+	//전문대
+	if (dataSersResult != "" && dataSersResult != null ) {
+		tbResult2 = $("#sers_select_list2");
+		tbResult2.empty();
+
+		strRow = "";
+		strRow +="<th scope='row'><span>학과계열</span></th>";
+	    strRow +="    <td>";
+
+		for(var i = 0; i < dataSersResult.length; i++){
+	   	 	strRow +="    <input type='radio' name='jncll_sers' id='jncll_sers_"+gfn_nvl(dataSersResult[i].sers_cd)+"' value='"+gfn_nvl(dataSersResult[i].sers_cd)+"'><label for='jncll_sers_"+gfn_nvl(dataSersResult[i].sers_cd)+"'>"+gfn_nvl(dataSersResult[i].sers_nm)+"</label>";
+		}
+	    strRow +="</td>";
+		tbResult2.append(strRow);
+	}
+
+	//일반대
+	if(dataAreaResult != "" && dataAreaResult != null ) {
+		tbResult = $("#area_select_list");
+		tbResult.empty();
+		var end_line = 0;
+		var area_cd = "";
+		strRow = "";
+		strRow +="<th scope='row'><span>지&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;역</span></th>";
+        strRow +="<td>";
+
+        if(dataComList != "" && dataComList != null){
+        	for(var i = 0 ; i < dataComList.length; i++){
+        		if(dataComList[i].univ_se_cd == '10'){
+        			area_cd = gfn_null(dataComList[i].area_cd);
+        		}
+        	}
+        }
+
+		for(var i = 0; i < dataAreaResult.length; i++){
+
+			if(i%8 == 0){
+				if(i == 0){
+					strRow += "<p>";
+	            	strRow +="  <input type='checkbox' name='area' id='area_all' value='' ";
+					if(area_cd == ""){
+						strRow += "checked='checked'";
+					}
+	            	strRow +="  onclick='fn_areaList_onclick(this);'><label for='area_all'>전체</label>";
+				} else if(i+1 != dataAreaResult.length){
+					strRow += "<p>";
+				}
+			}
+
+            strRow +="        <input type='checkbox' name='area' id='area_"+gfn_nvl(dataAreaResult[i].area_cd)+"' ";
+			if(area_cd.indexOf(gfn_nvl(dataAreaResult[i].area_cd)) >= 0){
+				strRow += "checked='checked'";
+			}
+            strRow +="        value='"+gfn_nvl(dataAreaResult[i].area_cd)+"' onclick='fn_areaList_onclick(this);'><label for='area_"+gfn_nvl(dataAreaResult[i].area_cd)+"'>"+gfn_nvl(dataAreaResult[i].area_nm)+"</label>";
+
+			//div 클래스 감싸기 끝 부분
+			end_line = i+1;
+			if(end_line %  8 == 0 && end_line != dataAreaResult.length-1){
+				if(i > 0){
+					strRow += "</p>";
+				}
+			}
+			//div 클래스 감싸기 끝 부분
+		}
+		strRow +="</td>";
+		tbResult.append(strRow);
+	}
+
+	//전문대
+	if(dataAreaResult != "" && dataAreaResult != null ) {
+		tbResult2 = $("#area_select_list2");
+		tbResult2.empty();
+		var end_line = 0;
+		var area_cd = "";
+		strRow = "";
+		strRow +="<th scope='row'><span>지&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;역</span></th>";
+        strRow +="<td>";
+
+        if(dataComList != "" && dataComList != null){
+        	for(var i = 0 ; i < dataComList.length; i++){
+        		if(dataComList[i].univ_se_cd == '20'){
+        			area_cd = gfn_null(dataComList[i].area_cd);
+        		}
+        	}
+        }
+
+		for(var i = 0; i < dataAreaResult.length; i++){
+
+			if(i%8 == 0){
+				if(i == 0){
+					strRow += "<p>";
+	            	strRow +="  <input type='checkbox' name='jncll_area' id='jncll_area_all' value='' ";
+					if(area_cd == ""){
+						strRow += "checked='checked'";
+					}
+	            	strRow +="  onclick='fn_areaList_onclick(this);'><label for='jncll_area_all'>전체</label>";
+
+				} else if(i+1 != dataAreaResult.length){
+					strRow += "<p>";
+				}
+			}
+
+           	strRow +="        <input type='checkbox' name='jncll_area' id='jncll_area_"+gfn_nvl(dataAreaResult[i].area_cd)+"' ";
+			if(area_cd.indexOf(gfn_nvl(dataAreaResult[i].area_cd)) >= 0){
+				strRow += "checked='checked'";
+			}
+           	strRow +="        value='"+gfn_nvl(dataAreaResult[i].area_cd)+"' onclick='fn_areaList_onclick(this);'><label for='jncll_area_"+gfn_nvl(dataAreaResult[i].area_cd)+"'>"+gfn_nvl(dataAreaResult[i].area_nm)+"</label>";
+
+			//div 클래스 감싸기 끝 부분
+			end_line = i+1;
+			if(end_line %  8 == 0 && end_line != dataAreaResult.length-1){
+				if(i > 0){
+					strRow += "</p>";
+				}
+			}
+			//div 클래스 감싸기 끝 부분
+		}
+		strRow +="</td>";
+		tbResult2.append(strRow);
+	}
+
+	$("#search_radio1").prop("checked",true);
+	$("#rcrr_select_list").hide();
+	$("#sers_select_list").hide();
+	$("#rcrr_select_list2").hide();
+	$("#sers_select_list2").hide();
+	$("#area_select_list2").hide();
+
+}
+
+
+function fn_areaList_onclick(area){
+	if($(area).attr("id") == "area_all"){
+		$("#area_all").prop("checked",true);
+		$("input[id^='area']:not(input[id='area_all'])").prop("checked",false);
+	}else{
+		$("#area_all").prop("checked",false);
+		var chk_area_list = $("input[id^='area']:checked").get();
+
+		if(chk_area_list.length < 1){
+			$("#area_all").prop("checked",true);
+		}
+	}
+
+	if($(area).attr("id") == "jncll_area_all"){
+		$("#jncll_area_all").prop("checked",true);
+		$("input[id^='jncll_area']:not(input[id='jncll_area_all'])").prop("checked",false);
+	}else{
+		$("#jncll_area_all").prop("checked",false);
+		var chk_area_list = $("input[id^='jncll_area']:checked").get();
+
+		if(chk_area_list.length < 1){
+			$("#jncll_area_all").prop("checked",true);
+		}
+	}
+}
+
+
+function fn_chsNm_onclick(chsNm){
+
+	if($(chsNm).val() == "chs_univ_nm") {
+		$("#grnInfkeyword").prop("placeholder","대학명을 입력해주세요.");
+		$("#rcrr_select_list").hide();
+		$("#sers_select_list").hide();
+		$("#area_select_list").show();
+	}
+	if($(chsNm).val() == "chs_univ_nm2") {
+		$("#jncllInfkeyword").prop("placeholder","대학명을 입력해주세요.");
+		$("#rcrr_select_list2").hide();
+		$("#sers_select_list2").hide();
+		$("#area_select_list2").show();
+	}
+	if($(chsNm).val() == "chs_sers_nm") {
+		$("#grnInfkeyword").prop("placeholder","학과명 키워드를 입력해주세요.");
+		$("#rcrr_select_list").hide();
+		$("#sers_select_list").show();
+		$("#area_select_list").hide();
+	}
+	if($(chsNm).val() == "chs_sers_nm2") {
+		$("#jncllInfkeyword").prop("placeholder","학과명 키워드를 입력해주세요.");
+		$("#rcrr_select_list2").hide();
+		$("#sers_select_list2").show();
+		$("#area_select_list2").hide();
+	}
+	if($(chsNm).val() == "chs_rcrr_nm") {
+		$("#grnInfkeyword").prop("placeholder","모집학과 키워드를 입력해주세요.");
+		$("#rcrr_select_list").show();
+		$("#sers_select_list").show();
+		$("#area_select_list").show();
+	}
+	if($(chsNm).val() == "chs_rcrr_nm2") {
+		$("#jncllInfkeyword").prop("placeholder","모집학과 키워드를 입력해주세요.");
+		$("#rcrr_select_list2").show();
+		$("#sers_select_list2").show();
+		$("#area_select_list2").show();
+	}
+
+}
+
+
+function fn_grnlInf_search(){
+
+	//일반대 학교명
+	if($(".tabmenu_uvType .uv_tab01").is(".on")) {
+		if($("input[id^='rcrr']:checked").get().length < 1){
+			alert("모집시기를 선택해주세요");
+		} else if($("input[id^='sers']:checked").get().length < 1){
+			alert("학과계열을 선택해주세요");
+		} else {
+			$("#grnInfkeyword").val("");
+			var url = "/PageLinkAll.do?link=/kcue/ast/eip/eis/inf/selctninf/EipSelctnInfGnrl.do&p_menu_id=PG-EIP-06001";
+			var frm = document.univListFrm;
+			frm.action = url;
+			frm.submit();
+		}
+		return;
+	}
+
+	//전문대 학교명
+	if($(".tabmenu_uvType .uv_tab02").is(".on")) {
+		if($("input[id^='jncll_rcrr']:checked").get().length < 1){
+			alert("모집시기를 선택해주세요");
+		} else if($("input[id^='jncll_sers']:checked").get().length < 1){
+			alert("학과계열을 선택해주세요");
+		} else {
+			$("#jncllInfkeyword").val("");
+			var url = "/PageLinkAll.do?link=/kcue/ast/eip/eis/inf/selctninfjncll/EipSelctnInfJncll.do&p_menu_id=PG-EIP-06601";
+			var frm = document.jncllListFirm;
+			frm.action = url;
+			frm.submit();
+		}
+		return;
+	}
+}
+
+
+
+
+
+function fn_grnlInfKeyword_search(){
+
+	//일반대 학교명
+	if($("#search_radio1").is(":checked") && $(".tabmenu_uvType .uv_tab01").is(".on")) {
+		var url = "/PageLinkAll.do?link=/kcue/ast/eip/eis/inf/univinf/eipUinfGnrl.do&p_menu_id=PG-EIP-01701";
+		var frm = document.univListFrm;
+		frm.action = url;
+		frm.submit();
+		return;
+	}
+
+	//일반대 학과명
+	if($("#search_radio2").is(":checked") && $(".tabmenu_uvType .uv_tab01").is(".on")) {
+		var url = "/PageLinkAll.do?link=/kcue/ast/eip/eis/inf/sjinf/eipSjinfGnrl.do&p_menu_id=PG-EIP-05101";
+		var frm = document.univListFrm;
+		frm.action = url;
+		frm.submit();
+		return;
+	}
+
+	//일반대 전형명
+	if($("#search_radio3").is(":checked") && $(".tabmenu_uvType .uv_tab01").is(".on")) {
+		var url = "/PageLinkAll.do?link=/kcue/ast/eip/eis/inf/selctninf/EipSelctnInfGnrl.do&p_menu_id=PG-EIP-06001";
+		var frm = document.univListFrm;
+		frm.action = url;
+		frm.submit();
+		return;
+	}
+
+	//전문대 학교명
+	if($("#search_radio4").is(":checked") && $(".tabmenu_uvType .uv_tab02").is(".on")) {
+		var url = "/PageLinkAll.do?link=/kcue/ast/eip/eis/inf/univinfjncll/eipUinfJncll.do&p_menu_id=PG-EIP-03401";
+		var frm = document.jncllListFirm;
+		frm.action = url;
+		frm.submit();
+		return;
+	}
+
+	//전문대 학과명
+	if($("#search_radio5").is(":checked") && $(".tabmenu_uvType .uv_tab02").is(".on")) {
+		var url = "/PageLinkAll.do?link=/kcue/ast/eip/eis/inf/sjinfjncll/eipSjinfJncll.do&p_menu_id=PG-EIP-05301";
+		var frm = document.jncllListFirm;
+		frm.action = url;
+		frm.submit();
+		return;
+	}
+
+	//전문대 전형명
+	if($("#search_radio6").is(":checked") && $(".tabmenu_uvType .uv_tab02").is(".on")) {
+		var url = "/PageLinkAll.do?link=/kcue/ast/eip/eis/inf/selctninfjncll/EipSelctnInfJncll.do&p_menu_id=PG-EIP-06601";
+		var frm = document.jncllListFirm;
+		frm.action = url;
+		frm.submit();
+		return;
+	}
+}
+
+//오늘하루 이창 열지 않기
+function setCookie( name, value, expirehours ) {
+    var todayDate = new Date();
+    todayDate.setHours( todayDate.getHours() + expirehours );
+    document.cookie = name + "=" + escape( value ) + "; path=/; expires=" + todayDate.toGMTString() + ";";
+}
+
+function fn_close_win() {
+    if(document.getElementById("todayChk").checked){
+        setCookie( "ncookie", "done" , 24 );
+    }
+    $("#layer_popup_wrap").css('display','none');
+    //document.getElementById('layer_popup_wrap').style.display = "none";
+    $(".mask").fadeOut(500);
+}
+
+//로그인 체크, 사용자 구분
+function go_online_advice(pageLink){
+	location.href = pageLink;
+}
+
+</script>
+        <!-- container -->
+    	<div id="container">
+            <!-- 상단내용 -->
+            <div id="content_1">
+                <div class="main_box_wrap">
+                    <div class="tab_menu_wrap">
+                        <ul class="tabmenu">
+                            <li class="tab01 on"><a href="#">커뮤니티</a></li>
+                            <li class="tab02"><a href="#">대학·학과·전형</a></li>
+                            <li class="tab03"><a href="#">성적분석</a></li>
+                            <li class="tab04"><a href="#">진로정보</a></li>
+                            <li class="tab05"><a href="#">표준 공통원서<br>접수가이드</a></li>
+                        </ul>
+                    </div>
+                    <div class="list_div">
+	                	<form id="newsFrm" name="newsFrm" action="/EgovPageLink.do?link=EipMain" method="post" onsubmit="return false;">
+	                    <input type="hidden" name="sel_se" value="%"/>
+	                    <input type="hidden" name="sel_rcrit_sch_year" value="%"/>
+	                    </form>
+
+											<div class="tab_4 main_bn04_wrap" id="tab4div">
+													<div class="main_content04">
+															<div class="content_box">
+																<div class="customer_box">
+																	<ul>
+																					<li class="cu01">
+																							<a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/cnslt/EipCnsltTelCnslt.do&p_menu_id=PG-EIP-10301" style="padding:0px;" title="초졸검정고시">초졸검정고시</a></li>
+
+																					<li class="cu02"><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/cnslt/onlineunvent/EipOnlineUnivCnslt.do&p_menu_id=PG-EIP-09401" title="중졸검정고시">중졸검정고시</a></li>
+																			</ul>
+																			<ul>
+																					<li class="cu03"><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/cnslt/onlinemajor/EipOnlineMajorCnsltMain.do&p_menu_id=PG-EIP-09801" title="고졸검정고시">고졸검정고시</a></li>
+																					<li class="cu04"><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/cnslt/example/eipUniventCnsltCase.do&p_menu_id=PG-EIP-10401" title="자주하는질문">자주하는질문</a></li>
+																			</ul>
+																</div>
+															</div>
+													</div>
+											</div>
+
+                        <div class="tab_1 main_bn01_wrap" style="display: block;"  id="tab1div">
+                           	<form name="occpFrm" id="occpFrm" method="post" onsubmit="return false">
+                           		<input type="hidden" name="main_searchAt" id="main_searchAt"/>
+                           		<input type="hidden" name="main_searchKeyword" id="main_searchKeyword"/>
+                           		<input type="hidden" name="main_optionAvg" id="main_optionAvg"/>
+                           		<input type="hidden" name="main_optionProspect" id="main_optionProspect"/>
+                           	</form>
+                            <div class="main_content01">
+                                <div class="content_box">
+                                    <h3><span class="or">내 꿈에 더 가까운 직업정보</span>를 확인하세요!</h3>
+                                    <div class="main_searchbox">
+                                         <fieldset>
+                                             <legend>키워드 검색박스</legend>
+                                             <!-- 조건별 검색 -->
+                                             <div class="search_keyword">
+                                                 <div class="type_btn" id="occp_rdo_chg">
+                                                     <input type="radio" name="occp_keyword" id="keyword_radio" title="키워드별" value="키워드별" checked>
+                                                     <label for="keyword_radio">키워드별</label>
+                                                     <input type="radio" name="occp_keyword" id="terms_radio" title="조건별" value="조건별">
+                                                     <label for="terms_radio">조건별</label>
+                                                 </div>
+                                                 <div class="type_box" id="occp_searchBox">
+
+                                                     <a href="javascript:fn_occp_search()" class="btn_search"><img src="통합검색 이미지.jpg" width="30" alt="검색하기" title="검색하기"></a>
+                                                     <div class="keyword_box_wrap">
+                                                         <div class="keyword_box">
+
+															<input type="text" id="occp_searchKeyword" name="occp_searchKeyword" placeholder="키워드를 입력해주세요" title="키워드를 입력해주세요" onkeypress="if(event.keyCode==13){fn_occp_search();}" style="ime-mode:active"/>
+                                                         </div>
+                                                     </div>
+
+                                                     <div class="select_box_wrap" style="display: none;">
+                                                         <ul class="select_box">
+                                                             <li>
+                                                                 <select class="pay" name="occp_optionAvg" id="occp_optionAvg" title="평균연봉을 선택해주세요">
+                                                                     <option value="" disabled selected >평균연봉</option>
+                                                                     <option value="">선택안함</option>
+                                                                     <option value="1">3,000만원 미만</option>
+                                                                     <option value="2">3,000~4,000만원 미만</option>
+                                                                     <option value="3">4,000~5,000만원 미만</option>
+                                                                     <option value="4">5,000만원 이상</option>
+                                                                 </select>
+                                                             </li>
+                                                             <li>
+                                                                 <select class="vision" name="occp_optionProspect" id="occp_optionProspect" title="직업전망을 선택해주세요">
+                                                                     <option value="" disabled selected >직업전망</option>
+                                                                     <option value="">선택안함</option>
+                                                                     <option value="74.2">매우밝음 (상위10%이상)</option>
+                                                                     <option value="63.3">밝음 (상위20%이상)</option>
+                                                                     <option value="40.0">보통 (중간이상)</option>
+                                                                     <option value="60.0">전망안좋음 (감소예상직업)</option>
+                                                                 </select>
+                                                             </li>
+                                                         </ul>
+                                                     </div>
+
+                                                 </div>
+                                             </div>
+                                             <!-- //조건별 검색 -->
+                                         </fieldset>
+                                    </div>
+                                    <ul class="main_con01_bn">
+                                        <li onclick="location.href='/PageLinkAll.do?link=/kcue/ast/eip/eis/inf/coseinf/EipCoseInfOccpCl.do&p_menu_id=PG-EIP-05501';">
+                                        	<a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/inf/coseinf/EipCoseInfOccpCl.do&p_menu_id=PG-EIP-05501" title="한국의 모든 직업분류">
+	                                            <span class="tt">직업분류</span>
+	                                            <span class="con">국내 모든 직업을 분야별로 분류,<br>직업에 대한 상세한 정보를 제공합니다.</span>
+                                            </a>
+                                        </li>
+                                        <li onclick="location.href='/PageLinkAll.do?link=/kcue/ast/eip/eis/cnslt/prsec/EipCoseAptdPrsec.do&p_menu_id=PG-EIP-10701';">
+                                        	<a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/cnslt/prsec/EipCoseAptdPrsec.do&p_menu_id=PG-EIP-10701" title="직업심리검사">
+	                                            <span class="tt">직업심리검사</span>
+	                                            <span class="con">심리적인 특성들이 각 직업에서 요구하는 능력수준 및 특성에 얼마나 적합한지를 측정합니다.</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab_2 main_bn02_wrap" id="tab2div">
+                            <div class="main_content02">
+                                <div class="content_box">
+                                    <h3 class="t"><span class="gr">검정고시 대학입학정보</span> <span class="or">,꿈을 향한 첫걸음을 위해 비교 분석</span>할 수 있도록 도와드립니다.</h3>
+                                    <div class="main_searchbox">
+                                        <ul class="tabmenu_uvType">
+                                            <li class="uv_tab01 on"><a href="#">일반대학</a></li>
+                                            <li class="uv_tab02"><a href="#">전문대학</a></li>
+                                        </ul>
+                                        <!--//tabmenu-->
+                                        <div class="list_div_uv">
+											<form method="post" id="univListFrm" name="univListFrm" onsubmit="return false;">
+											<input type="hidden" name="main_search_at" id="main_search_at" value="Y">
+                                            <div class="tab_uv1">
+                                            	<div class="search_keyword">
+                                                    <div class="type_btn">
+                                                        <input type="radio" name="keyword" id="search_radio1" value="chs_univ_nm" onclick='fn_chsNm_onclick(this);' title="대학정보" checked>
+                                                        <label for="search_radio1">대학정보</label>
+                                                        <input type="radio" name="keyword" id="search_radio2" value="chs_sers_nm" onclick='fn_chsNm_onclick(this);' title="학과정보">
+                                                        <label for="search_radio2">학과정보</label>
+                                                        <input type="radio" name="keyword" id="search_radio3" value="chs_rcrr_nm" onclick='fn_chsNm_onclick(this);' title="전형정보">
+                                                        <label for="search_radio3">전형정보</label>
+                                                    </div>
+                                                    <div class="type_box">
+                                                    	<a href="javascript:fn_grnlInfKeyword_search()" class="btn_search"><img src="/images/re_icon/icon_search2.gif" alt="검색하기" title="검색하기"></a>
+<!--                                                         <a href="javascript:fn_grnlInfKeyword_search()" class="btn_search"><img src="/images/re_icon/icon_search2.gif" alt="검색하기"></a> -->
+													 	<div class="keyword_box">
+                                                         	<label for="gnrlKeyword" class="tts">대학명을 입력해주세요</label>
+													 		<input type="text" name="gnrlKeyword" id="grnInfkeyword" placeholder="대학명을 입력해주세요." title="대학명을 입력해주세요" onkeypress="if(event.keyCode==13){fn_grnlInfKeyword_search();}" style="ime-mode:active">
+												 		</div>
+                                                    </div>
+                                                </div>
+                                                <div class="type_select_box">
+                                                    <table class="main_type_select">
+                                                        <caption>검색 조건 체크목록</caption>
+                                                        <colgroup>
+                                                            <col style="width:80px;">
+                                                            <col />
+                                                        </colgroup>
+                                                        <tbody>
+                                                            <tr id="rcrr_select_list" style="display:none;">
+                                                                <th scope="row"><span>모집시기</span></th>
+                                                                <td>
+                                                                    <input type="radio" name="time" id="time01"><label for="time01">수시</label>
+                                                                    <input type="radio" name="time" id="time02"><label for="time02">정시(전체)</label>
+                                                                    <input type="radio" name="time" id="time03"><label for="time03">정시(가)</label>
+                                                                    <input type="radio" name="time" id="time04"><label for="time04">정시(나)</label>
+                                                                    <input type="radio" name="time" id="time05"><label for="time05">정시(다)</label>
+                                                                    <input type="radio" name="time" id="time06"><label for="time06">추가</label>
+                                                                </td>
+                                                            </tr>
+                                                            <tr id="sers_select_list" style="display:none;">
+                                                                <th scope="row"><span>학과계열</span></th>
+                                                                <td>
+                                                                    <input type="radio" name="department" id="department01"><label for="department01">인문사회</label>
+                                                                    <input type="radio" name="department" id="department02"><label for="department02">자연과학</label>
+                                                                    <input type="radio" name="department" id="department03"><label for="department03">예체능</label>
+                                                                    <input type="radio" name="department" id="department04"><label for="department04">공학</label>
+                                                                    <input type="radio" name="department" id="department05"><label for="department05">의학</label>
+                                                                </td>
+                                                            </tr>
+                                                            <tr id="area_select_list">
+                                                                <th scope="row"><span>지&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;역</span></th>
+                                                                <td>
+                                                                    <p>
+                                                                        <input type="checkbox" name="area" id="area01"><label for="area01">전체</label>
+                                                                        <input type="checkbox" name="area" id="area02"><label for="area02">강원</label>
+                                                                        <input type="checkbox" name="area" id="area03"><label for="area03">경기</label>
+                                                                        <input type="checkbox" name="area" id="area04"><label for="area04">경남</label>
+                                                                        <input type="checkbox" name="area" id="area05"><label for="area05">경북</label>
+                                                                        <input type="checkbox" name="area" id="area06"><label for="area06">광주</label>
+                                                                        <input type="checkbox" name="area" id="area07"><label for="area07">대구</label>
+                                                                        <input type="checkbox" name="area" id="area08"><label for="area08">대전</label>
+                                                                        <input type="checkbox" name="area" id="area09"><label for="area09">부산</label>
+                                                                    </p>
+                                                                    <p>
+                                                                        <input type="checkbox" name="area" id="area10"><label for="area10">서울</label>
+                                                                        <input type="checkbox" name="area" id="area11"><label for="area11">세종</label>
+                                                                        <input type="checkbox" name="area" id="area12"><label for="area12">울산</label>
+                                                                        <input type="checkbox" name="area" id="area13"><label for="area13">인천</label>
+                                                                        <input type="checkbox" name="area" id="area14"><label for="area14">전남</label>
+                                                                        <input type="checkbox" name="area" id="area15"><label for="area15">전북</label>
+                                                                        <input type="checkbox" name="area" id="area16"><label for="area16">제주</label>
+                                                                        <input type="checkbox" name="area" id="area17"><label for="area17">충남</label>
+                                                                        <input type="checkbox" name="area" id="area18"><label for="area18">충북</label>
+                                                                    </p>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+
+                                                </div>
+
+                                            </div>
+                                           	</form>
+                                           	<form method="post" id="jncllListFirm" name="jncllListFirm" onsubmit="return false;">
+											<input type="hidden" name="main_search_at" id="main_search_at" value="Y">
+                                            <div class="tab_uv2">
+                                            	<div class="search_keyword">
+                                                    <div class="type_btn">
+                                                        <input type="radio" name="keyword2" id="search_radio4" value="chs_univ_nm2" onclick='fn_chsNm_onclick(this);' title="대학정보" checked>
+                                                        <label for="search_radio4">대학정보</label>
+                                                        <input type="radio" name="keyword2" id="search_radio5" value="chs_sers_nm2" onclick='fn_chsNm_onclick(this);' title="학과정보">
+                                                        <label for="search_radio5">학과정보</label>
+                                                        <input type="radio" name="keyword2" id="search_radio6" value="chs_rcrr_nm2" onclick='fn_chsNm_onclick(this);' title="전형정보">
+                                                        <label for="search_radio6">전형정보</label>
+                                                    </div>
+                                                    <div class="type_box">
+                                                    	<a href="javascript:fn_grnlInfKeyword_search()" class="btn_search"><img src="/images/re_icon/icon_search2.gif" alt="검색하기" title="검색하기"></a>
+<!--                                                      	<a href="javascript:fn_grnlInfKeyword_search()" class="btn_search"><img src="/images/re_icon/icon_search2.gif" alt="검색하기"></a> -->
+													 	<div class="keyword_box">
+                                                         	<label for="jncllInfkeyword" class="tts">대학명을 입력해주세요</label>
+													 		<input type="text" name="jncllKeyword" id="jncllInfkeyword" placeholder="대학명을 입력해주세요." title="대학명을 입력해주세요" onkeypress="if(event.keyCode==13){fn_grnlInfKeyword_search();}"  style="ime-mode:active"/>
+												 		</div>
+                                                    </div>
+                                                </div>
+                                                <div class="type_select_box">
+                                                    <table class="main_type_select">
+                                                        <caption>검색 조건 체크목록</caption>
+                                                        <colgroup>
+                                                            <col style="width:80px;">
+                                                            <col />
+                                                        </colgroup>
+                                                        <tbody>
+                                                            <tr id="rcrr_select_list2" style="display:none;">
+                                                                <th scope="row"><span>모집시기</span></th>
+                                                                <td>
+                                                                    <input type="radio" name="time" id="time07"><label for="time07">수시</label>
+                                                                    <input type="radio" name="time" id="time08"><label for="time08">정시</label>
+                                                                </td>
+                                                            </tr>
+                                                            <tr id="sers_select_list2" style="display:none;">
+                                                                <th scope="row"><span>학과계열</span></th>
+                                                                <td>
+                                                                    <input type="radio" name="department" id="department06"><label for="department06">인문사회</label>
+                                                                    <input type="radio" name="department" id="department07"><label for="department07">자연과학</label>
+                                                                    <input type="radio" name="department" id="department08"><label for="department08">예체능</label>
+                                                                    <input type="radio" name="department" id="department09"><label for="department09">공학</label>
+                                                                </td>
+                                                            </tr>
+                                                            <tr id="area_select_list2">
+                                                                <th scope="row"><span>지&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;역</span></th>
+                                                                <td>
+                                                                    <p>
+                                                                        <input type="checkbox" name="area" id="area21"><label for="area21">전체</label>
+                                                                        <input type="checkbox" name="area" id="area22"><label for="area22">강원</label>
+                                                                        <input type="checkbox" name="area" id="area23"><label for="area23">경기</label>
+                                                                        <input type="checkbox" name="area" id="area24"><label for="area24">경남</label>
+                                                                        <input type="checkbox" name="area" id="area25"><label for="area25">경북</label>
+                                                                        <input type="checkbox" name="area" id="area26"><label for="area26">광주</label>
+                                                                        <input type="checkbox" name="area" id="area27"><label for="area27">대구</label>
+                                                                        <input type="checkbox" name="area" id="area28"><label for="area28">대전</label>
+                                                                        <input type="checkbox" name="area" id="area29"><label for="area29">부산</label>
+                                                                    </p>
+                                                                    <p>
+                                                                        <input type="checkbox" name="area" id="area30"><label for="area30">서울</label>
+                                                                        <input type="checkbox" name="area" id="area31"><label for="area31">세종</label>
+                                                                        <input type="checkbox" name="area" id="area32"><label for="area32">울산</label>
+                                                                        <input type="checkbox" name="area" id="area33"><label for="area33">인천</label>
+                                                                        <input type="checkbox" name="area" id="area34"><label for="area34">전남</label>
+                                                                        <input type="checkbox" name="area" id="area35"><label for="area35">전북</label>
+                                                                        <input type="checkbox" name="area" id="area36"><label for="area36">제주</label>
+                                                                        <input type="checkbox" name="area" id="area37"><label for="area37">충남</label>
+                                                                        <input type="checkbox" name="area" id="area38"><label for="area38">충북</label>
+                                                                    </p>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+
+                                                </div>
+
+                                            </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <!-- main_searchbox -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab_3 main_bn03_wrap" id="tab3div">
+                            <div class="main_content03">
+                                <div class="content_box">
+                                	<h3 class="th"><span class="gr">검정고시, 수능/모의고사 성적</span>을 <span class="or">원하는 전형조건</span>으로 분석해 드립니다.</h3>
+                                	<div class="step_box_wrap">
+                                		<ul class="step_box">
+                                			<li><span class="tt_step">Step 1</span></li>
+                                			<li>검정고시/수능/모의고사</li>
+                                			<li class="tt">성적선택</li>
+                                			<li class="img"><img src="/images/re_icon/icon_step_img01.gif" alt="성적선택"></li>
+                                			<li class="bt_btn">
+                                				<p class="mT16"><a href="/PageLinkAll.do?link=/kcue/ast/eip/cun/mng/sgc/ConStdptScrMngSimplReg.do?linkParamDefaultField=1&p_menu_id=PG-CON-00201" title="학생부 성적입력" class="btn_step">학생부 성적입력</a></p>
+                                				<p><a href="/PageLinkAll.do?link=/kcue/ast/eip/cun/mng/csat/ConCsatScrMng.do&p_menu_id=PG-CON-00501" title="수능/모의 성적입력" class="btn_step">수능/모의 성적입력</a></p>
+                                			</li>
+                                		</ul>
+                                		<ul class="step_box">
+                                			<li><span class="tt_step">Step 2</span></li>
+                                			<li>분석하고 싶은</li>
+                                			<li class="tt">대학/학과/전형 선택</li>
+                                			<li class="img"><img src="/images/re_icon/icon_step_img02.gif" alt="대학/학과/전형 선택"></li>
+                                			<li class="bt_btn">
+                                				<p><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/inf/univinf/eipUinfGnrl.do&p_menu_id=PG-EIP-01701" title="대학검색" class="btn_step">대학검색</a></p>
+                                				<p><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/inf/sjinf/eipSjinfGnrl.do&p_menu_id=PG-EIP-05101" title="학과검색" class="btn_step">학과검색</a></p>
+                                				<p><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/inf/selctninf/EipSelctnInfGnrl.do&p_menu_id=PG-EIP-06001" title="전형검색" class="btn_step">전형검색</a></p>
+                                			</li>
+                                		</ul>
+                                		<ul class="step_box">
+                                			<li><span class="tt_step">Step 3</span></li>
+                                			<li>성적 분석</li>
+                                			<li class="tt">결과 확인</li>
+                                			<li class="img"><img src="/images/re_icon/icon_step_img03.gif" alt="결과 확인"></li>
+                                			<li class="bt_btn">
+                                				<p class="mT16"><a href="/PageLinkAll.do?link=/kcue/ast/eip/cun/ssa/sgc/ConStdptScrAnalsMain.do&p_menu_id=PG-CON-00901" title="성적분석 결과확인" class="btn_step">성적분석 결과확인</a></p>
+                                				<p><a href="/PageLinkAll.do?link=/kcue/ast/eip/cou/ssa/atrcr/CouAtrcrScrComputList.do&p_menu_id=PG-CON-01401" title="대학별 내점수확인" class="btn_step">대학별 내점수확인</a></p>
+                                			</li>
+                                		</ul>
+                                	</div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="tab_6 main_bn05_wrap" id="tab5div">
+                            <div class="main_content06">
+                                <div class="content_box con05_bg">
+									<div class="mv-box">
+										<iframe title ="표준공통원서 접수가이드" width="645" height="363" src="https://www.youtube.com/embed/oT_LqRWdDvQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+									</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- main_box_wrap -->
+                <div class="main_m_banner_new">
+                    <ul class="m_bn_list_new">
+											<div id="mainbn">
+                    	<li>
+                            <a href="javascript:goGuide('/kcue/ast/eip/eis/cstmr/guide/GuideMain.do?p_menu_id=PG-EIP-11001')" title="대입정보포털 활용법(새창)">
+                                <span class="tt">모여봐 효과적 활용법</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/inf/stdptselctn/EipStdGenSlcIem.do&p_menu_id=PG-EIP-16101" title="전형 평가기준 및 결과공개">
+                            	<span class="tt">전형 평가기준 및 결과공개</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/inf/bbs/EipUnventSfe.do&p_menu_id=PG-EIP-31301" title="대입특징">
+                                <span class="tt">검정고시 정보</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/inf/bbs/EipUnventRecsroom.do&p_menu_id=PG-EIP-07401" title="검정고시 대입 사례">
+                                <span class="tt">검정고시 대입 사례 및 후기</span>
+                            </a>
+                        </li>
+												<li>
+                            <a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/inf/bbs/EipUnventRecsroom.do&p_menu_id=PG-EIP-07401" title="조언">
+                                <span class="tt">선배들의 조언</span>
+                            </a>
+                        </li>
+											</div>
+                    </ul>
+                </div>
+                <!-- main_m_banner -->
+            <!-- //상단내용 -->
+
+        	<!-- 하단내용 -->
+            <div id="content_2">
+
+                <!-- 하단 게시판 -->
+				<!--대입정보센터-->
+                <div class="board_list_new0807" id="unvent_div_grp">
+					<p class="board_list_all">
+						<span class="title">검고가능대학</span>
+						<input type="hidden" name="unvent_ctgry" id="unvent_ctgry">
+						<span class="more"><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/unventsystem/EipUnventInfCnterMainView.do&p_menu_id=PG-EIP-30701" title="더보기"><img src="더보기옆.jpg" width="20" alt="더보기"></a></span>
+						<span class="se_on" id="unvent_div_all"><a href="javascript:tab_sel('unvent_div','all')">전체</a></span>
+						<span class="se_line">l</span>
+						<span class="se_off" id="unvent_div_intrst"><a href="javascript:tab_sel('unvent_div','intrst')">관심</a></span>
+					</p>
+					<!--대입정보센터 리스트-->
+					<div id="unvent_div">
+					</div>
+					<!--//대입정보센터 리스트-->
+				</div>
+				<!--//대입정보센터-->
+				<!--대입소식-->
+				<div class="board_list_new020807" id="news_div_grp">
+					<p class="board_list_all">
+						<span class="title">검고소식</span>
+						<input type="hidden" name="news_ctgry" id="news_ctgry">
+						<span class="more"><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/inf/bbs/EipUnventNews.do&p_menu_id=PG-EIP-07601" title="더보기"><img src="더보기옆.jpg" width="20" alt="더보기"></a></span>
+						<span class="se_on" id="news_div_all"><a href="javascript:tab_sel('news_div','all')">전체</a></span>
+						<span class="se_line">l</span>
+						<span class="se_off" id="news_div_news"><a href="javascript:tab_sel('news_div','news')">뉴스</a></span>
+						<span class="se_line">l</span>
+						<span class="se_off" id="news_div_recsroom"><a href="javascript:tab_sel('news_div','recsroom')">자료</a></span>
+					</p>
+					<!--대입소식 리스트-->
+					<div id="news_div">
+					</div>
+					<!--//대입소식 리스트-->
+				</div>
+				<!--//대입소식-->
+
+                <!-- //하단 게시판 -->
+
+            </div>
+            <!-- //하단내용 -->
+
+			<!-- 레이어팝업(입학도우미 or 비대면 상담 팝업창 사용)  -->
+    	    <div class="mask" style="z-index: 600;"></div>
+
+        </div>
+      	<!-- //container -->
+
+	    <!-- QuickMenu -->
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" type="text/css" href="/css/jquery.mCustomScrollbar.css"/>
+<script type="text/javascript" src="/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script type="text/javascript">
+	var gs_usidId = "null";
+	var gs_macIp = "null";
+	var gs_usSeCd = "null";
+	var chkUniv = [];
+
+	(function($){
+        $(window).on("load",function(){
+            $("#visitUnivDiv").mCustomScrollbar();
+
+//            var popupWrap = $("#popup_top_wrap")[0];
+//            popupWrap.offsetTop;
+//            $("#qmenu_0806new").css('top', (popupWrap.offsetTop - 43) + 'px');
+//            console.log('1111', popupWrap.offsetTop, $("#popup_top_wrap")[0].offsetTop, (popupWrap.offsetTop - 50));
+
+        });
+ //       $(window).scroll(function(){
+ //       	var $el = $(".qmenu_0806new");
+ //       	var $el2 = $(".date_detail");
+ //       	var position = $(this).scrollTop();
+ //
+ //       	if($(this).scrollTop() >= 120){ $el.css("top","1%"); $el2.css("top","1%");}
+ //       	else{ $el.css("top",((1 - (position/120)) * 28)+"%"); $el2.css("top",((1 - (position/120)) * 28)+"%");}
+ //       });
+    })(jQuery);
+
+	$(document).ready(function() {
+		// loading 메세지 출력
+		$("#qmenu_add").draggable({ handle: ".tit_popcal" });
+	});
+
+
+	/*
+	 * 팝업창 열기
+	 */
+	function fn_popup_onclick(pop_gubun){
+
+		var width = $(window).width();
+		var height = $(window).height();
+		var loadingDiv = "";
+
+		if(gs_usidId == "null" || gs_macIp == "null"){
+			alert("로그인 후 이용해주세요.");
+		}else{
+			if(pop_gubun == "bkmk"){
+
+				fn_select_qmenuList();
+				loadingDiv = "qmenu_add";
+
+				//화면을 가리는 레이어의 사이즈 조정
+// 				$(".mask").width(width);
+// 				$(".mask").height(height);
+
+				//화면을 가리는 레이어를 보여준다 (0.5초동안 30%의 농도의 투명도)
+// 				$(".mask").fadeTo(300, 0.3);
+
+				//팝업 레이어 안보이게
+				$("#qmenu_add").hide();
+				$("#date_detail").hide();
+
+				//팝업 레이어 보이게
+				var loadingDivObj = $("#"+loadingDiv);
+				loadingDivObj.fadeIn(300);
+
+
+			}else if(pop_gubun == "dday"){
+				if($("#date_detail").css("display") == "none"){
+					fn_select_date_detail();
+				}
+			}
+
+		}
+	}
+
+	function fn_select_qmenuList(){
+		gfn_Submission_Call("/kcue/ast/eip/com/selectQmenuList.do",null, function(data){
+			if(data != null){
+		        if (data.resultVO.resultCode == "SUCCESS")
+			    {
+		        	fn_make_bkmk(data);
+		        	gfn_setComSession("bkmkRef","Y");
+			    }else{
+			    	alert(data.resultVO.resultMessage);
+			    }
+			}
+		},'json');
+	}
+
+	function fn_select_date_detail(){
+		gfn_Submission_Call("/kcue/ast/eip/com/selectDateDetail.do",null, function(data){
+			if(data != null){
+		        if (data.resultVO.resultCode == "SUCCESS")
+			    {
+		        	date_detail_make(data);
+			    }else{
+			    	alert(data.resultVO.resultMessage);
+			    }
+			}
+		},'json');
+	}
+
+	function date_detail_make(data){
+
+		var resultCnt = data.schdulCnt;
+		var resultList = data.lst_mySchdul;
+		var strRow = "";
+		if(gfn_null(resultCnt) > 0){
+
+			for(var i = 0 ; i < resultList.length ; i++){
+				var result = resultList[i];
+
+				if(i == 0 || resultList[i].begin_month != resultList[i-1].begin_month){
+					strRow += '<div class="d_value">';
+					strRow += '	<div class="data_view">';
+					strRow += '	<h3>'+gfn_null(result.begin_year)+'<span class="month_text">'+gfn_null(result.begin_month)+'</span></h3>';
+					strRow += '	<ul>';
+				}
+
+				strRow += '<li><span class="day_text">'+gfn_null(result.begin_day)+' ('+gfn_null(result.begin_dy)+')</span>';
+				strRow += gfn_null(result.sj)+'<br/>('+gfn_null(result.begin_de).substring(5,10);
+
+				if(gfn_null(result.end_de) != ""){
+					strRow += '~'+gfn_null(result.end_de).substring(5,10);
+				}
+
+				strRow += ')</li>';
+
+				if(i == (resultList.length-1) || resultList[i+1].begin_month != resultList[i].begin_month){
+					strRow += '	</ul>';
+					strRow += '	</div>';
+					strRow += '</div>';
+				}
+
+			}
+
+			$("#myDateQuickDiv").html(strRow);
+
+		}else{
+			strRow += '<div class="q_schedule">';
+			strRow += '	<p><img src="/images/schedule_icon.png" alt="스케줄 아이콘" /></p>';
+			strRow += '	<p>등록된 개인일정이 없습니다.</p>';
+			strRow += '</div>';
+
+			$("#myDateQuickDiv").before(strRow);
+		}
+
+		//팝업 레이어 안보이게
+		$("#qmenu_add").hide();
+		$("#date_detail").hide();
+
+		//팝업 레이어 보이게
+		var loadingDivObj = $("#date_detail");
+		loadingDivObj.fadeIn(300);
+
+        $("#myDateQuickDiv").mCustomScrollbar();
+
+	}
+
+	/*
+	 * 팝업창 닫기
+	 */
+	function closed(divNm)
+	{
+		if(divNm == 'date_detail'){
+	        $("#myDateQuickDiv").mCustomScrollbar('destroy');
+			$("#myDateQuickDiv").html("");
+		}
+
+		 var ex_obj = document.getElementById(divNm);
+		 ex_obj.style.display = ex_obj.style.display=='none'?'block':'none';
+		 $(".mask").fadeOut(200);
+	}
+
+
+	/***********************************************************************
+	함수명 : lst_univ_onclick
+	설 명   : 대학명 클릭시 대학정보 조회
+	인 자   : univ_cd : 대학코드
+	사용법 : lst_com_univ_onclick(univ_cd)
+	 ***********************************************************************/
+	function lst_com_univ_onclick(univ_cd){
+		var frm = document.quick_frm;
+
+		frm.univ_cd.value = gfn_leadingZeros(univ_cd, 7);
+
+		frm.action = "/PageLinkAll.do?link=/kcue/ast/eip/eis/inf/univinf/eipUinfMainGnrl.do&p_menu_id=PG-EIP-01801";
+		frm.submit();
+		return;
+	}
+
+
+
+	/***********************************************************************
+	함수명 : sel_com_univlist_make
+	설 명   : 빠른대학검색의 지역 선택시 대학명 조회시 대학목록 생성
+	인 자   : data : json 데이터 값 ( function sel_com_searchArea_onchage() )
+	사용법 : sel_com_univlist_make(data)
+
+	 ***********************************************************************/
+	function sel_com_univlist_make(data){
+		var dataResultList = data.lst_univList;
+
+		var tbResult = $("#t_ipt");
+		tbResult.empty();
+
+		if(dataResultList != "" && dataResultList != null){
+
+			var strRow = "";
+			strRow += "<option value=''>대학명</option>";
+
+			for(var i =0; i < dataResultList.length; i++){
+				if(dataResultList[i].pcpskl_bnhh_nm ==""){
+					strRow += "<option value="+gfn_null(dataResultList[i].univ_cd)+">"+gfn_null(dataResultList[i].univ_nm)+"</option>";
+				}else{
+					strRow += "<option value="+gfn_null(dataResultList[i].univ_cd)+">"+gfn_null(dataResultList[i].univ_nm)+"["+gfn_null(dataResultList[i].pcpskl_bnhh_nm)+"]"+"</option>";
+				}
+			}
+
+			tbResult.append(strRow);
+		}else{
+			var strRow = "";
+			strRow += "<option value=''>대학명</option>";
+
+			tbResult.append(strRow);
+		}
+	}
+
+
+	/***********************************************************************
+	함수명 : fn_visitUniv_onchage
+	설 명   : 첨부파일 다운로드
+	인 자   : file_id : file_id 값
+	사용법 : fncFileDown(file_id)
+
+	 ***********************************************************************/
+	function fn_comVisitUniv_onchage(chk){
+		if(chk.checked){
+			chkUniv[chkUniv.length] = chk.value;
+
+			if(chkUniv.length > 3){
+				chkUniv.splice(chkUniv.length-1,1);
+				chk.checked = false;
+				alert("더이상 선택할 수 없습니다.");
+				return;
+			}
+
+		}else{
+			for(var i = 0 ; i < chkUniv.length ; i++){
+				if(chkUniv[i] == chk.value){
+					chkUniv.splice(i,1);
+				}
+			}
+		}
+	}
+
+
+	/***********************************************************************
+	함수명 : visti_univ_make
+	설 명   : 첨부파일 다운로드
+	인 자   : file_id : file_id 값
+	사용법 : visti_univ_make(data)
+	 ***********************************************************************/
+	function visti_univ_make(data){
+		var dataVisitUniv = data.lst_visitUniv;
+		chkUniv = [];
+		var tbResultList = $("#visitUnivDiv");
+		tbResultList.empty();
+
+		if(dataVisitUniv != "" && dataVisitUniv != null){
+
+			var strRow = "<ul>";
+
+			for(var i = 0 ; i < dataVisitUniv.length ; i++){
+				strRow += "<li><input type='checkbox' id='che"+i+"' value=\""+dataVisitUniv[i].univ_cd+"\" onchange='fn_comVisitUniv_onchage(this)'/>&nbsp;"
+						  +"<a href='javascript:lst_univ_onclick(\""+dataVisitUniv[i].univ_cd+"\");'>"+dataVisitUniv[i].univ_nm+"</a></li>";
+			}
+
+			strRow += "</ul>";
+
+			tbResultList.append(strRow);
+		}
+
+	}
+
+	/***********************************************************************
+	함수명 : fn_comDel_visitUniv
+	설 명   : 첨부파일 다운로드
+	인 자   : file_id : file_id 값
+	사용법 : fn_comDel_visitUniv(file_id)
+	 ***********************************************************************/
+	function fn_comDel_visitUniv(){
+		if(chkUniv.length > 0){
+			gfn_Submission_Call("/kcue/ast/eip/eis/inf/univinf/deleteVisitUnivCookie.do?chkUnivList="+chkUniv,$("#quick_frm").serialize(), function(data){
+				if(data != null){
+			        if (data.resultVO.resultCode == "SUCCESS")
+				    {
+			        	visti_univ_make(data);
+				    }else{
+				    	alert(data.resultVO.resultMessage);
+				    }
+				}
+			},'json');
+		}else{
+			alert("선택된 대학이 없습니다.");
+			return;
+		}
+	}
+
+	function fn_scroll_top(){
+		$("html").animate({scrollTop:0},200);
+	}
+
+	function btn_modifyQmenu_onclick(mnu_id, saveType){
+
+		if(saveType == "S" && mnu_id == ""){
+			alert("즐겨찾기 메뉴를 선택해 주세요.");
+			$("#add_qmenu").focus();
+			return;
+		}
+
+		if(saveType == "S" && $("#quick_qmenu > #myQuickIcon").get().length >= 4){
+			alert("더이상 추가 할 수 없습니다.");
+			$("#add_qmenu").focus();
+			return;
+		}
+
+		$("#save_type").val(saveType);
+		$("#mnu_id").val(mnu_id);
+
+		gfn_Submission_Call("/kcue/ast/eip/com/modifyBkmkMnu.do",$("#quick_frm").serialize(), function(data){
+			if(data != null){
+		        if (data.resultVO.resultCode == "SUCCESS")
+			    {
+		        	fn_make_bkmk(data, saveType);
+		        	gfn_setComSession("bkmkRef","Y");
+			    }else{
+			    	alert(data.resultVO.resultMessage);
+			    }
+			}
+		},'json');
+	}
+
+	function fn_make_bkmk(data, saveType){
+		var resultBkmk = data.bkmkList;
+		var strRow = "";
+		var strRow2 = "";
+		var strRow3 = '<option value="">- 선택 -</option>';
+		var cnt = 1;
+
+		var resultDiv = $("#quick_qmenu");
+		var resultDiv2 = $("#del_qmenu");
+		var resultDiv3 = $("#add_qmenu");
+
+		if(resultBkmk != null && resultBkmk != "null"){
+
+			for(var i = 0 ; i < resultBkmk.length ; i++){
+				if(gfn_null(resultBkmk[i].usr_id) != ""){
+					strRow += "";
+
+					strRow += '<div class="icons" id="myQuickIcon" ';
+
+					if(cnt == 4){
+						strRow += 'style="background: none;"';
+					}
+
+					strRow += ' >';
+					strRow += '	<div class="icons_left"><img src="/images/q_icon0'+cnt+'_new.png" alt="즐겨찾기아이콘'+cnt+'" /></div>';
+					strRow += '	<div class="icons_right"><a href="/PageLinkAll.do?link='+resultBkmk[i].conect_url+'&p_menu_id='+resultBkmk[i].mnu_id+'">'+resultBkmk[i].quick_nm+'</a></div>';
+					strRow += '</div>';
+
+					strRow2 += '<div class="qmenu_list" id="qmenu_list_'+resultBkmk[i].mnu_id+'">';
+					strRow2 += '	<div class="list_l">- '+resultBkmk[i].mnu_nm+'</div>';
+					strRow2 += '	<div  class="list_r"><a href="javascript:btn_modifyQmenu_onclick(\''+resultBkmk[i].mnu_id+'\', \'D\')"><img src="/images/deletion_bt.png" alt="삭제"></a></div>';
+					strRow2 += '</div>';
+
+					cnt++;
+				}else{
+					strRow3 += '<option value="'+resultBkmk[i].mnu_id+'">'+resultBkmk[i].mnu_nm+'</option>';
+				}
+			}
+		}
+
+
+		if(cnt == 1){
+			strRow += '	<div class="icons">';
+			strRow += '		<div class="icons_left"><img src="/images/q_icon01_new.png" alt="대학정보 아이콘" /></div>';
+			strRow += '		<div class="icons_right"><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/inf/univinf/eipUinfGnrl.do&p_menu_id=PG-EIP-01701">대학정보</a></div>';
+			strRow += '	</div>';
+		}
+		if(cnt == 1 || cnt == 2){
+			strRow += '<div class="icons">';
+			strRow += '	<div class="icons_left"><img src="/images/q_icon02_new.png" alt="학과정보 아이콘" /></div>';
+			strRow += '	<div class="icons_right"><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/inf/sjinf/eipSjinfGnrl.do&p_menu_id=PG-EIP-05101">학과정보</a></div>';
+			strRow += '</div>';
+		}
+		if(cnt < 4 && cnt > 0){
+			strRow += '<div class="icons">';
+			strRow += '	<div class="icons_left"><img src="/images/q_icon03_new.png" alt="전형정보 아이콘" /></div>';
+			strRow += '	<div class="icons_right"><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/inf/selctninf/EipSelctnInfGnrl.do&p_menu_id=PG-EIP-06001">전형정보</a></div>';
+			strRow += '</div>';
+		}
+		if(cnt < 5 && cnt > 0){
+			strRow += '<div class="icons" style="background:none;">';
+			strRow += '	<div class="icons_left"><img src="/images/q_icon04_new.png" alt="온라인대입상담 아이콘" /></div>';
+			strRow += '	<div class="icons_right"><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/cnslt/onlineunvent/EipOnlineUnivCnslt.do&p_menu_id=PG-EIP-09401">온라인<br/>대입상담</a></div>';
+			strRow += '</div>';
+		}
+
+		resultDiv.empty().append(strRow);
+
+		resultDiv2.html(strRow2);
+		resultDiv3.html(strRow3);
+
+	}
+
+    /***********************************************************************
+    함수명 : go_online_quick
+    설 명   : 온라인 대입상담 바로가기
+     ***********************************************************************/
+	function go_online_quick(){
+    	location.href = "/kcue/ast/eip/ocu/main/EipMain.do";
+	}
+
+    /***********************************************************************
+    함수명 : go_online_quick
+    설 명   : 대입정보 매거진 바로가기
+     ***********************************************************************/
+	function go_magazine_quick(){
+        location.href = "/PageLinkAll.do?link=/kcue/ast/eip/eis/inf/bbs/EipUnventInfMgznView.do&p_menu_id=PG-EIP-07801";
+    }
+
+	/***********************************************************************
+    함수명 : go_online_quick
+    설 명   : 졸업생 수상실적 관련 주요 안내사항 바로가기
+     ***********************************************************************/
+    function go_graduateNotice_quick(){
+        location.href = "/PageLinkAll.do?link=/kcue/ast/eip/eis/cstmr/notice/EipNoticeView.do&p_menu_id=PG-EIP-10901&sn=13698&rnum=9";
+    }
+
+</script>
+
+
+		<!-- Footer -->
+		<div id="footerWrap">
+        <!-- footer -->
+            <div id="footer">
+                <div class="f_con">
+                    <ul>
+                        <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/mbersvc/EipIndvdlinfoPolcyView.do&p_menu_id=PG-EIP-12701" title="개인정보처리방침" class="t_cr02" style="font-weight: bold;">개인정보처리방침</a></li>
+                        <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/mbersvc/EipUseStplatView.do&p_menu_id=PG-EIP-12801" title="이용약관">이용약관</a></li>
+                        <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/mbersvc/EipEmailWtrmsRecptnRejectView.do&p_menu_id=PG-EIP-13001" title="이메일주소 무단수집 거부">이메일주소 무단수집 거부</a></li>
+                        <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/mbersvc/EipCpyrhtPolicyView.do&p_menu_id=PG-EIP-12901" title="저작권정책">저작권정책</a></li>
+                        <li><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/cstmr/useinqry/addEipPropseReg.do&p_menu_id=PG-EIP-11701" title="제안 및 건의하기">제안 및 건의하기</a></li>
+                    </ul>
+                </div>
+								<div class="foot_copy">
+                 	<div id="copyright1">
+							 전화문의 : 010-4026-1885<br />
+                    	 Copyright 2022. KCUE all rights reserved.
+                 	</div>
+								</div>
+
+            </div>
+        <!-- footer -->
+
+
+</div>
+		<!-- // Footer -->
+	<!-- </div> -->
+	</div>
+</body>
+</html>

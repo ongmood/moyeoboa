@@ -2,7 +2,7 @@
 <html >
   <head>
     <meta charset="utf-8">
-    <title>검정고시 커뮤니티-성적-성적분석</title>
+    <title>검정고시 커뮤니티-검정고시-초졸</title>
     <style>
 	.marginauto {
 	    margin: 10px auto 20px;
@@ -14,6 +14,7 @@
   	<link rel="stylesheet" href="plus.css" />
     <link rel="stylesheet" href="검정고시.css"/>
     <link rel="stylesheet" href="대학,학과,전형.css"/>
+    <link rel="stylesheet" href="커뮤니티글쓰기.css"/>
   </head>
   <body>
     <div class="top_menu" id="topHeaderMenu">
@@ -63,7 +64,7 @@
       <ul id="gnb_ul">
 
           <li><a href="검정고시초졸.html" class="menu1">검정고시</a></li>
-          <li><a href="커뮤니티알림창.html" class="menu2">커뮤니티</a></li>
+          <li><a href="커뮤니티초졸.html" class="menu2">커뮤니티</a></li>
           <li><a href="대학,학과,전형.html" class="menu3">대학/학과/전형</a></li>
           <li><a href="성적분석.html" class="menu4">성적분석</a></li>
           <li><a href="대입정보.html" class="menu5">대입정보</a></li>
@@ -72,13 +73,13 @@
       </ul>
       <ul id="gnb_ul1">
     <div class="potal_search" id="myPgeSlide">
-    <a href="마이페이지.html" title="마이페이지"><img src="마이메뉴 이미지1.jpg"  width="40" alt="마이페이지"></a>
+    <a href="javascript:fn_mypgeVib_onclick()" title="마이페이지"><img src="마이메뉴 이미지1.jpg"  width="40" alt="마이페이지"></a>
     </div>
 
     <!-- gnb 통합검색 팝업 -->
 
 <!--         <form id="total_search" method="get" action="/kcue/ast/eip/eis/newsearch/totalSearch.do"> -->
-    <div class="bt_sc_open"><a href="검색.html" title="통합검색"><img src="통합검색 이미지1.jpg" width="40" alt="통합검색"/></a></div>
+    <div class="bt_sc_open"><a href="#" title="통합검색"><img src="통합검색 이미지1.jpg" width="40" alt="통합검색"/></a></div>
     <div id="sc_pop_wrap" style="display:none;">
         <p class="bt_sc_close"><a href="#" title="닫기"><img src="닫기 이미지.jpg" width="40" alt="닫기"/></a></p>
 
@@ -190,28 +191,56 @@
                 <div id="textup" style="position:absolute; top:0; left:0; width:600px;">
                   <div style="line-height:21px;">
 
+
+
+
+
+
+
                           <a href="#" tabindex="-1" title="대입정보포털 단계적 서비스 제공 안내" class="popup_content" >
                           대입정보포털 단계적 서비스 제공 안내
                           </a>
 
+
                               <br/>
+
+
+
+
+
 
 
                           <a href="#" tabindex="-1" title="2023학년도 수시 대학별 검정고시 성적산출 서비스 오픈" class="popup_content" >
                           2023학년도 수시 대학별 성적산출 서비스 오픈
                           </a>
 
+
                               <br/>
+
+
+
+
+
+
 
                           <a href="#" tabindex="-1" title="2023학년도 수시 대입정보포털 만족도조사" class="popup_content" >
                           2023학년도 수시 대입정보포털 만족도조사
                           </a>
 
+
+
                               <br/>
+
+
+
+
+
 
                           <a href="#" tabindex="-1" title="대학별 정보를 한눈에 볼 수 있는 대학알리미" class="popup_content" >
                           대학별 정보를 한눈에 볼 수 있는 대학알리미
                           </a>
+
+
 
                   </div>
                 </div>
@@ -230,14 +259,33 @@
               <!-- 팝업 배너 이미지 -->
               <div class="banner_img_wrap">
 
+
+
                           <div>
                           <ul>
+
+
+
+
+
+
 
                   <li>
                       <a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/cstmr/notice/EipNoticeView.do&p_menu_id=PG-EIP-10901&sn=15461&rnum=203" tabindex="-1" title="대입정보포털 단계적 서비스 제공 안내" onclick="go_hearderPop(this.href,'10','',''); return false;">
                       <img src="/common/downloadImage.do?fileId=00000000000000115424&fileSn=1&filePath=eip.fileStorePath" alt="대입정보포털 단계적 서비스 제공 안내" width="226" height="256"/>
                       </a>
                   </li>
+
+
+
+
+
+
+
+
+
+
+
 
 
                   <li>
@@ -247,17 +295,39 @@
                   </li>
 
 
+
+
+
+
+
+
+
+
+
+
+
                   <li>
                       <a href="https://ko.research.net/r/adigamain2022" tabindex="-1" title="2023학년도 수시 대입정보포털 만족도조사" onclick="go_hearderPop(this.href,'30','0','0'); return false;">
                       <img src="/common/downloadImage.do?fileId=00000000000000124405&fileSn=1&filePath=eip.fileStorePath" alt="2023학년도 수시 대입정보포털 만족도조사" width="226" height="256"/>
                       </a>
                   </li>
 
+
+
                           </ul>
                           </div>
 
+
+
+
+
+
                           <div>
                           <ul>
+
+
+
+
 
                   <li>
                       <a href="https://www.gumjung.co.kr/" tabindex="-1" title="검정고시 대입정보포털 검정고시로 대학어디가" onclick="go_hearderPop(this.href,'30','0','0'); return false;">
@@ -265,8 +335,13 @@
                       </a>
                   </li>
 
+
                           </ul>
                           </div>
+
+
+
+
 
               </div>
               <!-- //팝업 배너 이미지 -->
@@ -277,19 +352,19 @@
 <div id="hole">
   <!--왼쪽 메뉴-->
   <div class="left_menu" id="left_menu_gom">
-    <div class="left_menu_title">성적분석</div>
+    <div class="left_menu_title">검정고시</div>
     <ul id="left_menu_gom1">
 
       <li>
-        <a href="성적분석.html" class="cho">성적환산예시</a>
+        <a href="검정고시초졸.html" class="cho">초졸</a>
       </li>
 
       <li>
-        <a href="성적분석어디가.html">성적분석</a>
+        <a href="검정고시중졸.html">중졸</a>
       </li>
 
       <li>
-        <a href="대학,전형별.html">전형별</a>
+        <a href="검정고시고졸.html">고졸</a>
       </li>
 
     </ul>
@@ -303,24 +378,57 @@
 
   <!--본문제목-->
   <div id="gomgo">
-  <div class="gomcho_title"><h1>검정고시성적</h1></div>
-<!--스페셜메뉴-->
-
-<!--스페셜메뉴 끝-->
-
+  <div class="gomcho_title"><h1>초졸 커뮤니티</h1></div>
   <!--본문내용-->
-  <div class="gomcho_contents">
-    <div class="gomgo_h3"><li class="care">※검정고시 성적환산은 대학별로 상이하며 공개하지 않은 대학도 많습니다.</li></div>
-<h4 class="gomgo_h4">△성적환산 일부 예시<h4>
-  <h3 class="gomgo_h4h3">-삼육대<h3>
-    <img src="삼육대1.jpg" width="100%" alt="삼육대 성적환산">
-  <h3 class="gomgo_h4h3">-경북대<h3>
-    <img src="경북대1.jpg" width="100%" alt="경북대 성적환산">
-  <h3 class="gomgo_h4h3">-가천대<h3>
-    <img src="가천대1.jpg" width="100%" alt="가천대 성적환산">
-  <h3 class="gomgo_h4h3">-전남대<h3>
-    <img src="전남대1.jpg" width="100%" alt="전남대 성적환산">
+  <!--스페실메뉴-->
+<div class="SpecialMenu">
+  <ul class="menu_list">
+    <li class="item" id="cho-1">
+      <a href="커뮤니티초졸.html" class="link_special">전체글보기</a>
+    </li>
+    <li class="item">
+      <a href="https://cafe.naver.com/ArticleList.nhn?search.clubid=27496865&amp;search.boardtype=I&amp;search.specialmenutype=P" class="link_special">best글보기</a>
+    </li>
+    <li class="item">
+      <a href="https://cafe.naver.com/CafeTagCloudList.nhn?search.clubId=27496865" class="link_special">내가쓴글보기</a>
+    </li>
+  </ul>
+</div>
 
+<section class="container">
+  <div class="WritingWrap">
+    <div class="WritingHeader">
+      <h2 class="title">글쓰기</h2>
+    <div class="tool_area">
+      <a href="커뮤니티초졸.html" role="button" class="BaseButton BaseButton--skinGreen size_default">
+        <!---->
+        <span class="BaseButton__txt">등록</span>
+      </a>
+      </div>
+    </div>
+
+    <div class="WritingContent">
+      <div class="WritingEditor">
+          <div class="comtainer>
+          <form action="/post" method="post">
+            <div class="form-group">
+
+              <input type="text" class="form-control"
+               placeholder="제목을 입력해 주세요" name="title" required="required"/>
+
+            </div>
+            <div class="form-group">
+              <textarea rows="10" class="form-comtrol" placeholder="내용을 입력해 주세요" name="comtent" style="height: 380px;"></textarea>
+            </div>
+          </form>
+        </div>
+
+
+        </div>
+        </div>
+
+      </div>
+      </section>
 
 
 </div>

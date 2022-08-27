@@ -277,7 +277,7 @@ legend{ position: absolute; overflow: hidden; visibility: hidden; height: 0; fon
 
 
 
-#content_2{position:relative;margin:0 auto;width:1000px;}
+#content_2{position:relative;margin:0 auto;width:1000px;height: 270px;}
 .board_list{ width: 47%; height: 250px; float: left; margin-bottom: 30px; font-size: 13px; position: relative; }
 .board_list .btn_more{ position: absolute; top: 20px; right: 0; padding-left: 14px; background: url("../images/btn_plus.png") no-repeat left 2px; }
 .board_list .board_box li{ max-width:95%; background: url("../images/bullet_01.gif") no-repeat left center; padding: 12px 0 12px 8px; border-bottom: 1px solid #e9eeef; }
@@ -306,11 +306,11 @@ legend{ position: absolute; overflow: hidden; visibility: hidden; height: 0; fon
 .ellipsis2{ max-width: 93%; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; float: left; }
 
 /* tabmenu */
-.tabmenu { position: absolute; width: 220px; top: 62px; display:inline-block; color: #333; z-index: 50; }
+.tabmenu { position: absolute; width: 220px; top: 40px; display:inline-block; color: #333; z-index: 50; }
 .tabmenu li { padding:12px 0; font-size: 16px; text-align: center; line-height: 48px; }
 .tabmenu a { color:#fff; padding:16px 43px; }
 .tabmenu li.on { font-weight:bold; padding:12px 0; }
-.tabmenu li.on a { color:#333; padding:16px 43px; font-size: 16px; letter-spacing: -1px; }
+.tabmenu li.on a { color:#778899; padding:16px 43px; font-size: 16px; letter-spacing: -1px; }
 .tabmenu li.tab05 { line-height:1.2; }
 .tabmenu li.tab05 a { display:block; padding:5px 0; font-size: 16px; letter-spacing: -3px; }
 
@@ -443,12 +443,21 @@ legend{ position: absolute; overflow: hidden; visibility: hidden; height: 0; fon
 .board_list_new02 .new_list .type{color: #1B7F98; margin-right: 3px; font-size:14px; font-weight:bold;}
 
 /* 풋터 */
-#footerWrap{width:100%;min-width:1000px;background:#fafafa;border-top:1px solid #c3c6ca; padding-bottom:20px;}
-#footer{position:relative;margin:0 auto;width:1000px;height:120px; }
+
+#footerWrap{
+  width:100%;
+  height: 50px;
+  min-width:1000px;
+  background:#fafafa;
+  border-top:1px solid #c3c6ca;
+  padding-bottom:20px;
+}
+
+#footer{position:relative;bottom:0; margin:0 auto;width:1000px;height:50px; }
 
 
 #footer .f_con{position:relative;float:left;width:1000px;margin-left:0px; left:0; }
-#footer .f_con ul{display:inline-block;margin-top:20px}
+#footer .f_con ul{display:inline-block;margin-top:20px;}
 #footer .f_con ul li{float: left; padding: 0 19px; text-align: center; border-left: 1px solid #ddd; }
 #footer .f_con ul li:first-child{padding-left:0; border-left:none;}
 #footer .f_con ul li:last-child{padding-right:30px}
@@ -458,7 +467,27 @@ legend{ position: absolute; overflow: hidden; visibility: hidden; height: 0; fon
 #footer select{font-size:13px;color:#58595b; height:23px;}
 .pgemove{margin-top:1px;}
 
-#copyright1{ width:280px; font:11px sans-serif;color:#666; opacity: 0.6; text-align: right; position: absolute; right: 0;}
+#footer .foot_copy {
+
+  margin:0;
+  width:100%;
+  clear:both;
+  left:0;
+  top:20px;
+  bottom:-20px;
+}
+#footer .foot_copy2 { position:absolute; margin:0; width:400px; clear:both; left:500px; top:57px; bottom:-20px;}
+.f_logo{ position:relative; float:left;width:200px;}
+#copyright1{
+  padding-bottom: 20px;
+  width:280px;
+  font:11px sans-serif;
+  color:#666;
+  opacity: 0.6;
+  text-align: right;
+  position: absolute;
+  right: 10px;
+}
 
 
  .content_box {
@@ -524,3 +553,10 @@ p {
 }
 
   .tts { position:absolute; width:0; height:0; font-size:0; line-height:0; overflow:hidden; visibility:hidden;}
+
+.menu1:hover #gnb_view{
+  display:block;
+}
+.menu1:hover .tts{
+  color:
+}

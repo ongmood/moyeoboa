@@ -102,3 +102,19 @@
   border-right: 0.1px solid #b3b3b3;
   line-height: 25px;
   }
+  .tabmenu{
+    margin-bottom: 20px;
+    font-size: 16px;
+    letter-spacing: -1px;
+  }
+  .tabmenu li a:hover{
+    color:#778899;
+    font-weight: bold;
+  }
+
+.tabmenu .cho3 {
+   color:#778899;
+   padding:16px 43px;
+   font-size: 16px;
+   letter-spacing: -1px;
+}
