@@ -12,6 +12,17 @@
 
 	</style>
 	<script type="text/javascript">
+		var bigPic=document.querySelector("#big");
+		var small=document.querySelector("#small");
+
+		for(var i =0; i <smallPics.length; i++){
+			smallPics[i].addEventListener("click", changepic);
+		}
+
+		function changepic(){
+			var smallPicAttribute=this.getAttribute("src");
+			bigPic.setAttribute("src", smallPicAttribute);
+		}
 	</script>
 
 	<meta property="og:type" content="website" />
@@ -58,7 +69,7 @@
 	.skipContent span{display:inline-block;padding:2px 6px 0 0;color:#fff;letter-spacing:-1px;font-size:13px;line-height:26px}
 	</style>
 
-	<script type="text/javascript" src="/js/jquery-1.11.3.min.js"></script>
+	<script src="jquery-3.6.1.min.js"></script>
 
 
 </head>
@@ -357,9 +368,9 @@
         </div>
         <div class="slide_btn_wrap">
 
-            <p class="btn_close">
+            <span class="btn_close">
                 <a href="#" id="btn_top_popup" title="팝업 열기"><img src="더보기 이미지.jpg" width="30" alt="팝업 열기 버튼"></a>
-            </p>
+            </span>
 
         </div><!--//slide_btn_wrap-->
         <div id="pop_top_banner" style="display: none;" >
@@ -533,349 +544,57 @@
                 <div class="main_box_wrap">
                     <div class="tab_menu_wrap">
                         <ul class="tabmenu">
-                            <li class="tab01 on"><a href="#" class="cho3">커뮤니티</a></li>
-                            <li class="tab02"><a href="#">대학·학과·전형</a></li>
-                            <li class="tab03"><a href="#">성적분석</a></li>
-                            <li class="tab04"><a href="#">진로정보</a></li>
-                            <li class="tab05"><a href="#">표준 공통원서<br>접수가이드</a></li>
+													<ul class="list">
+                            <li class="tab01 on"><a href="표지검고.png" data-n="01" class="cho3">검정고시</a></li>
+                            <li class="tab02"><a href="표지커뮤니티.png" data-n="02">커뮤니티</a></li>
+                            <li class="tab03"><a href="표지대학.png" data-n="03">대학,학과,전형</a></li>
+                            <li class="tab04"><a href="표지성적.png" data-n="04">성적분석</a></li>
+                            <li class="tab05"><a href="표지대입정보.png" data-n="05">대입정보</a></li>
+													</ul>
                         </ul>
                     </div>
+
                     <div class="list_div">
 	                	<form id="newsFrm" name="newsFrm" action="/EgovPageLink.do?link=EipMain" method="post" onsubmit="return false;">
 	                    <input type="hidden" name="sel_se" value="%"/>
 	                    <input type="hidden" name="sel_rcrit_sch_year" value="%"/>
 	                    </form>
 
-											<div class="tab_4 main_bn04_wrap" id="tab4div">
-													<div class="main_content04">
+											<div class="tab_1 main_bn01_wrap" style="display: block;"  id="tab1div">
+													<form name="occpFrm" id="occpFrm" method="post" onsubmit="return false">
+														<input type="hidden" name="main_searchAt" id="main_searchAt"/>
+														<input type="hidden" name="main_searchKeyword" id="main_searchKeyword"/>
+														<input type="hidden" name="main_optionAvg" id="main_optionAvg"/>
+														<input type="hidden" name="main_optionProspect" id="main_optionProspect"/>
+													</form>
+													<div class="main_content01">
 															<div class="content_box">
-																<div class="customer_box">
-																	<ul>
-																					<li class="cu01">
-																							<a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/cnslt/EipCnsltTelCnslt.do&p_menu_id=PG-EIP-10301" style="padding:0px;" title="초졸검정고시">초졸검정고시</a></li>
-
-																					<li class="cu02"><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/cnslt/onlineunvent/EipOnlineUnivCnslt.do&p_menu_id=PG-EIP-09401" title="중졸검정고시">중졸검정고시</a></li>
-																			</ul>
-																			<ul>
-																					<li class="cu03"><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/cnslt/onlinemajor/EipOnlineMajorCnsltMain.do&p_menu_id=PG-EIP-09801" title="고졸검정고시">고졸검정고시</a></li>
-																					<li class="cu04"><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/cnslt/example/eipUniventCnsltCase.do&p_menu_id=PG-EIP-10401" title="자주하는질문">자주하는질문</a></li>
-																			</ul>
-																</div>
+																<p><img src="표지대학.png" width="100%" id="po" alt="검고표지" onclick="location.href='검정고시초졸.html'"/></p>
 															</div>
 													</div>
 											</div>
 
-                        <div class="tab_1 main_bn01_wrap" style="display: block;"  id="tab1div">
-                           	<form name="occpFrm" id="occpFrm" method="post" onsubmit="return false">
-                           		<input type="hidden" name="main_searchAt" id="main_searchAt"/>
-                           		<input type="hidden" name="main_searchKeyword" id="main_searchKeyword"/>
-                           		<input type="hidden" name="main_optionAvg" id="main_optionAvg"/>
-                           		<input type="hidden" name="main_optionProspect" id="main_optionProspect"/>
-                           	</form>
-                            <div class="main_content01">
-                                <div class="content_box">
-                                    <h3><span class="or">내 꿈에 더 가까운 직업정보</span>를 확인하세요!</h3>
-                                    <div class="main_searchbox">
-                                         <fieldset>
-                                             <legend>키워드 검색박스</legend>
-                                             <!-- 조건별 검색 -->
-                                             <div class="search_keyword">
-                                                 <div class="type_btn" id="occp_rdo_chg">
-                                                     <input type="radio" name="occp_keyword" id="keyword_radio" title="키워드별" value="키워드별" checked>
-                                                     <label for="keyword_radio">키워드별</label>
-                                                     <input type="radio" name="occp_keyword" id="terms_radio" title="조건별" value="조건별">
-                                                     <label for="terms_radio">조건별</label>
-                                                 </div>
-                                                 <div class="type_box" id="occp_searchBox">
-
-                                                     <a href="javascript:fn_occp_search()" class="btn_search"><img src="통합검색 이미지.jpg" width="30" alt="검색하기" title="검색하기"></a>
-                                                     <div class="keyword_box_wrap">
-                                                         <div class="keyword_box">
-
-															<input type="text" id="occp_searchKeyword" name="occp_searchKeyword" placeholder="키워드를 입력해주세요" title="키워드를 입력해주세요" onkeypress="if(event.keyCode==13){fn_occp_search();}" style="ime-mode:active"/>
-                                                         </div>
-                                                     </div>
-
-                                                     <div class="select_box_wrap" style="display: none;">
-                                                         <ul class="select_box">
-                                                             <li>
-                                                                 <select class="pay" name="occp_optionAvg" id="occp_optionAvg" title="평균연봉을 선택해주세요">
-                                                                     <option value="" disabled selected >평균연봉</option>
-                                                                     <option value="">선택안함</option>
-                                                                     <option value="1">3,000만원 미만</option>
-                                                                     <option value="2">3,000~4,000만원 미만</option>
-                                                                     <option value="3">4,000~5,000만원 미만</option>
-                                                                     <option value="4">5,000만원 이상</option>
-                                                                 </select>
-                                                             </li>
-                                                             <li>
-                                                                 <select class="vision" name="occp_optionProspect" id="occp_optionProspect" title="직업전망을 선택해주세요">
-                                                                     <option value="" disabled selected >직업전망</option>
-                                                                     <option value="">선택안함</option>
-                                                                     <option value="74.2">매우밝음 (상위10%이상)</option>
-                                                                     <option value="63.3">밝음 (상위20%이상)</option>
-                                                                     <option value="40.0">보통 (중간이상)</option>
-                                                                     <option value="60.0">전망안좋음 (감소예상직업)</option>
-                                                                 </select>
-                                                             </li>
-                                                         </ul>
-                                                     </div>
-
-                                                 </div>
-                                             </div>
-                                             <!-- //조건별 검색 -->
-                                         </fieldset>
-                                    </div>
-                                    <ul class="main_con01_bn">
-                                        <li onclick="location.href='/PageLinkAll.do?link=/kcue/ast/eip/eis/inf/coseinf/EipCoseInfOccpCl.do&p_menu_id=PG-EIP-05501';">
-                                        	<a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/inf/coseinf/EipCoseInfOccpCl.do&p_menu_id=PG-EIP-05501" title="한국의 모든 직업분류">
-	                                            <span class="tt">직업분류</span>
-	                                            <span class="con">국내 모든 직업을 분야별로 분류,<br>직업에 대한 상세한 정보를 제공합니다.</span>
-                                            </a>
-                                        </li>
-                                        <li onclick="location.href='/PageLinkAll.do?link=/kcue/ast/eip/eis/cnslt/prsec/EipCoseAptdPrsec.do&p_menu_id=PG-EIP-10701';">
-                                        	<a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/cnslt/prsec/EipCoseAptdPrsec.do&p_menu_id=PG-EIP-10701" title="직업심리검사">
-	                                            <span class="tt">직업심리검사</span>
-	                                            <span class="con">심리적인 특성들이 각 직업에서 요구하는 능력수준 및 특성에 얼마나 적합한지를 측정합니다.</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab_2 main_bn02_wrap" id="tab2div">
-                            <div class="main_content02">
-                                <div class="content_box">
-                                    <h3 class="t"><span class="gr">검정고시 대학입학정보</span> <span class="or">,꿈을 향한 첫걸음을 위해 비교 분석</span>할 수 있도록 도와드립니다.</h3>
-                                    <div class="main_searchbox">
-                                        <ul class="tabmenu_uvType">
-                                            <li class="uv_tab01 on"><a href="#">일반대학</a></li>
-                                            <li class="uv_tab02"><a href="#">전문대학</a></li>
-                                        </ul>
-                                        <!--//tabmenu-->
-                                        <div class="list_div_uv">
-											<form method="post" id="univListFrm" name="univListFrm" onsubmit="return false;">
-											<input type="hidden" name="main_search_at" id="main_search_at" value="Y">
-                                            <div class="tab_uv1">
-                                            	<div class="search_keyword">
-                                                    <div class="type_btn">
-                                                        <input type="radio" name="keyword" id="search_radio1" value="chs_univ_nm" onclick='fn_chsNm_onclick(this);' title="대학정보" checked>
-                                                        <label for="search_radio1">대학정보</label>
-                                                        <input type="radio" name="keyword" id="search_radio2" value="chs_sers_nm" onclick='fn_chsNm_onclick(this);' title="학과정보">
-                                                        <label for="search_radio2">학과정보</label>
-                                                        <input type="radio" name="keyword" id="search_radio3" value="chs_rcrr_nm" onclick='fn_chsNm_onclick(this);' title="전형정보">
-                                                        <label for="search_radio3">전형정보</label>
-                                                    </div>
-                                                    <div class="type_box">
-                                                    	<a href="javascript:fn_grnlInfKeyword_search()" class="btn_search"><img src="/images/re_icon/icon_search2.gif" alt="검색하기" title="검색하기"></a>
-<!--                                                         <a href="javascript:fn_grnlInfKeyword_search()" class="btn_search"><img src="/images/re_icon/icon_search2.gif" alt="검색하기"></a> -->
-													 	<div class="keyword_box">
-                                                         	<label for="gnrlKeyword" class="tts">대학명을 입력해주세요</label>
-													 		<input type="text" name="gnrlKeyword" id="grnInfkeyword" placeholder="대학명을 입력해주세요." title="대학명을 입력해주세요" onkeypress="if(event.keyCode==13){fn_grnlInfKeyword_search();}" style="ime-mode:active">
-												 		</div>
-                                                    </div>
-                                                </div>
-                                                <div class="type_select_box">
-                                                    <table class="main_type_select">
-                                                        <caption>검색 조건 체크목록</caption>
-                                                        <colgroup>
-                                                            <col style="width:80px;">
-                                                            <col />
-                                                        </colgroup>
-                                                        <tbody>
-                                                            <tr id="rcrr_select_list" style="display:none;">
-                                                                <th scope="row"><span>모집시기</span></th>
-                                                                <td>
-                                                                    <input type="radio" name="time" id="time01"><label for="time01">수시</label>
-                                                                    <input type="radio" name="time" id="time02"><label for="time02">정시(전체)</label>
-                                                                    <input type="radio" name="time" id="time03"><label for="time03">정시(가)</label>
-                                                                    <input type="radio" name="time" id="time04"><label for="time04">정시(나)</label>
-                                                                    <input type="radio" name="time" id="time05"><label for="time05">정시(다)</label>
-                                                                    <input type="radio" name="time" id="time06"><label for="time06">추가</label>
-                                                                </td>
-                                                            </tr>
-                                                            <tr id="sers_select_list" style="display:none;">
-                                                                <th scope="row"><span>학과계열</span></th>
-                                                                <td>
-                                                                    <input type="radio" name="department" id="department01"><label for="department01">인문사회</label>
-                                                                    <input type="radio" name="department" id="department02"><label for="department02">자연과학</label>
-                                                                    <input type="radio" name="department" id="department03"><label for="department03">예체능</label>
-                                                                    <input type="radio" name="department" id="department04"><label for="department04">공학</label>
-                                                                    <input type="radio" name="department" id="department05"><label for="department05">의학</label>
-                                                                </td>
-                                                            </tr>
-                                                            <tr id="area_select_list">
-                                                                <th scope="row"><span>지&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;역</span></th>
-                                                                <td>
-                                                                    <p>
-                                                                        <input type="checkbox" name="area" id="area01"><label for="area01">전체</label>
-                                                                        <input type="checkbox" name="area" id="area02"><label for="area02">강원</label>
-                                                                        <input type="checkbox" name="area" id="area03"><label for="area03">경기</label>
-                                                                        <input type="checkbox" name="area" id="area04"><label for="area04">경남</label>
-                                                                        <input type="checkbox" name="area" id="area05"><label for="area05">경북</label>
-                                                                        <input type="checkbox" name="area" id="area06"><label for="area06">광주</label>
-                                                                        <input type="checkbox" name="area" id="area07"><label for="area07">대구</label>
-                                                                        <input type="checkbox" name="area" id="area08"><label for="area08">대전</label>
-                                                                        <input type="checkbox" name="area" id="area09"><label for="area09">부산</label>
-                                                                    </p>
-                                                                    <p>
-                                                                        <input type="checkbox" name="area" id="area10"><label for="area10">서울</label>
-                                                                        <input type="checkbox" name="area" id="area11"><label for="area11">세종</label>
-                                                                        <input type="checkbox" name="area" id="area12"><label for="area12">울산</label>
-                                                                        <input type="checkbox" name="area" id="area13"><label for="area13">인천</label>
-                                                                        <input type="checkbox" name="area" id="area14"><label for="area14">전남</label>
-                                                                        <input type="checkbox" name="area" id="area15"><label for="area15">전북</label>
-                                                                        <input type="checkbox" name="area" id="area16"><label for="area16">제주</label>
-                                                                        <input type="checkbox" name="area" id="area17"><label for="area17">충남</label>
-                                                                        <input type="checkbox" name="area" id="area18"><label for="area18">충북</label>
-                                                                    </p>
-                                                                </td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-
-                                                </div>
-
-                                            </div>
-                                           	</form>
-                                           	<form method="post" id="jncllListFirm" name="jncllListFirm" onsubmit="return false;">
-											<input type="hidden" name="main_search_at" id="main_search_at" value="Y">
-                                            <div class="tab_uv2">
-                                            	<div class="search_keyword">
-                                                    <div class="type_btn">
-                                                        <input type="radio" name="keyword2" id="search_radio4" value="chs_univ_nm2" onclick='fn_chsNm_onclick(this);' title="대학정보" checked>
-                                                        <label for="search_radio4">대학정보</label>
-                                                        <input type="radio" name="keyword2" id="search_radio5" value="chs_sers_nm2" onclick='fn_chsNm_onclick(this);' title="학과정보">
-                                                        <label for="search_radio5">학과정보</label>
-                                                        <input type="radio" name="keyword2" id="search_radio6" value="chs_rcrr_nm2" onclick='fn_chsNm_onclick(this);' title="전형정보">
-                                                        <label for="search_radio6">전형정보</label>
-                                                    </div>
-                                                    <div class="type_box">
-                                                    	<a href="javascript:fn_grnlInfKeyword_search()" class="btn_search"><img src="/images/re_icon/icon_search2.gif" alt="검색하기" title="검색하기"></a>
-<!--                                                      	<a href="javascript:fn_grnlInfKeyword_search()" class="btn_search"><img src="/images/re_icon/icon_search2.gif" alt="검색하기"></a> -->
-													 	<div class="keyword_box">
-                                                         	<label for="jncllInfkeyword" class="tts">대학명을 입력해주세요</label>
-													 		<input type="text" name="jncllKeyword" id="jncllInfkeyword" placeholder="대학명을 입력해주세요." title="대학명을 입력해주세요" onkeypress="if(event.keyCode==13){fn_grnlInfKeyword_search();}"  style="ime-mode:active"/>
-												 		</div>
-                                                    </div>
-                                                </div>
-                                                <div class="type_select_box">
-                                                    <table class="main_type_select">
-                                                        <caption>검색 조건 체크목록</caption>
-                                                        <colgroup>
-                                                            <col style="width:80px;">
-                                                            <col />
-                                                        </colgroup>
-                                                        <tbody>
-                                                            <tr id="rcrr_select_list2" style="display:none;">
-                                                                <th scope="row"><span>모집시기</span></th>
-                                                                <td>
-                                                                    <input type="radio" name="time" id="time07"><label for="time07">수시</label>
-                                                                    <input type="radio" name="time" id="time08"><label for="time08">정시</label>
-                                                                </td>
-                                                            </tr>
-                                                            <tr id="sers_select_list2" style="display:none;">
-                                                                <th scope="row"><span>학과계열</span></th>
-                                                                <td>
-                                                                    <input type="radio" name="department" id="department06"><label for="department06">인문사회</label>
-                                                                    <input type="radio" name="department" id="department07"><label for="department07">자연과학</label>
-                                                                    <input type="radio" name="department" id="department08"><label for="department08">예체능</label>
-                                                                    <input type="radio" name="department" id="department09"><label for="department09">공학</label>
-                                                                </td>
-                                                            </tr>
-                                                            <tr id="area_select_list2">
-                                                                <th scope="row"><span>지&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;역</span></th>
-                                                                <td>
-                                                                    <p>
-                                                                        <input type="checkbox" name="area" id="area21"><label for="area21">전체</label>
-                                                                        <input type="checkbox" name="area" id="area22"><label for="area22">강원</label>
-                                                                        <input type="checkbox" name="area" id="area23"><label for="area23">경기</label>
-                                                                        <input type="checkbox" name="area" id="area24"><label for="area24">경남</label>
-                                                                        <input type="checkbox" name="area" id="area25"><label for="area25">경북</label>
-                                                                        <input type="checkbox" name="area" id="area26"><label for="area26">광주</label>
-                                                                        <input type="checkbox" name="area" id="area27"><label for="area27">대구</label>
-                                                                        <input type="checkbox" name="area" id="area28"><label for="area28">대전</label>
-                                                                        <input type="checkbox" name="area" id="area29"><label for="area29">부산</label>
-                                                                    </p>
-                                                                    <p>
-                                                                        <input type="checkbox" name="area" id="area30"><label for="area30">서울</label>
-                                                                        <input type="checkbox" name="area" id="area31"><label for="area31">세종</label>
-                                                                        <input type="checkbox" name="area" id="area32"><label for="area32">울산</label>
-                                                                        <input type="checkbox" name="area" id="area33"><label for="area33">인천</label>
-                                                                        <input type="checkbox" name="area" id="area34"><label for="area34">전남</label>
-                                                                        <input type="checkbox" name="area" id="area35"><label for="area35">전북</label>
-                                                                        <input type="checkbox" name="area" id="area36"><label for="area36">제주</label>
-                                                                        <input type="checkbox" name="area" id="area37"><label for="area37">충남</label>
-                                                                        <input type="checkbox" name="area" id="area38"><label for="area38">충북</label>
-                                                                    </p>
-                                                                </td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-
-                                                </div>
-
-                                            </div>
-                                            </form>
-                                        </div>
-                                    </div>
-                                    <!-- main_searchbox -->
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab_3 main_bn03_wrap" id="tab3div">
-                            <div class="main_content03">
-                                <div class="content_box">
-                                	<h3 class="th"><span class="gr">검정고시, 수능/모의고사 성적</span>을 <span class="or">원하는 전형조건</span>으로 분석해 드립니다.</h3>
-                                	<div class="step_box_wrap">
-                                		<ul class="step_box">
-                                			<li><span class="tt_step">Step 1</span></li>
-                                			<li>검정고시/수능/모의고사</li>
-                                			<li class="tt">성적선택</li>
-                                			<li class="img"><img src="/images/re_icon/icon_step_img01.gif" alt="성적선택"></li>
-                                			<li class="bt_btn">
-                                				<p class="mT16"><a href="/PageLinkAll.do?link=/kcue/ast/eip/cun/mng/sgc/ConStdptScrMngSimplReg.do?linkParamDefaultField=1&p_menu_id=PG-CON-00201" title="학생부 성적입력" class="btn_step">학생부 성적입력</a></p>
-                                				<p><a href="/PageLinkAll.do?link=/kcue/ast/eip/cun/mng/csat/ConCsatScrMng.do&p_menu_id=PG-CON-00501" title="수능/모의 성적입력" class="btn_step">수능/모의 성적입력</a></p>
-                                			</li>
-                                		</ul>
-                                		<ul class="step_box">
-                                			<li><span class="tt_step">Step 2</span></li>
-                                			<li>분석하고 싶은</li>
-                                			<li class="tt">대학/학과/전형 선택</li>
-                                			<li class="img"><img src="/images/re_icon/icon_step_img02.gif" alt="대학/학과/전형 선택"></li>
-                                			<li class="bt_btn">
-                                				<p><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/inf/univinf/eipUinfGnrl.do&p_menu_id=PG-EIP-01701" title="대학검색" class="btn_step">대학검색</a></p>
-                                				<p><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/inf/sjinf/eipSjinfGnrl.do&p_menu_id=PG-EIP-05101" title="학과검색" class="btn_step">학과검색</a></p>
-                                				<p><a href="/PageLinkAll.do?link=/kcue/ast/eip/eis/inf/selctninf/EipSelctnInfGnrl.do&p_menu_id=PG-EIP-06001" title="전형검색" class="btn_step">전형검색</a></p>
-                                			</li>
-                                		</ul>
-                                		<ul class="step_box">
-                                			<li><span class="tt_step">Step 3</span></li>
-                                			<li>성적 분석</li>
-                                			<li class="tt">결과 확인</li>
-                                			<li class="img"><img src="/images/re_icon/icon_step_img03.gif" alt="결과 확인"></li>
-                                			<li class="bt_btn">
-                                				<p class="mT16"><a href="/PageLinkAll.do?link=/kcue/ast/eip/cun/ssa/sgc/ConStdptScrAnalsMain.do&p_menu_id=PG-CON-00901" title="성적분석 결과확인" class="btn_step">성적분석 결과확인</a></p>
-                                				<p><a href="/PageLinkAll.do?link=/kcue/ast/eip/cou/ssa/atrcr/CouAtrcrScrComputList.do&p_menu_id=PG-CON-01401" title="대학별 내점수확인" class="btn_step">대학별 내점수확인</a></p>
-                                			</li>
-                                		</ul>
-                                	</div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="tab_6 main_bn05_wrap" id="tab5div">
-                            <div class="main_content06">
-                                <div class="content_box con05_bg">
-									<div class="mv-box">
-										<iframe title ="표준공통원서 접수가이드" width="645" height="363" src="https://www.youtube.com/embed/oT_LqRWdDvQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-									</div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
+								<script>
+									$(function(){
+
+										$('.list li a').click(function(){
+
+											var img_src=$(this).attr('href')
+
+											var art_txt=$(this).text()
+
+											$('p img').attr('src',img_src)
+
+											$('p img').attr('alt',art_txt)
+
+											return false;
+										})
+									})
+								</script>
+
+
                 <!-- main_box_wrap -->
                 <div class="main_m_banner_new">
                     <ul class="m_bn_list_new">
@@ -918,14 +637,12 @@
                 <!-- 하단 게시판 -->
 				<!--대입정보센터-->
                 <div class="board_list_new0807" id="unvent_div_grp">
-					<p class="board_list_all">
+					<div class="board_list_all">
 						<span class="title">검고가능대학</span>
 						<input type="hidden" name="unvent_ctgry" id="unvent_ctgry">
 						<span class="more"><a href="대학,학과,전형.html" title="더보기"><img src="더보기옆.jpg" width="20" alt="더보기"></a></span>
-						<span class="se_on" id="unvent_div_all"><a href="javascript:tab_sel('unvent_div','all')">전체</a></span>
-						<span class="se_line">l</span>
-						<span class="se_off" id="unvent_div_intrst"><a href="javascript:tab_sel('unvent_div','intrst')">관심</a></span>
-					</p>
+						<span class="se_on" id="unvent_div_all"><a href="대학,학과,전형.html">전체</a></span>
+					</div>
 					<div id="unvent_div">
 						<div class="list_all">
 							<div class="list_left">
@@ -972,21 +689,44 @@
 				<!--//대입정보센터-->
 				<!--대입소식-->
 				<div class="board_list_new020807" id="news_div_grp">
-					<p class="board_list_all">
+					<div class="board_list_all">
 						<span class="title">검고소식</span>
 						<input type="hidden" name="news_ctgry" id="news_ctgry">
 						<span class="more"><a href="검고소식.html" title="더보기"><img src="더보기옆.jpg" width="20" alt="더보기"></a></span>
-						<span class="se_on" id="news_div_all"><a href="javascript:tab_sel('news_div','all')">전체</a></span>
-						<span class="se_line">l</span>
-						<span class="se_off" id="news_div_news"><a href="javascript:tab_sel('news_div','news')">뉴스</a></span>
-						<span class="se_line">l</span>
-						<span class="se_off" id="news_div_recsroom"><a href="javascript:tab_sel('news_div','recsroom')">자료</a></span>
-					</p>
-					<!--대입소식 리스트-->
-					<div id="news_div">
+						<span class="se_on" id="news_div_all"><a href="검고소식.html">전체</a></span>
+
+						<div class="list_all">
 					</div>
-					<!--//대입소식 리스트-->
+					<!--검고소식 리스트-->
+					<div class="new_list">
+						<span class="type">[검고소식]</span>
+						<img src="new.png" width="15px" alt="new" class="new">
+						<span class="text">
+						<a href="검고소식3.html">검정고시 출신자 수능 원서내는 법</a>
+						</span>
+					</div>
+
+					<div class="new_list">
+						<span class="type">[검고소식]</span>
+						<img src="new.png" width="15px" alt="new" class="new">
+						<span class="text">
+						<a href="검고소식2.html">2022검고2차 시행 답안지 발표</a>
+						</span>
+					</div>
+
+					<div id="news_div">
+						<div class="new_list">
+							<span class="type">[검고소식]</span>
+							<span class="text">
+								<a href="검고소식1.html">학교밖 청소년 커뮤니티 모여봐 개설</a>
+							</span>
+						</div>
+
+
+					</div>
 				</div>
+					<!--//검고소식 리스트-->
+			</div>
 				<!--//대입소식-->
 
                 <!-- //하단 게시판 -->
@@ -1011,7 +751,7 @@
 								<div class="foot_copy">
                  	<div id="copyright1">
 							 전화문의 : 010-4026-1885<br />
-                    	 제작일 2022. 08. 25
+                    	홈페이지 등록일 2022. 08. 22
                  	</div>
 								</div>
 

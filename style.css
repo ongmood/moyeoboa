@@ -128,7 +128,7 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
  .main_box_wrap { width: 100%; min-width:1000px;/* height: 445px; */ }
  .tab_menu_wrap{ position: relative; width: 1000px; margin: 10px auto; }
 
-.main_bn01_wrap {background: #4ac2c6 url('배경이미지4.PNG') no-repeat center top; height: 445px;}
+.main_bn01_wrap {background: #4ac2c6 url('배경-2.PNG') no-repeat center top; height: 445px;}
 .main_bn02_wrap{ background: #ed714f url('배경이미지1.PNG') no-repeat center top; height: 445px; }
 .main_bn03_wrap{ background: #3e5375 url('배경이미지2.PNG') no-repeat center top; height: 445px; }
 .main_bn04_wrap{ background: #f7b442 url('배경이미지.PNG') no-repeat center top; height: 445px; }
@@ -139,6 +139,8 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 .main_content04{ position: relative; width: 1000px; height: 445px; margin: 0 auto; background: url('../images/re_icon/bg_box04.png') no-repeat; }
 .main_content05{ position: relative; width: 1000px; height: 445px; margin: 0 auto; background: url('../images/re_icon/bg_box05_rm_all.png') no-repeat; }
 .main_content06{ position: relative; width: 1000px; height: 445px; margin: 0 auto; background: url('../images/re_icon/bg_box05.png') no-repeat; } /*210203 추가*/
+
+
 
 .content_box{ position: absolute; width: 662px; height: 326px; right: 0; padding: 50px 80px; }
 .content_box h3{ text-align: center; letter-spacing: -3px; font-size: 20px; padding: 20px 0; background: url('../images/re_icon/txt_po01.gif') no-repeat 178px 10px; }
@@ -310,9 +312,11 @@ legend{ position: absolute; overflow: hidden; visibility: hidden; height: 0; fon
 .tabmenu li { padding:12px 0; font-size: 16px; text-align: center; line-height: 48px; }
 .tabmenu a { color:#fff; padding:16px 43px; }
 .tabmenu li.on { font-weight:bold; padding:12px 0; }
-.tabmenu li.on a { color:#778899; padding:16px 43px; font-size: 16px; letter-spacing: -1px; }
+.tabmenu li.on a { height: 147px; color: deepskyblue; padding:16px 43px; font-size: 16px; letter-spacing: -1px; background: url(왼쪽검고1.png) no-repeat center top; background-size: cover;}
 .tabmenu li.tab05 { line-height:1.2; }
 .tabmenu li.tab05 a { display:block; padding:5px 0; font-size: 16px; letter-spacing: -3px; }
+
+/*deepskyblue*/
 
 
 .tabmenu1 { width: 100%; border-bottom: 1px solid #ddd; display:inline-block; color: #333; margin: 10px 0 5px 0; }
@@ -365,9 +369,9 @@ legend{ position: absolute; overflow: hidden; visibility: hidden; height: 0; fon
 .board_list_new0807 .board_list_all {border-bottom:1px solid #dddddd; height:35px;}
 .board_list_new0807 .board_list_all span{display: inline-block;}
 .board_list_new0807 .title{width:100px; color: #333; font-size: 16px; font-weight:bold; }
-.board_list_new0807 .more{width:270px;}
+.board_list_new0807 .more{width:330px;}
 .board_list_new0807 .more img{vertical-align:middle; padding-bottom: 7px;}
-.board_list_new0807 .se_on{width:30px; color:#16a1a9; font-weight:bold; border-bottom: 2px solid #16a1a9;  background: url(../images/grade_dot_new.png) no-repeat 11px 0px;  height: 23px;  padding-top: 10px;}
+.board_list_new0807 .se_on{width:30px; color:#16a1a9; font-weight:bold; border-bottom: 2px solid #04aec4; height: 23px;  padding-top: 10px;}
 .board_list_new0807 .se_off{width:30px; color:#777;}
 .board_list_new0807 .se_line{color:#ccc; padding: 0px 5px; font-family:dotum, sans-serif;  font-size: 18px;}
 .board_list_new0807 .list_all{overflow:hidden;padding-top:14px; padding-bottom:13px; border-bottom:1px solid #dcdcdc;}
@@ -392,7 +396,7 @@ legend{ position: absolute; overflow: hidden; visibility: hidden; height: 0; fon
 .board_list_new020807 .title{width:70px; color: #333; font-size: 16px; font-weight:bold; }
 .board_list_new020807 .more{width:250px; }
 .board_list_new020807 .more img{vertical-align:middle; padding-bottom: 7px;}
-.board_list_new020807 .se_on{width:30px; color:#1B7F98; font-weight:bold; border-bottom: 2px solid #1B7F98;  background: url(../images/grade_dot_new.png) no-repeat center 0px;  height: 23px;  padding-top: 10px;}
+.board_list_new020807 .se_on{width:30px; color:#1B7F98; font-weight:bold; border-bottom: 2px solid #04aec4;height: 23px;  padding-top: 10px;}
 .board_list_new020807 .se_off{width:30px; color:#777}
 .board_list_new020807 .se_line{color:#ccc; padding: 0px 5px; font-family:dotum, sans-serif;  font-size: 18px}
 .board_list_new020807 .new_list{border-bottom:1px solid #dcdcdc; padding-top:12px; padding-bottom:12px; text-overflow: ellipsis; overflow: hidden;   white-space: nowrap;}
@@ -419,14 +423,14 @@ legend{ position: absolute; overflow: hidden; visibility: hidden; height: 0; fon
 .board_list_new020807 .board_list_all {border-bottom:1px solid #dddddd; height:35px;}
 .board_list_new020807 .board_list_all span{display: inline-block;}
 .board_list_new020807 .title{width:70px; color: #333; font-size: 16px; font-weight:bold; }
-.board_list_new020807 .more{width:250px; }
+.board_list_new020807 .more{width:330px; }
 .board_list_new020807 .more img{vertical-align:middle; padding-bottom: 7px;}
-.board_list_new020807 .se_on{width:30px; color:#1B7F98; font-weight:bold; border-bottom: 2px solid #1B7F98;  background: url(../images/grade_dot_new.png) no-repeat center 0px;  height: 23px;  padding-top: 10px;}
+.board_list_new020807 .se_on{width:30px; color:#1B7F98; font-weight:bold; border-bottom: 2px solid #04aec4; height: 23px;  padding-top: 10px;}
 .board_list_new020807 .se_off{width:30px; color:#777}
 .board_list_new020807 .se_line{color:#ccc; padding: 0px 5px; font-family:dotum, sans-serif;  font-size: 18px}
 .board_list_new020807 .new_list{border-bottom:1px solid #dcdcdc; padding-top:12px; padding-bottom:12px; text-overflow: ellipsis; overflow: hidden;   white-space: nowrap;}
 .board_list_new020807 .new_list .text{white-space:nowrap;}
-.board_list_new020807 .new_list .type{color: #1B7F98; margin-right: 3px; font-size:14px; font-weight:bold;}
+.board_list_new020807 .new_list .type{color: #04aec4; margin-right: 3px; font-size:14px; font-weight:bold;}
 
 .board_list_new02{ float:right; width: 47%; height: 260px; margin-bottom: 30px; font-size: 13px; position: relative; }
 .board_list_new02 .board_list_all {border-bottom:1px solid #000; height:30px;}
