@@ -133,7 +133,7 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 .main_bn03_wrap{ background: #3e5375 url('배경이미지2.PNG') no-repeat center top; height: 445px; }
 .main_bn04_wrap{ background: #f7b442 url('배경이미지.PNG') no-repeat center top; height: 445px; }
 .main_bn05_wrap{ background: #6abbd9 url('배경이미지4.PNG')no-repeat center top; height: 445px; }
-.main_content01{ position: relative; width: 1000px; height: 445px; margin: 0 auto; background: url('../images/re_icon/bg_box01.png') no-repeat; }
+.main_content01{ position: relative; width: 1000px; height: 445px; margin: 0 auto; background: url('배경-2.PNG') no-repeat; }
 .main_content02{ position: relative; width: 1000px; height: 445px; margin: 0 auto; background: url('../images/re_icon/bg_box02.png') no-repeat; }
 .main_content03{ position: relative; width: 1000px; height: 445px; margin: 0 auto; background: url('../images/re_icon/bg_box03.png') no-repeat; }
 .main_content04{ position: relative; width: 1000px; height: 445px; margin: 0 auto; background: url('../images/re_icon/bg_box04.png') no-repeat; }
@@ -311,8 +311,15 @@ legend{ position: absolute; overflow: hidden; visibility: hidden; height: 0; fon
 .tabmenu { position: absolute; width: 220px; top: 40px; display:inline-block; color: #333; z-index: 50; }
 .tabmenu li { padding:12px 0; font-size: 16px; text-align: center; line-height: 48px; }
 .tabmenu a { color:#fff; padding:16px 43px; }
-.tabmenu li.on { font-weight:bold; padding:12px 0; }
-.tabmenu li.on a { height: 147px; color: deepskyblue; padding:16px 43px; font-size: 16px; letter-spacing: -1px; background: url(왼쪽검고1.png) no-repeat center top; background-size: cover;}
+.tabmenu li.on { font-weight:bold; padding:12px 0; background: url(왼쪽검고.jpg) no-repeat center top; background-size: 200px 70px;}
+.tabmenu li.on a { color: deepskyblue; padding:16px 43px; font-size: 16px; letter-spacing: -1px; }
+.tabmenu li.on a:visited{ height: 147px; color: deepskyblue; padding:16px 43px; font-size: 16px; letter-spacing: -1px; background: url(왼쪽검고.jpg) no-repeat center top; background-size: 146px 53.33px;}
+.tabmenu li.tab02 a:visited { height: 147px; color: deepskyblue; padding:16px 43px; font-size: 16px; letter-spacing: -1px; background: url(왼쪽커뮤니티.jpg) no-repeat center top; background-size: 146px 53.33px;}
+.tabmenu li.tab03 a:visited { height: 147px; color: deepskyblue; padding:16px 43px; font-size: 16px; letter-spacing: -1px; background: url(왼쪽대학.jpg) no-repeat center top; background-size: 146px 53.33px;}
+.tabmenu li.tab04 a:visited { height: 147px; color: deepskyblue; padding:16px 43px; font-size: 16px; letter-spacing: -1px; background: url(왼쪽성적.jpg) no-repeat center top; background-size: 146px 53.33px;}
+.tabmenu li.tab05 a:visited { height: 147px; color: deepskyblue; padding:16px 43px; font-size: 16px; letter-spacing: -1px; background: url(왼쪽대입정보.jpg) no-repeat center top; background-size: 146px 53.33px;}
+
+
 .tabmenu li.tab05 { line-height:1.2; }
 .tabmenu li.tab05 a { display:block; padding:5px 0; font-size: 16px; letter-spacing: -3px; }
 
