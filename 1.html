@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>event</title>
+    <script src="jquery-3.6.1.min.js"></script>
+    <link rel="stylesheet" href="1.css" />
+  </head>
+  <body>
+    <ul class="list">
+      <li><a href="표지대학.png" data-n="01">01</a></li>
+      <li><a href="표지검고.png" data-n="02">02</a></li>
+      <li><a href="표지성적.png" data-n="03">03</a></li>
+      <li><a href="표지대입정보.png" data-n="04">04</a></li>
+      <li><a href="표지커뮤니티.png" data-n="05">05</a></li>
+    </ul>
+    <p><img src="표지대학.png" width="500px" alt="영화01"/></p>
+    <script>
+      $(function(){
+
+        $('.list li a').click(function(){
+
+          var img_src=$(this).attr('href')
+
+          var art_txt=$(this).text()
+
+          $('p img').attr('src',img_src)
+
+          $('p img').attr('alt',art_txt)
+
+          return false;
+        })
+      })
+    </script>
+
+  </body>
+</html>
