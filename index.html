@@ -127,9 +127,9 @@
         <div class="top_menu" id="topHeaderMenu">
 <!--            <div style="margin: 5px; padding: 5px; border: 2px solid red; border-image: none; font-size: 20px; font-weight: bold; display: inline; position: absolute;"><span style="color: red;">시험운영중</span></div> -->
             <ul id="top">
-                    <li><a class="jiu" href="/PageLinkAll.do?link=/kcue/ast/eip/eis/mbersvc/login/EipLoginView.do&p_menu_id=PG-EIP-12001" title="로그인">로그인</a></li>
-                    <li><a class="jiu" href="/PageLinkAll.do?link=/kcue/ast/eip/eis/mbersvc/mbersbscrb/EipStplatAgreView.do&p_menu_id=PG-EIP-12101" title="회원가입">회원가입</a></li>
-                   <li><a class="jiu" href="/PageLinkAll.do?link=/kcue/ast/eip/eis/cstmr/notice/EipNotice.do&p_menu_id=PG-EIP-10801" title="고객센터">고객센터</a></li>
+                    <li><a class="jiu" href="login stoke.html" title="로그인">로그인</a></li>
+                    <li><a class="jiu" href="login stoke.html" title="회원가입">회원가입</a></li>
+                   <li><a class="jiu" href="고객센터 알림창.html" title="고객센터">고객센터</a></li>
 
             </ul>
 
@@ -316,8 +316,8 @@
 
 
 
-                            <a href="#" tabindex="-1" title="대입정보포털 단계적 서비스 제공 안내" class="popup_content" >
-                            대입정보포털 단계적 서비스 제공 안내
+                            <a href="#" tabindex="-1" title="검정고시 커뮤니티 웹페이지 '모여봐'개설" class="popup_content" >
+                            검정고시 커뮤니티 웹페이지 '모여봐'개설
                             </a>
 
 
@@ -368,9 +368,7 @@
         </div>
         <div class="slide_btn_wrap">
 
-            <span class="btn_close">
-                <a href="#" id="btn_top_popup" title="팝업 열기"><img src="더보기 이미지.jpg" width="30" alt="팝업 열기 버튼"></a>
-            </span>
+
 
         </div><!--//slide_btn_wrap-->
         <div id="pop_top_banner" style="display: none;" >
@@ -545,14 +543,48 @@
                     <div class="tab_menu_wrap">
                         <ul class="tabmenu">
 													<ul class="list">
-                            <li class="tab01 on"><a href="표지검고.jpg" data-n="01" class="cho3">검정고시</a></li>
-                            <li class="tab02"><a href="표지커뮤니티.jpg" data-n="02">커뮤니티</a></li>
-                            <li class="tab03"><a href="표지대학.jpg" data-n="03">대학,학과,전형</a></li>
-                            <li class="tab04"><a href="표지성적.jpg" data-n="04">성적분석</a></li>
-                            <li class="tab05"><a href="표지대입정보.jpg" data-n="05">대입정보</a></li>
+                            <li class="tab01 on"><a href="표지검고.jpg" style="position:relative; left: 20px;" data-n="01" class="cho3" onclick="colorset(1)">검정고시</a></li>
+                            <li id="good" class="tab02"><a href="표지커뮤니티.jpg" style="position:relative; left: 20px;" data-n="02" onclick="colorset(2)">커뮤니티</a></li>
+                            <li id="good1" class="tab03"><a href="표지대학.jpg" style="position:relative; left: 18px;" data-n="03" onclick="colorset(3)">대학,학과,전형</a></li>
+                            <li id="good2" class="tab04"><a href="표지성적.jpg" style="position:relative; left: 20px;" data-n="04" onclick="colorset(4)">성적분석</a></li>
+                            <li id="good3" class="tab05"><a href="표지대입정보.jpg" style="position:relative; left: 20px;" data-n="05" onclick="colorset(5)">대입정보</a></li>
 													</ul>
                         </ul>
                     </div>
+
+
+										<!--왼쪽 누를 때 배경 변경-->
+										<script type="text/javascript">
+
+								      function colorset(num) {
+								        if(num == 1) {
+								          document.body.style.background = "url('왼쪽검고.jpg') no-repeat 0 0";
+													document.body.style.backgroundSize = "220px 70px";
+													document.body.style.backgroundPosition = "10px 200px";
+								        }
+								        if(num == 2) {
+								          document.body.style.background = "url('왼쪽커뮤니티.jpg') no-repeat 0 0";
+													document.body.style.backgroundSize = "220px 70px";
+													document.body.style.backgroundPosition = "10px 200px";
+								        }
+								        if(num == 3) {
+								          document.body.style.background = "url('왼쪽대학.jpg') no-repeat 0 0";
+													document.body.style.backgroundSize = "220px 70px";
+													document.body.style.backgroundPosition = "10px 200px";
+								        }
+								        if(num == 4) {
+								          document.body.style.background = "url('왼쪽성적.jpg') no-repeat 0 0";
+													document.body.style.backgroundSize = "220px 70px";
+													document.body.style.backgroundPosition = "10px 200px";
+												}
+								        if(num == 5) {
+								          document.body.style.background = "url('왼쪽대입정보.jpg') no-repeat 0 0";
+													document.body.style.backgroundSize = "220px 70px";
+													document.body.style.backgroundPosition = "10px 200px";
+												}
+								      }
+								    </script>
+
 
                     <div class="list_div">
 	                	<form id="newsFrm" name="newsFrm" action="/EgovPageLink.do?link=EipMain" method="post" onsubmit="return false;">
@@ -569,7 +601,7 @@
 													</form>
 													<div class="main_content01">
 															<div class="content_box" style="width: px; height: 80px;">
-																<p><img src="표지대학.jpg" width="100%" id="po" alt="검고표지" onclick="location.href='검정고시초졸.html'"/></p>
+																<p><img src="표지검고.jpg" width="800px" id="po" alt="검고표지" onclick="location.href='검정고시초졸.html'"/></p>
 															</div>
 													</div>
 											</div>
@@ -651,8 +683,9 @@
 								</div>
 							</div>
 							<div class="list_center">
-								<p>
+								<p><a href="https://admission.uos.ac.kr/admission/main.do?epTicket=LOG">
 									"서울시립대"
+									</a>
 								</p>
 						</div>
 					</div>
@@ -663,8 +696,9 @@
 								</div>
 							</div>
 						<div class="list_center">
-							<p>
+							<p><a href="http://admission.gachon.ac.kr/admission/html/main/main.asp">
 								"가천대"
+							</a>
 							</p>
 						</div>
 					</div>
@@ -675,8 +709,9 @@
 							</div>
 						</div>
 					<div class="list_center">
-						<p>
+						<p><a href="https://ent.wsu.ac.kr/main/index.jsp">
 							"우송대"
+							</a>
 						</p>
 					</div>
 				</div>
@@ -750,7 +785,7 @@
 
 								<div class="foot_copy">
                  	<div id="copyright1"><a href="모여봐+개인정보처리방침.html"> 개인정보처리장침</a>
-							 <br />전화문의 : 010-4026-1885<br />
+							 <br />전화문의 : 010-4026-18xx<br />
                     	홈페이지 등록일 2022. 08. 22
                  	</div>
 								</div>
